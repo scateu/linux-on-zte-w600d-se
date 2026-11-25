@@ -1,7 +1,7 @@
 # Optional USB U-Boot and typewriter
 
 This is the **two-U-Boot workflow**, separate from the current Ubuntu USB.
-Run commands below from `2026-11-25-Codex/`, unless a block says otherwise.
+Run commands below from the repository root, unless a block says otherwise.
 Use a separate typewriter stick: do not add these files to the working Linux
 stick, where an extra boot.scr can change which boot path the factory scanner takes.
 

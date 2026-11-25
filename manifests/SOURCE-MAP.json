@@ -1,7 +1,25 @@
 {
-  "consolidated_at": "2026-11-25T11:42:50.781603+08:00",
+  "consolidated_at": "2026-11-25T12:02:04.505190+08:00",
   "provenance": "pre-cleanup/FILES.json, pre-cleanup/SOURCE-MAP.json and CLEANUP-REPORT.json",
   "sources": [
+    {
+      "path": ".githooks/pre-commit",
+      "sha256": "6028b3a3037478af7c2c4c70770ebe40df994e09633772a981e1375f723d4f04",
+      "bytes": 48,
+      "original_sources": []
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "3b8006c0d7b209d050e372794fea089f5f3e12440f70804b466e5ed5fb15b1d3",
+      "bytes": 588,
+      "original_sources": []
+    },
+    {
+      "path": ".gitmodules",
+      "sha256": "2b961a0cc779e9d5164506d331b5b933195273c1b9aac72ad16ecba41b61c8dc",
+      "bytes": 312,
+      "original_sources": []
+    },
     {
       "path": "CURRENT.md",
       "sha256": "5e7e48e0bc33b683e817c33907c127c8ea3f141b25ceea4490c92acb41851b5b",
@@ -10,8 +28,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "fda94028696345eeac70c216070eef9d0779b0ba137fe1612f9860eb5e217c69",
-      "bytes": 7043,
+      "sha256": "1bedc66fe7febc54f76fa207dcad8521836d81e2383cd1a16b8c8181fc10f834",
+      "bytes": 8641,
       "original_sources": []
     },
     {
@@ -2266,11 +2284,9 @@
     },
     {
       "path": "docs/BUILD-CURRENT.md",
-      "sha256": "69e75de4e6d7537e540051174665479982599fb81a1a84c49ec8c7ef80f71d07",
-      "bytes": 5262,
-      "original_sources": [
-        "2026-11-25-Codex/docs/BUILD-CURRENT.md"
-      ]
+      "sha256": "dd959d1c1b23b648c018a8e285a6ffaeb8c21d1a99cff056b56df4a390559130",
+      "bytes": 5245,
+      "original_sources": []
     },
     {
       "path": "docs/BUILD-SIMPLE.md",
@@ -2304,14 +2320,14 @@
     },
     {
       "path": "docs/FACTORY-UBOOT-PATCH.md",
-      "sha256": "f193f5d565e4d5003e8741cf815005fae6de4d7ad1766b036379a7a29c90dcd5",
+      "sha256": "641e4bda6176b084fdc2d8873c221181ac7d82367486d26878cce8dbddf44f5a",
       "bytes": 3985,
       "original_sources": []
     },
     {
       "path": "docs/GIT-REPOSITORY.md",
-      "sha256": "659acba21c56771fdc56b973dfdcfa21f608266f65baab01c317fa7905f482bd",
-      "bytes": 3096,
+      "sha256": "4ea3a87ed62b76ed121c4fedf465bf3aba26541581dedd037dfc95db74fe6e81",
+      "bytes": 3157,
       "original_sources": []
     },
     {
@@ -2322,7 +2338,7 @@
     },
     {
       "path": "docs/RECOVERY.md",
-      "sha256": "64c05eddc192c1e08f9d07517cd76ad67829bb007ae68908c85dcc6300da39b3",
+      "sha256": "fbd3054dd00df1eb174b9a22f6aa7342351827b48fe8ffc020bc01f6794ba704",
       "bytes": 3772,
       "original_sources": []
     },
@@ -2352,7 +2368,7 @@
     },
     {
       "path": "docs/USB-UBOOT-TYPEWRITER.md",
-      "sha256": "235d5acc7057d55f4093eaaecf155b6dc9f2486ce76a64cfe3e06b9c4b91039f",
+      "sha256": "7cfc5c15ef29113e9611e0f1ca3426d9515dc98a1395592d0e21fbfdd8691b04",
       "bytes": 4753,
       "original_sources": []
     },

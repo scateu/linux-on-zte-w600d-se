@@ -1,8 +1,8 @@
 [submodule "usb-uboot"]
-	path = 2026-11-25-Codex/bootloader/usb-uboot
+	path = bootloader/usb-uboot
 	url = https://github.com/scateu/u-boot-zte-w600d-se.git
 	ignore = dirty
 [submodule "cloudbook-reference"]
-	path = 2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-air-mainline-linux
+	path = build/linux-7.3.6/reference/cloudbook-air-mainline-linux
 	url = https://github.com/eastwoodnet/cloudbook-air-mainline-linux.git
 	ignore = dirty

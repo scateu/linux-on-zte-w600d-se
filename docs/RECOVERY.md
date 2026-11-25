@@ -15,7 +15,7 @@ necessarily factory-stock bytes.
 
 ## Extract outside the workspace
 
-From `2026-11-25-Codex/`, use a **new** destination:
+From the repository root, use a **new** destination:
 
 ```sh
 python3 tools/extract-backups.py /tmp/w600d-restored

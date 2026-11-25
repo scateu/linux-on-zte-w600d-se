@@ -1,7 +1,8 @@
 # Source-only Git repository and GitHub publication
 
-Git root: `/Users/k/zte-book`; initial branch: main. The dated directory stays
-inside the repository so future dated work can be added without moving sources.
+Git root: `/Users/k/zte-book`; initial branch: main. Sources, guides, tools and
+local artifacts live directly at the repository root, without a dated wrapper.
+Earlier dated research remains labelled under docs/history/.
 The commit author is taken from the user's original U-Boot effort:
 Wang Kang <scateu@gmail.com>. Identity/hook configuration is repository-local.
 No GitHub repository was created and no remote push was performed by setup.

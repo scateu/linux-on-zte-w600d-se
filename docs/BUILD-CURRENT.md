@@ -14,7 +14,7 @@ refuse to overwrite completed rootfs exports, images and rollback archives.
 From the original Mac workspace, after inspecting that the destination is new:
 
 ```sh
-rsync -a 2026-11-25-Codex/build/linux-7.3.6/ \
+rsync -a build/linux-7.3.6/ \
   trash:/home/k/codex-workdir-nov-25-2026/
 ssh trash
 cd /home/k/codex-workdir-nov-25-2026

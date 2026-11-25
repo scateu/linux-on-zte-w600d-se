@@ -3,7 +3,7 @@
 The current laptop already has this patch. Do not reflash eMMC for kernel,
 DTS, desktop or typewriter USB updates. This guide records how to prepare
 another **matching factory machine** safely; cleanup itself performs no flash.
-Run local commands from `2026-11-25-Codex/`.
+Run local commands from the repository root.
 
 ## What changes, and what does not
 
