@@ -2,18 +2,21 @@
 set -euo pipefail
 ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
 cd "$ROOT"
+KERNEL_ARTIFACTS=${KERNEL_ARTIFACTS:-artifacts/kernel}
+KERNEL_RELEASE=$(cat "$KERNEL_ARTIFACTS/kernelrelease")
+BOARD_DTB=${BOARD_DTB:-rk3568-zte-w600d-mainline.dtb}
 mkdir -p out/usb-image artifacts logs
 exec > >(tee logs/assemble-image.log) 2>&1
-IMAGE="$ROOT/artifacts/w600d-ubuntu-xfce-7.3.6-20261124.img"
+IMAGE=${IMAGE:-"$ROOT/artifacts/w600d-ubuntu-xfce-7.3.6-20261124.img"}
 test ! -e "$IMAGE" || { printf 'Refusing to overwrite existing image: %s\n' "$IMAGE" >&2; exit 1; }
-python3 scripts/validate-board.py artifacts/kernel/rk3568-zte-w600d-mainline.dtb
-python3 scripts/validate-kernel-config.py artifacts/kernel/config-7.3.6-w600d-usb
+python3 scripts/validate-board.py "$KERNEL_ARTIFACTS/$BOARD_DTB"
+python3 scripts/validate-kernel-config.py "$KERNEL_ARTIFACTS/config-$KERNEL_RELEASE"
 test -s artifacts/ubuntu-w600d-rootfs.tar
 truncate -s 512M out/usb-image/boot.fat
 mkfs.vfat -F 32 -n W600D_BOOT out/usb-image/boot.fat
 mmd -i out/usb-image/boot.fat ::/boot ::/extlinux
-mcopy -i out/usb-image/boot.fat artifacts/kernel/Image ::/boot/Image
-mcopy -i out/usb-image/boot.fat artifacts/kernel/rk3568-zte-w600d-mainline.dtb ::/boot/
+mcopy -i out/usb-image/boot.fat "$KERNEL_ARTIFACTS/Image" ::/boot/Image
+mcopy -i out/usb-image/boot.fat "$KERNEL_ARTIFACTS/$BOARD_DTB" ::/boot/rk3568-zte-w600d-mainline.dtb
 mcopy -i out/usb-image/boot.fat extlinux.conf ::/extlinux/extlinux.conf
 ROOTFS_BYTES=$(( (6 * 1024 - 513) * 1024 * 1024 ))
 truncate -s "$ROOTFS_BYTES" out/usb-image/rootfs.ext4

@@ -1,0 +1,57 @@
+diff --git a/drivers/net/wireless/mediatek/mt76/mt7663s/mt7663s_w103d.c b/drivers/net/wireless/mediatek/mt76/mt7663s/mt7663s_w103d.c
+--- a/drivers/net/wireless/mediatek/mt76/mt7663s/mt7663s_w103d.c
++++ b/drivers/net/wireless/mediatek/mt76/mt7663s/mt7663s_w103d.c
+@@ -96,7 +96,8 @@
+ 
+ bool mt7663s_w103d_active(void)
+ {
+-	return of_machine_is_compatible("zte,w103d");
++	return of_machine_is_compatible("zte,w103d") ||
++	       of_machine_is_compatible("zte,w600d-se");
+ }
+ 
+ int mt7663s_w103d_mcu_restart(struct mt76_dev *mdev)
+@@ -706,7 +707,7 @@
+ {
+ 	struct mt76_phy *mphy = &dev->mphy;
+ 
+-	if (!of_machine_is_compatible("zte,w103d"))
++	if (!mt7663s_w103d_active())
+ 		return;
+ 
+ 	/*
+diff --git a/drivers/net/wireless/mediatek/mt76/mt7663s/sdio_mcu.c b/drivers/net/wireless/mediatek/mt76/mt7663s/sdio_mcu.c
+--- a/drivers/net/wireless/mediatek/mt76/mt7663s/sdio_mcu.c
++++ b/drivers/net/wireless/mediatek/mt76/mt7663s/sdio_mcu.c
+@@ -144,7 +144,7 @@
+ 	};
+ 	struct mt76_mcu_ops *transport_ops = NULL;
+ 	struct mt7615_mcu_ops *mcu_ops;
+-	bool w103d = of_machine_is_compatible("zte,w103d");
++	bool w103d = mt7663s_w103d_active();
+ 	int ret;
+ 
+ 	ret = __mt7663s_mcu_drv_pmctrl(dev);
+diff --git a/drivers/bluetooth/btmtksdio-w103d.h b/drivers/bluetooth/btmtksdio-w103d.h
+--- a/drivers/bluetooth/btmtksdio-w103d.h
++++ b/drivers/bluetooth/btmtksdio-w103d.h
+@@ -53,7 +53,8 @@
+ 	struct mt7663_combo *combo, *found = ERR_PTR(-EPROBE_DEFER);
+ 	struct device_link *link;
+ 
+-	if (!of_machine_is_compatible("zte,w103d"))
++	if (!of_machine_is_compatible("zte,w103d") &&
++	    !of_machine_is_compatible("zte,w600d-se"))
+ 		return NULL;
+ 
+ 	mutex_lock(&mt7663_combos_lock);
+@@ -135,7 +136,8 @@
+ 	struct mt7663_combo *combo;
+ 
+ 	if (bdev->data->chipid != 0x7663 ||
+-	    !of_machine_is_compatible("zte,w103d"))
++	    (!of_machine_is_compatible("zte,w103d") &&
++	     !of_machine_is_compatible("zte,w600d-se")))
+ 		return 0;
+ 	combo = kzalloc(sizeof(*combo), GFP_KERNEL);
+ 	if (!combo)

@@ -15,6 +15,7 @@ __pycache__/
 **/rootfs_build/
 **/artifacts/kernel*/
 **/artifacts/userspace/
+**/artifacts/firmware/
 **/logs/
 
 *.o

@@ -13,7 +13,7 @@ not discarded; both original Git repositories and their histories were moved.
 
 **Start with `CURRENT.md`, then `docs/DIY-FROM-UPSTREAM.md`.** This is a
 source-and-evidence handoff, not a claim that the laptop is completely finished.
-The pinned, hardware-tested kernel is **7.3.6-w600d-usb**, with Ubuntu
+The current live kernel is **7.3.6-w600d-usb-wifi**, with Ubuntu
 **24.04.5 ARM64 Base plus XFCE**. These version numbers are reproduction inputs,
 not a claim about the latest upstream release today.
 
@@ -54,7 +54,7 @@ Git ignore patterns alone cannot filter arbitrary files by size.
 A fresh clone must build its own kernel/rootfs and use its own device backups.
 See [GitHub publication notes](docs/GIT-REPOSITORY.md) for initial push commands,
 local overrides and the ignored-file policy. No complete desktop/trackpad/DHCP/
-Android-fallback acceptance is implied.
+Android-fallback acceptance is implied; see the live follow-up in `CURRENT.md`.
 
 ## Goal and bootflow
 
@@ -86,6 +86,7 @@ The optional typewriter stick is different: factory U-Boot -> vendor boot.scr
 | `docs/DEVICE-TREE.md` | Where DTS information comes from; board wiring and include chain |
 | `docs/BOOTFLOW.md` | Factory patch scope, direct USB boot, Android fallback |
 | `docs/DEBUGGING.md` | Black-screen root cause, file-only updates, UART/getty issues |
+| `docs/TRACKPAD-AND-WIFI.md` | I2C4 trackpad, persistent Ethernet DHCP, MT7663S radio patches and rollback |
 | `build/linux-7.3.6/` | Build-host recipe: DTS, patches, rootfs definitions, scripts and config |
 | `build/linux-7.3.6/reference/cloudbook-mainline-6.12/` | Comparison project, including required Naneng PHY patch |
 | `artifacts/kernel-tested/` | Corrected Image, final DTB, exact config, System.map and upstream build checksums |
@@ -118,7 +119,7 @@ old proposals to erase Android/repartition eMMC are **not the current plan**.
   and recovery images compressed only after verifying decompressed SHA256.
   No USB/eMMC write, reboot, serial interaction, remote-host modification,
   kernel rebuild or physical full-disk read-back occurred during cleanup.
-- The source recipe includes all four necessary eDP patches, the three DTS
+- The source recipe includes all four necessary eDP patches, the board DTS
   source files, the validated kernel config, and post-export Docker-marker
   stripping. The complete tested Image and DTB are included too.
 - The 1.2 GB rootfs tar, approximately 90 MB module tree, full kernel source
@@ -129,8 +130,9 @@ old proposals to erase Android/repartition eMMC are **not the current plan**.
 - The original whole-image hashes are historical: the USB's Image was replaced
   afterward. They do not verify the currently updated physical USB.
 - Bring-up autologin/passwordless sudo are not production security defaults.
-  Trackpad, DHCP, complete visible XFCE acceptance, and Android fallback remain
-  unfinished.
+  Trackpad motion/left-click, managed Ethernet DHCP and normal hardware-mode
+  boot are now recorded. Wi-Fi, complete visible XFCE/right-click acceptance
+  and Android fallback remain unfinished.
 
 ## Verify this copy
 

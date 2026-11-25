@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-25",
+  "build_host": "trash:/home/k/codex-workdir-nov-24-2026",
+  "release": "7.3.6-w600d-usb-wifi",
+  "cloudbook_reference": "3a031bd9fd3d6c79d9ad0444af5088d0c21d4a43",
+  "sdio_functions": {"wifi": "037a:7603", "bluetooth": "037a:7663"},
+  "dtb": "rk3568-zte-w600d-mainline-v6-wifi-bt.dtb",
+  "boot_image": "/boot/Image.wifi-20261125",
+  "sha256": {
+    "Image": "f3eb7e6fb5a07af13c6f33ac38925a5060ff2031dfbd78aa9b5b53f1d6f946e8",
+    "rk3568-zte-w600d-mainline-v6-wifi-bt.dtb": "2a101c4b321003c90f24febf5d719a1c86c32769f9f9a60aa0c8e30f93b8e136",
+    "config-7.3.6-w600d-usb-wifi": "0050c1c01648b26edb764bc4bf14d6a66cf9443591b6cd5e8a433436233f37de",
+    "System.map-7.3.6-w600d-usb-wifi": "74bde965ffa8a6ea0de981497cc5d12a78061abfaa377608f34d5aacba1284ee",
+    "modules-7.3.6-w600d-usb-wifi.tar.gz": "1d720ce99755c9626ed07775cdbad482c3593a9245b3339cc6cf1e538c8a092c",
+    "mt7663s.ko": "f991a7b124ccf34a5a2f26dbfaa784507a54b8c8aa9163af94058aa056a9df8a",
+    "btmtksdio.ko": "eff187b580053a58826216a5488eaf2d830f32d8c25e52c058ce0d5028f54fd2"
+  },
+  "validated": ["kernel and modules build", "board and config validators", "USB-only deployment", "clean reboot", "2.4/5 GHz active scan", "Bluetooth combo initialization", "display/input and Ethernet DHCP regression", "read-only FAT mount"],
+  "pending": ["Wi-Fi association/DHCP/throughput", "Bluetooth pairing", "physical trackpad scrolling/right-click acceptance", "new full-image pipeline end-to-end"],
+  "policy": "No eMMC/Android writes, whole-drive flash or full-drive read-back; original Image/modules and rescue entries retained. No commit or push."
+}

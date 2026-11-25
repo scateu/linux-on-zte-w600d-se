@@ -1,0 +1,68 @@
+#include "rk3568-zte-w600d-mainline-v3.dts"
+
+/ {
+	vcc_touchpad: vcc-touchpad-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc_touchpad";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		regulator-always-on;
+		regulator-boot-on;
+		vin-supply = <&vcc3v3_sys>;
+		gpio = <&gpio3 RK_PB4 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		startup-delay-us = <10000>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&touchpad_power_en>;
+	};
+
+	vcc_tp_reset: vcc-tp-reset-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc_tp_reset";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		regulator-always-on;
+		regulator-boot-on;
+		vin-supply = <&vcc_touchpad>;
+		gpio = <&gpio3 RK_PA1 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		startup-delay-us = <100000>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&touchpad_reset_en>;
+	};
+};
+
+&i2c4 {
+	status = "okay";
+	clock-frequency = <100000>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&i2c4m0_xfer>;
+
+	touchpad@2c {
+		compatible = "hid-over-i2c";
+		reg = <0x2c>;
+		hid-descr-addr = <0x0020>;
+		interrupt-parent = <&gpio3>;
+		interrupts = <RK_PB3 IRQ_TYPE_LEVEL_LOW>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&touchpad_irq>;
+		vdd-supply = <&vcc_touchpad>;
+		vddl-supply = <&vcc_tp_reset>;
+		post-power-on-delay-ms = <100>;
+		wakeup-source;
+	};
+};
+
+&pinctrl {
+	touchpad {
+		touchpad_power_en: touchpad-power-en {
+			rockchip,pins = <3 RK_PB4 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+		touchpad_reset_en: touchpad-reset-en {
+			rockchip,pins = <3 RK_PA1 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+		touchpad_irq: touchpad-irq {
+			rockchip,pins = <3 RK_PB3 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+	};
+};

@@ -1,0 +1,53 @@
+#include "rk3568-zte-w600d-mainline-v4-touchpad.dts"
+
+/ {
+	vcc_wlan: vcc-wlan-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc_wlan";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		regulator-always-on;
+		regulator-boot-on;
+		vin-supply = <&vcc3v3_sys>;
+		gpio = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&wlan_power_en>;
+	};
+
+	w600d_sdio_pwrseq: sdio-pwrseq {
+		compatible = "mmc-pwrseq-simple";
+		clocks = <&rk809 1>;
+		clock-names = "ext_clock";
+		reset-gpios = <&gpio0 RK_PB5 GPIO_ACTIVE_HIGH>;
+		post-power-on-delay-ms = <200>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&wlan_reset>;
+	};
+};
+
+&sdmmc1 {
+	status = "okay";
+	bus-width = <4>;
+	max-frequency = <25000000>;
+	cap-sd-highspeed;
+	cap-sdio-irq;
+	keep-power-in-suspend;
+	non-removable;
+	disable-wp;
+	no-1-8-v;
+	vmmc-supply = <&vcc_wlan>;
+	mmc-pwrseq = <&w600d_sdio_pwrseq>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&sdmmc1_bus4>, <&sdmmc1_clk>, <&sdmmc1_cmd>;
+};
+
+&pinctrl {
+	wlan {
+		wlan_power_en: wlan-power-en {
+			rockchip,pins = <0 RK_PA5 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+		wlan_reset: wlan-reset {
+			rockchip,pins = <0 RK_PB5 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+};

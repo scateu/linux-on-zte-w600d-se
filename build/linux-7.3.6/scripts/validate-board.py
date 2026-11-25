@@ -52,12 +52,45 @@ for property_name, provider in {
 }.items():
     assert value(node("pmu_io_domains"), property_name) == [handle(provider)]
 assert value(node("vcc3v3_pmu"), "regulator-min-microvolt") == [3300000]
-for label in ["sdhci", "sdmmc0", "sdmmc1"]:
+for label in ["sdhci", "sdmmc0"]:
     assert value(node(label), "status", "s") == "disabled"
+if value(node("sdmmc1"), "status", "s") == "okay":
+    assert value(node("sdmmc1"), "max-frequency") == [25000000]
+    assert value(node("sdmmc1"), "bus-width") == [4]
+    assert value(node("sdmmc1"), "vmmc-supply") == [handle("vcc_wlan")]
+    assert value(node("vcc_wlan"), "gpio") == [handle("gpio0"), 5, 1]
+    assert value(node("w600d_sdio_pwrseq"), "reset-gpios") == [handle("gpio0"), 13, 0]
+    assert value(node("w600d_sdio_pwrseq"), "post-power-on-delay-ms") == [200]
+    print("Validated SDIO-only diagnostic enable; eMMC and removable-card host remain disabled")
+else:
+    assert value(node("sdmmc1"), "status", "s") == "disabled"
+symbols = subprocess.check_output(["fdtget", "-p", str(DTB), "/__symbols__"], text=True).splitlines()
+if "vcc_bt_rst_n" in symbols:
+    assert value(node("vcc_bt_rst_n"), "gpio") == [handle("gpio2"), 15, 0]
+    assert value(node("vcc_bt_rst_n"), "vin-supply") == [handle("vcc3v3_sys")]
+    assert value(node("vcc_bt_rst_n"), "regulator-min-microvolt") == [3300000]
+    assert value(node("sdmmc1"), "status", "s") == "okay"
+    print("Validated factory/CloudBook GPIO2_B7 Bluetooth reset-enable")
 for label in ["edp", "edp_phy", "pwm2", "vop", "vop_mmu", "usb_host0_xhci", "usb_host1_xhci"]:
     assert value(node(label), "status", "s") == "okay"
 properties = subprocess.check_output(["fdtget", "-p", str(DTB), node("edp_phy")], text=True).splitlines()
 assert "zte,edp-v12-v13" not in properties
+if value(node("i2c4"), "status", "s") == "okay":
+    touchpad = node("i2c4") + "/touchpad@2c"
+    assert value(touchpad, "compatible", "s") == "hid-over-i2c"
+    assert value(touchpad, "reg") == [0x2c]
+    assert value(touchpad, "hid-descr-addr") == [0x20]
+    assert value(touchpad, "interrupt-parent") == [handle("gpio3")]
+    assert value(touchpad, "interrupts") == [11, 8]
+    assert value(touchpad, "vdd-supply") == [handle("vcc_touchpad")]
+    assert value(touchpad, "vddl-supply") == [handle("vcc_tp_reset")]
+    assert value(touchpad, "post-power-on-delay-ms") == [100]
+    assert value(node("vcc_touchpad"), "gpio") == [handle("gpio3"), 12, 0]
+    assert value(node("vcc_touchpad"), "startup-delay-us") == [10000]
+    assert value(node("vcc_tp_reset"), "gpio") == [handle("gpio3"), 1, 0]
+    assert value(node("vcc_tp_reset"), "vin-supply") == [handle("vcc_touchpad")]
+    assert value(node("vcc_tp_reset"), "startup-delay-us") == [100000]
+    print("Validated factory-matched I2C4 touchpad wiring and chained power/reset enables")
 image = DTB.parent / "Image"
 with image.open("rb") as source:
     header = source.read(64)

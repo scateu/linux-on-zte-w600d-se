@@ -57,14 +57,16 @@ eMMC region were also saved. This is **not a complete factory-disk backup**.
 | Keyboard | USB HID 258a:0001; GPIO3_A3 power hog high |
 | USB power | GPIO3_A0 host supply, GPIO0_C4 other USB/OTG supply |
 | Diagnostic UART | uart2 / ttyS2, 115200 8N1; bridge tcp://localhost:5000 |
-| USB Ethernet | 0fe6:9900 seen; DHCP and actual bound driver not yet accepted |
-| Trackpad | Not enumerated in last mainline input inventory; still unresolved |
+| USB Ethernet | 0fe6:9900, cdc_ether; managed DHCP confirmed across November 25 reboot |
+| Trackpad | I2C4 0x2c, HID 093a:0255; GPIO3_B4 power, GPIO3_A1 reset-enable, GPIO3_B3 low-level IRQ |
+| Wi-Fi/Bluetooth | Live SDIO 037a:7603 / 037a:7663; MediaTek MT7663S, despite generic factory Unisoc nodes |
 
 These pins are this board's current authored settings, not proof that every
 peripheral is finished. The related CloudBook project is a comparison source,
 not a pin-for-pin substitute. `CURRENT.md` records what the user actually
-confirmed: visible cursor and Ctrl+Alt+F1/keyboard operation, not full acceptance
-of trackpad, DHCP, a complete desktop or unplugged Android fallback.
+confirmed. November 25 added trackpad input, Ethernet DHCP, two-band Wi-Fi scans
+and Bluetooth controller initialization;
+full desktop/right-click and unplugged Android fallback still need acceptance.
 
 ## Where the descriptions came from
 
@@ -82,8 +84,8 @@ The canonical factory evidence is `../recovery/factory-backups/`:
 Ubuntu does not generate the board wiring. We decompile factory DTBs for
 reference, combine that information with upstream RK3568 DTSI and measurements,
 and manually port a mainline board DTS. `DEVICE-TREE.md` explains the include
-chain and compilation; `../build/linux-7.3.6/` keeps all three authored DTS files,
-the EDID and the four required eDP patches.
+chain and compilation; `../build/linux-7.3.6/` keeps the complete authored DTS
+include chain, EDID, eDP patches and board-adapted radio patches.
 
 ## Backups are compressed, not discarded
 

@@ -3,8 +3,9 @@
 This is the order for reproducing this board's current Linux build, not a
 generic Ubuntu installer. The pinned inputs are Linux 7.3.6 and Ubuntu
 24.04.5 ARM64 Base. No claim is made that these are the latest releases on
-the day this guide is read. Screen and keyboard have been demonstrated;
-trackpad and DHCP are separate unfinished bring-up items.
+the day this guide is read. Screen/keyboard, trackpad input and Ethernet DHCP
+have been demonstrated. The v6 recipe adds the CloudBook-derived MT7663S
+Wi-Fi/Bluetooth path; see `TRACKPAD-AND-WIFI.md` for actual acceptance results.
 
 ## 0. Patch the factory U-Boot once
 
@@ -58,18 +59,25 @@ Use our pinned Linux 7.3.6 adaptation, not the reference's complete 6.12
 Analogix patch. Do not enable its optional BOE N44 panel voltage override
 on this laptop's KDC panel.
 
+Then run `bash scripts/apply-wifi-patches.sh` once from the recipe directory.
+It applies CloudBook 0005, our 7.3 lifecycle adaptation 0005b, CloudBook
+0011/0012/0013 and our board-ID adaptation 0005c. These radio patches use
+`git apply`, not GNU patch. Compiling CloudBook code without adapting its
+`zte,w103d` checks does not enable the special transport on our `zte,w600d-se`.
+
 ## 4. Add this laptop's DTS sources
 
-Copy all three `rk3568-zte-w600d-mainline*.dts` files from the recipe into
-Linux `arch/arm64/boot/dts/rockchip/`. The final v3 source includes v2,
-which includes the base source; keeping only v3 is insufficient.
+Copy all `rk3568-zte-w600d-mainline*.dts` include-chain files from the recipe
+into Linux `arch/arm64/boot/dts/rockchip/`. The final v6 source includes v5,
+v4, v3, v2 and the base source. Keeping only v6 is insufficient.
 
 They describe the actual 2 GB RAM map, KDC panel, power supplies, PWM2
-backlight, keyboard power and VP1-to-eDP connection. They also disable
-Linux access to Android's eMMC/SDMMC nodes. Do not borrow the comparison
+backlight, keyboard power, I2C4 touchpad and VP1-to-eDP connection. v6 adds
+the SDIO radio at conservative 25 MHz while keeping Android's eMMC and the
+removable-card host disabled. Do not borrow the comparison
 laptop's RAM size, panel, PWM or I/O voltage map.
 
-Compile **v3**, never boot the intermediate v1/v2 DTBs. DTS is source;
+Compile **v6-wifi-bt**, never boot the intermediate v1/v2 DTBs. DTS is source;
 DTB is the compiled binary that U-Boot hands to Linux.
 
 ## 5. Configure and build Image, modules and final DTB
@@ -81,32 +89,32 @@ in `config/config-7.3.6-w600d-usb`; the original host copy is in
 built in so USB root and the display do not need an initramfs.
 
 Run from the copied recipe directory, after downloading/unpacking the source,
-applying the four patches and copying all three DTS files:
+applying the eDP/radio patches and copying the complete DTS include chain:
 
 ```sh
-RECIPE=$(pwd)
-KERNEL="$RECIPE/src/linux-7.3.6"
-BUILD="$RECIPE/out/kernel-7.3.6"
-export ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
-mkdir -p "$BUILD"
-cp "$RECIPE/config/config-7.3.6-w600d-usb" "$BUILD/.config"
-make -C "$KERNEL" O="$BUILD" olddefconfig
-make -C "$KERNEL" O="$BUILD" -j24 DTC_FLAGS=-@ \
-  Image modules rockchip/rk3568-zte-w600d-mainline-v3.dtb
+JOBS=24 bash scripts/build-wifi-kernel.sh
 ```
 
-Outputs are `arch/arm64/boot/Image`, modules, and
-`arch/arm64/boot/dts/rockchip/rk3568-zte-w600d-mainline-v3.dtb` under BUILD.
-Run the recipe's board and kernel-config validators. Install matching
-modules into the rootfs using `modules_install` with `INSTALL_MOD_PATH`
-pointing at that rootfs, preserving the `7.3.6-w600d-usb` release name.
+This enables MT7663S/BT_MTKSDIO modules and combo coordination, sets the distinct
+release `7.3.6-w600d-usb-wifi`, and builds Image, modules and v6 with symbols.
+Validated outputs are under `artifacts/kernel-wifi/`; build output is
+`out/kernel-7.3.6-wifi/`. Install its matching module tar into the rootfs,
+excluding build/source links, then run `depmod 7.3.6-w600d-usb-wifi`.
+Do not mix modules from another release or omit the board-guard patch.
 
 ## 6. Turn Ubuntu Base into the Ubuntu rootfs
 
 Inside an ARM64 environment, install systemd/systemd-sysv, XFCE, LightDM,
-NetworkManager, input/Xorg/Mesa packages and normal Ubuntu utilities.
+NetworkManager, wpasupplicant, wireless-regdb, BlueZ, iw/rfkill,
+input/Xorg/Mesa packages and normal Ubuntu utilities.
 Create a user, enable the desired desktop/network services, set hostname,
 locale and `/etc/fstab`, and install the matching kernel modules.
+
+Run `bash scripts/fetch-mt7663-firmware.sh`; install the two hash-verified
+`mediatek/` files and `LICENSES/LICENCE.mediatek` under `/lib/firmware/`.
+Apply `rootfs/overlay/`: it permits Ethernet management in NetworkManager,
+enables touchpad tapping and mounts USB FAT read-only with a 90-second device
+timeout. Keep its PARTUUIDs consistent with the partition table/extlinux.
 
 For your own usable system, set a real user password; the current image's
 UART root autologin and passwordless sudo are temporary bring-up settings.
@@ -139,7 +147,7 @@ On p1, place:
 /extlinux/extlinux.conf
 ```
 
-The unversioned DTB filename on FAT is a copy of the **compiled v3** DTB.
+The unversioned DTB filename on FAT is a copy of the **compiled v4-touchpad** DTB.
 On p2, put Ubuntu and `/lib/modules/7.3.6-w600d-usb/`. No second U-Boot,
 Rockchip raw USB loader or boot.scr is required for this bootflow.
 

@@ -11,6 +11,48 @@ preserved both Git repositories. It adds no new hardware acceptance results.
 The four consolidated bootloader/logo/hardware guides and `docs/RECOVERY.md`
 are indexed in README.md; older notes are now in `docs/history/`.
 
+## Latest live follow-up — November 25, 2026
+
+- The laptop was queried and reboot-tested after the archival snapshot below.
+- The v4 DTB enabled factory-wired I2C4 power/reset and HID-over-I2C. Actual
+  trackpad ID is **093a:0255**; `hid_multitouch` and Xorg/libinput bind it.
+  Motion, contact/release and left-button events were recorded. Tap-to-click
+  is configured and loaded after reboot; right-click behavior remains to verify.
+- Docker markers were backed up/removed. `systemd-detect-virt` reports `none`,
+  udev and ttyS2 work, and console-getty stays inactive across reboot.
+- USB Ethernet uses `cdc_ether`. The Ubuntu NetworkManager default excluded
+  Ethernet; a narrow override now permits it. DHCP automatically reconnects
+  after service restart and a complete reboot: last address `192.168.1.220/24`.
+- Network time synchronized automatically, correcting the stale 2017 RTC date.
+- The v5-sdio diagnostic boot used the original kernel #3. SDIO at
+  `fe2c0000` enumerates **037a:7603** (Wi-Fi) and **037a:7663** (Bluetooth):
+  the same MediaTek MT7663S pair as CloudBook. Factory Unisoc nodes were
+  misleading; no Unisoc module was installed.
+- The current live boot uses **7.3.6-w600d-usb-wifi #1** and **v6-wifi-bt**.
+  CloudBook's isolated driver/stability patches required both the 7.3 lifecycle
+  adaptation and our 0005c board-ID guards. After the latter module-only update,
+  Wi-Fi initializes, loads N9 firmware, and NetworkManager successfully scans
+  many 2.4 GHz and 5 GHz access points. Association/DHCP over Wi-Fi and
+  sustained throughput still need a user-selected network and acceptance.
+- Bluetooth initializes through the shared combo coordinator with result=0;
+  a powered HCI controller is present. No Bluetooth pairing has been tested.
+- Display remains connected at 1920x1080, Xorg/libinput retains trackpad input,
+  and Ethernet DHCP/NTP return after reboot. The boot FAT mount timeout is now
+  90 seconds and its read-only mount succeeds after the final reboot.
+- The normal entry selects `/boot/Image.wifi-20261125`. Original Image/v3 rescue
+  entries are unchanged. Radio-module rollback is under
+  `/root/w600d-debug-backups/20261125T1512-radio-board-guards`; the previous v5
+  boot config/DTB is under `20261125T145740-wifi-bt-v6` in the same backup root.
+- Fresh full-image entry: `build/linux-7.3.6/scripts/build-wifi-image.sh`.
+  Kernel/module builds and file-only live deployment are validated. This new
+  complete-image wrapper has syntax checks, not an end-to-end image/flash test.
+- Original Image, v3/v4 DTBs, old modules, rescue entries and Android/eMMC are
+  preserved. USB FAT is read-only except during guarded, file-only updates.
+- Investigation/rollback/build details: `docs/TRACKPAD-AND-WIFI.md`.
+
+The following sections preserve the older November 24 checkpoint and are
+historical where they differ from this live follow-up.
+
 ## Confirmed on the corrected mainline boot
 
 - ZTE W600D SE, RK3568, 2 GB RAM; USB Ubuntu 24.04.5/XFCE.
@@ -60,7 +102,7 @@ are indexed in README.md; older notes are now in `docs/history/`.
   corrections. This snapshot contains the newer source recipe, not a claim
   those old images were regenerated.
 
-## Next work, in order
+## Original next-work list (superseded by the live follow-up)
 
 1. Recheck UART ownership and Ethernet state; identify the actual bound driver
    and NetworkManager policy, then establish DHCP narrowly.

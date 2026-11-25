@@ -1,8 +1,8 @@
 # Current reproducible build recipe
 
 Use the recipe in `../build/linux-7.3.6/`. It was copied from the working
-build host and contains its reference patch, three DTS files, exact validated
-config, Ubuntu definitions and latest lane/marker fixes. This guide supersedes
+build host and contains its reference patch, board DTS include chain, exact
+validated config, Ubuntu definitions and lane/marker/trackpad fixes. This guide supersedes
 the historical recipe README and older build entry points.
 
 ## Fresh work directory on trash
@@ -33,21 +33,39 @@ utilities, mtools, zstd, curl and rg. The saved host environment record is
 
 ## What the current wrapper does
 
+For the **v6 Wi-Fi/Bluetooth build**, replace the final command above with:
+
+```sh
+JOBS=24 bash scripts/build-wifi-image.sh
+```
+
+Use a clean recipe directory without an extracted Linux source. This adds
+CloudBook 0005/0011/0012/0013 plus our 0005b Linux-7.3 lifecycle and 0005c board-ID
+adaptations. It selects `7.3.6-w600d-usb-wifi`, includes both pinned MediaTek
+firmware files/license and integrates the v6 DTB, touchpad/network overlays
+and radio tools. Outputs are in `artifacts/kernel-wifi/` and
+`artifacts/w600d-ubuntu-xfce-7.3.6-wifi-20261125.img[.zst]`.
+The original display-only outputs below remain the baseline recipe.
+The Wi-Fi full-image wrapper has syntax checks, not an end-to-end flash test;
+the live USB is being validated with file-only updates. See `TRACKPAD-AND-WIFI.md`.
+
 1. Downloads/checksum-verifies pinned Linux 7.3.6 and Ubuntu 24.04.5 ARM64 Base.
 2. Builds Ubuntu userspace with `rootfs/Dockerfile.v3`.
 3. Adds Naneng PHY support and our RK3568 Analogix adaptation; builds the kernel
    and matching modules with the validated configuration.
 4. Applies `0004-analogix-complete-phy-lanes.patch`.
-5. Adds `0003-kdc-141020khz-vpll.patch`, rebuilds Image and final **v3** DTB,
+5. Adds `0003-kdc-141020khz-vpll.patch`, rebuilds Image and final **v4-touchpad** DTB,
    and validates the result with symbol support enabled (`DTC_FLAGS=-@`).
-6. Integrates modules and services using `rootfs/Dockerfile.final`.
+6. Integrates modules, services, Ethernet-management and tap-to-click overlays
+   using `rootfs/Dockerfile.final`.
 7. Removes container-runtime markers from the exported rootfs archive.
 8. Builds a regular-file USB image with 512 MiB FAT32 boot and ext4 root.
 
 The historical kernel builder creates an intermediate v2 DTB before finalization.
-It must never be booted or copied to USB; only final v3 is validated for this
+It must never be booted or copied to USB; final v4 retains the validated v3
+display settings and adds the verified trackpad wiring for this
 board. To avoid intermediate builds when doing the work manually, follow the
-patch order and v3 build in `DIY-FROM-UPSTREAM.md`.
+patch order and v4 build in `DIY-FROM-UPSTREAM.md`.
 
 ## Final outputs
 

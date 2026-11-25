@@ -1,0 +1,15 @@
+{
+  "project": "kernel-firmware/linux-firmware",
+  "revision": "16a7a3f83c2f83239b0395faac8da4acbbbb0ffe",
+  "source_base": "https://gitlab.com/kernel-firmware/linux-firmware/-/raw/16a7a3f83c2f83239b0395faac8da4acbbbb0ffe",
+  "license": "LICENSES/LICENCE.mediatek",
+  "license_sha256": "a90d3f66704d85889945fec5525ea77622549da83aced1aac99828383f8f1805",
+  "license_blob": "6886c61bab1bec4c1a653abd2324adac4f296fcb",
+  "license_api": "https://gitlab.com/api/v4/projects/kernel-firmware%2Flinux-firmware/repository/files/LICENSES%2FLICENCE.mediatek/raw?ref=16a7a3f83c2f83239b0395faac8da4acbbbb0ffe",
+  "files": {
+    "mediatek/mt7663_n9_v3.bin": "d8b8488f37f65e41ded9a911950afb000d236b36e5aa94ad9650ad0c3a86fd45",
+    "mediatek/mt7663pr2h.bin": "534f2152f9b0f48dfcec9c1727b0bab9a3727a655d76d5ec818cc39a55602336"
+  },
+  "discovery": "Live SDIO 037a:7603 and 037a:7663 match the pinned CloudBook MediaTek driver; factory Unisoc nodes are not chip identification.",
+  "repository_policy": "Firmware binaries and deployment outputs are ignored; retain exact provenance and the manufacturer's license."
+}

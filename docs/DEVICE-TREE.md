@@ -52,29 +52,41 @@ memory size, GPIOs and I/O supplies are not this laptop's wiring.
 
 ## Our source chain
 
-All three files live at `../build/linux-7.3.6/` and are required:
+The production include-chain files live at `../build/linux-7.3.6/`:
 
 ```text
-rk3568-zte-w600d-mainline-v3.dts
-  includes rk3568-zte-w600d-mainline-v2.dts
-    includes rk3568-zte-w600d-mainline.dts
-      includes upstream rk3568.dtsi
+rk3568-zte-w600d-mainline-v6-wifi-bt.dts
+  includes rk3568-zte-w600d-mainline-v5-sdio.dts
+    includes rk3568-zte-w600d-mainline-v4-touchpad.dts
+      includes rk3568-zte-w600d-mainline-v3.dts
+        includes rk3568-zte-w600d-mainline-v2.dts
+          includes rk3568-zte-w600d-mainline.dts
+            includes upstream rk3568.dtsi
 ```
 
-**Build and deploy v3 only.** It corrects the intermediate I/O supply choices
-and display clock. v1/v2 are retained as include-chain source, not boot targets.
+**Build v6 for display, trackpad and Wi-Fi/Bluetooth.** v3 supplies the corrected
+I/O supply choices and display clock; v4 adds the factory-matched I2C4
+touchpad and power/reset sequence. v5 enables the verified SDIO radio at
+25 MHz; v6 adds GPIO2_B7 Bluetooth reset-enable. eMMC remains disabled.
+v1/v2 are not boot targets. The display-only wrapper retains v4 as its baseline.
 
 Kernel build target:
 
 ```sh
 make -C "$KERNEL" O="$BUILD" ARCH=arm64 \
   CROSS_COMPILE=aarch64-linux-gnu- DTC_FLAGS=-@ \
-  rockchip/rk3568-zte-w600d-mainline-v3.dtb
+  rockchip/rk3568-zte-w600d-mainline-v6-wifi-bt.dtb
 ```
 
-The compiled v3 binary is installed on FAT as
+For new Wi-Fi images, the compiled v6 binary is installed on FAT as
 `/boot/rk3568-zte-w600d-mainline.dtb`; extlinux points to that unversioned
 filename. Renaming the binary does not change which DTS generated it.
+
+The live debug USB instead retains its original v3 DTB and uses a distinct
+v6 filename for normal boot, with `/boot/Image.wifi-20261125`. See
+`TRACKPAD-AND-WIFI.md` for actual HID ID, input events, radio patches,
+successful scans and rollback paths. DTS alone cannot replace those patches
+or the matching modules and firmware in the Ubuntu rootfs.
 
 ## Verified board facts encoded in our sources
 

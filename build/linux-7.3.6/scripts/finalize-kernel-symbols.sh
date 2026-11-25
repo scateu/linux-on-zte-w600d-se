@@ -11,9 +11,9 @@ if ! rg -q 'RK3036_PLL_RATE\(564080000' "$SOURCE/drivers/clk/rockchip/clk-rk3568
     patch --batch --fuzz=0 -d "$SOURCE" -p1 < "$ROOT/patches/0003-kdc-141020khz-vpll.patch"
 fi
 cp "$ROOT/"rk3568-zte-w600d-mainline*.dts "$SOURCE/arch/arm64/boot/dts/rockchip/"
-make -C "$SOURCE" O="$OUTPUT" DTC_FLAGS=-@ -j"${JOBS:-24}" Image rockchip/rk3568-zte-w600d-mainline-v3.dtb
+make -C "$SOURCE" O="$OUTPUT" DTC_FLAGS=-@ -j"${JOBS:-24}" Image rockchip/rk3568-zte-w600d-mainline-v4-touchpad.dtb
 cp "$OUTPUT/arch/arm64/boot/Image" "$ARTIFACTS/Image"
-cp "$OUTPUT/arch/arm64/boot/dts/rockchip/rk3568-zte-w600d-mainline-v3.dtb" "$ARTIFACTS/rk3568-zte-w600d-mainline.dtb"
+cp "$OUTPUT/arch/arm64/boot/dts/rockchip/rk3568-zte-w600d-mainline-v4-touchpad.dtb" "$ARTIFACTS/rk3568-zte-w600d-mainline.dtb"
 cp "$OUTPUT/System.map" "$ARTIFACTS/System.map-7.3.6-w600d-usb"
 python3 "$ROOT/scripts/validate-board.py" "$ARTIFACTS/rk3568-zte-w600d-mainline.dtb"
 cd "$ARTIFACTS"

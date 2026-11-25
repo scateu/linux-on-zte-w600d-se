@@ -1,0 +1,25 @@
+#include "rk3568-zte-w600d-mainline-v5-sdio.dts"
+
+/ {
+	vcc_bt_rst_n: vcc-bt-rst-n-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc_bt_rst_n";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		regulator-always-on;
+		regulator-boot-on;
+		vin-supply = <&vcc3v3_sys>;
+		gpio = <&gpio2 RK_PB7 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		pinctrl-names = "default";
+		pinctrl-0 = <&bt_reset_en>;
+	};
+};
+
+&pinctrl {
+	bluetooth {
+		bt_reset_en: bt-reset-en {
+			rockchip,pins = <2 RK_PB7 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+};

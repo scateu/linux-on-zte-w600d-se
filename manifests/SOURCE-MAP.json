@@ -1,5 +1,5 @@
 {
-  "consolidated_at": "2026-11-25T12:02:04.505190+08:00",
+  "consolidated_at": "2026-11-25T15:34:18.839097+08:00",
   "provenance": "pre-cleanup/FILES.json, pre-cleanup/SOURCE-MAP.json and CLEANUP-REPORT.json",
   "sources": [
     {
@@ -10,8 +10,8 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "3b8006c0d7b209d050e372794fea089f5f3e12440f70804b466e5ed5fb15b1d3",
-      "bytes": 588,
+      "sha256": "8f5e3357f49db4f3a745bea65faf023d8cde7ab10243ee8375a5d331ea87dc15",
+      "bytes": 611,
       "original_sources": []
     },
     {
@@ -22,14 +22,14 @@
     },
     {
       "path": "CURRENT.md",
-      "sha256": "5e7e48e0bc33b683e817c33907c127c8ea3f141b25ceea4490c92acb41851b5b",
-      "bytes": 4678,
+      "sha256": "108f72a2002d3bfb8bf705193ffd738651e6713c6557b2fa013c6583a94c89d5",
+      "bytes": 7606,
       "original_sources": []
     },
     {
       "path": "README.md",
-      "sha256": "1bedc66fe7febc54f76fa207dcad8521836d81e2383cd1a16b8c8181fc10f834",
-      "bytes": 8641,
+      "sha256": "1b9c96e3de0836c94541689922a86797f0b12a802c3eddadc4b1d7d7fa003e27",
+      "bytes": 8887,
       "original_sources": []
     },
     {
@@ -113,6 +113,18 @@
       ]
     },
     {
+      "path": "artifacts/build-records/wifi-20261125.json",
+      "sha256": "5b6bccc2b0e8180d875212b5800b7cea9c4225f96c30ff6e25673a7a8a228672",
+      "bytes": 1630,
+      "original_sources": []
+    },
+    {
+      "path": "artifacts/kernel-sdio-v5/rk3568-zte-w600d-mainline-v5-sdio.dtb",
+      "sha256": "cac6eea50ac0de0acf6e0f8fcc365e031b944c584b49c0646c5876c2b539b672",
+      "bytes": 123278,
+      "original_sources": []
+    },
+    {
       "path": "artifacts/kernel-tested/Image",
       "sha256": "0b0c71f33eed1057e9857e65ff60b9fecb248d7ed394408af4c240fb64c8638d",
       "bytes": 43792896,
@@ -147,6 +159,12 @@
         "2026-11-25-Codex/artifacts/kernel-tested/rk3568-zte-w600d-mainline.dtb",
         "ssh://trash/home/k/codex-workdir-nov-24-2026/artifacts/kernel-edp-lanes-fix/rk3568-zte-w600d-mainline.dtb"
       ]
+    },
+    {
+      "path": "artifacts/kernel-touchpad-v4/rk3568-zte-w600d-mainline-v4-touchpad.dtb",
+      "sha256": "e6bad7de98cda606c75740f2386e7717cc56b59a2a580ae7984ac43707ccc8df",
+      "bytes": 122231,
+      "original_sources": []
     },
     {
       "path": "bootloader/usb-uboot/.gitignore",
@@ -1064,8 +1082,8 @@
     },
     {
       "path": "build/linux-7.3.6/README.md",
-      "sha256": "08eac73ea7ba99b7b52f703d884c86a7062c81dcff0abd89e72f519f0f701a2c",
-      "bytes": 2178,
+      "sha256": "022a53cac2d19e9c260d477c2045f7e0b0703741f07e98f556a787ebb6f8f005",
+      "bytes": 2809,
       "original_sources": []
     },
     {
@@ -1132,6 +1150,18 @@
         "2026-11-25-Codex/build/linux-7.3.6/patches/0004-analogix-complete-phy-lanes.patch",
         "ssh://trash/home/k/codex-workdir-nov-24-2026/patches/0004-analogix-complete-phy-lanes.patch"
       ]
+    },
+    {
+      "path": "build/linux-7.3.6/patches/0005b-mt7663-combo-linux-7.3.patch",
+      "sha256": "5591bc762a0a04d41c674038f2867536ffbd811c306cedff71872b92af57d209",
+      "bytes": 10763,
+      "original_sources": []
+    },
+    {
+      "path": "build/linux-7.3.6/patches/0005c-mt7663-w600d-board-guards.patch",
+      "sha256": "56d994185d7fc328e14958eda789be9f0863e3f4252ecbeeb2060fdcdb0c2155",
+      "bytes": 1965,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/reference/HOWTO-patch-uboot.md",
@@ -1996,6 +2026,24 @@
       ]
     },
     {
+      "path": "build/linux-7.3.6/rk3568-zte-w600d-mainline-v4-touchpad.dts",
+      "sha256": "c9603e199d6f03b74027adb162358901aed55b307b22c2da985044451cd27ac5",
+      "bytes": 1702,
+      "original_sources": []
+    },
+    {
+      "path": "build/linux-7.3.6/rk3568-zte-w600d-mainline-v5-sdio.dts",
+      "sha256": "2c49216972b3abf4dbcc0fab38d20f42a0eb1c8b6ffc6d656e96646330d910cc",
+      "bytes": 1231,
+      "original_sources": []
+    },
+    {
+      "path": "build/linux-7.3.6/rk3568-zte-w600d-mainline-v6-wifi-bt.dts",
+      "sha256": "00e8524c4061f742f4e82fb3a00989e589acbad4e12c097a08162c1f0b9289a3",
+      "bytes": 572,
+      "original_sources": []
+    },
+    {
       "path": "build/linux-7.3.6/rk3568-zte-w600d-mainline.dts",
       "sha256": "6ffed682e708a548186f80bd3e48fde7bb0e76831ad839babed727d41c8e0335",
       "bytes": 9232,
@@ -2008,14 +2056,9 @@
     },
     {
       "path": "build/linux-7.3.6/rootfs/Dockerfile.final",
-      "sha256": "dea9677947fbdde868264eee25b602cfc8ab7a18948e7e0a04d9c3c0872dc1d5",
-      "bytes": 617,
-      "original_sources": [
-        "2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.final",
-        "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.final",
-        "2026-11-25-Codex/build/linux-7.3.6/rootfs/Dockerfile.final",
-        "ssh://trash/home/k/codex-workdir-nov-24-2026/rootfs/Dockerfile.final"
-      ]
+      "sha256": "b223a8c5d83452c00b3507b6b2745b40c6029fc78ce5500407a32ab4e8aa2ab8",
+      "bytes": 717,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/rootfs/Dockerfile.mtools",
@@ -2030,14 +2073,9 @@
     },
     {
       "path": "build/linux-7.3.6/rootfs/Dockerfile.v3",
-      "sha256": "e3ed966ed196fb6301ff7ea986905b90c11c881b76a47bfb2952efe90b0c10ad",
-      "bytes": 2978,
-      "original_sources": [
-        "2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.v3",
-        "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.v3",
-        "2026-11-25-Codex/build/linux-7.3.6/rootfs/Dockerfile.v3",
-        "ssh://trash/home/k/codex-workdir-nov-24-2026/rootfs/Dockerfile.v3"
-      ]
+      "sha256": "2a1b9221261fe13b12ebaa63a4cb784cd93f03e9560357ebf6db4c0ecc8053be",
+      "bytes": 3044,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/rootfs/FIRST-STEPS.txt",
@@ -2073,6 +2111,24 @@
       ]
     },
     {
+      "path": "build/linux-7.3.6/rootfs/overlay/etc/NetworkManager/conf.d/20-w600d-network.conf",
+      "sha256": "a34fb9f6f7a07f0e9de51ad08894e03492d0e8cc26a5c60536beecadd90a90c5",
+      "bytes": 101,
+      "original_sources": []
+    },
+    {
+      "path": "build/linux-7.3.6/rootfs/overlay/etc/X11/xorg.conf.d/30-touchpad.conf",
+      "sha256": "fdf60ec1c7ece66865a7e954bb4ec03fa73fab6c3c6e37f200d0f1129b31c893",
+      "bytes": 137,
+      "original_sources": []
+    },
+    {
+      "path": "build/linux-7.3.6/rootfs/overlay/etc/fstab",
+      "sha256": "64e968db88cf86951d159e3bcc0ee7003fc73ff5e326a05c4915f994d24d3fff",
+      "bytes": 129,
+      "original_sources": []
+    },
+    {
       "path": "build/linux-7.3.6/scripts/apply-edp-lane-fix.sh",
       "sha256": "55fb55a061220c56392ea8a0d3125932e05df71a07db5936d9ccaaa1993f4e0f",
       "bytes": 426,
@@ -2082,6 +2138,12 @@
         "2026-11-25-Codex/build/linux-7.3.6/scripts/apply-edp-lane-fix.sh",
         "ssh://trash/home/k/codex-workdir-nov-24-2026/scripts/apply-edp-lane-fix.sh"
       ]
+    },
+    {
+      "path": "build/linux-7.3.6/scripts/apply-wifi-patches.sh",
+      "sha256": "2772c32fb16d16720e9dbdd7b978cd33701f33e3ad4b9c8a12c546980e74f4a2",
+      "bytes": 746,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/scripts/assemble-capacity-image.sh",
@@ -2096,25 +2158,15 @@
     },
     {
       "path": "build/linux-7.3.6/scripts/assemble-image.sh",
-      "sha256": "da922d662be5ce577478af2ca3c0423f3df3c13a0a41710db7b2da4f43fcef40",
-      "bytes": 2321,
-      "original_sources": [
-        "2026-11-24-Codex2/linux-7.3.6-build/scripts/assemble-image.sh",
-        "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/assemble-image.sh",
-        "2026-11-25-Codex/build/linux-7.3.6/scripts/assemble-image.sh",
-        "ssh://trash/home/k/codex-workdir-nov-24-2026/scripts/assemble-image.sh"
-      ]
+      "sha256": "9946b46a3ce950a11a6f52c454f5a7a5d6150dde8cb668f100cbfa5678b56a00",
+      "bytes": 2499,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/scripts/build-desktop-rootfs-v2.sh",
-      "sha256": "754a1920e6d1ec408444f37d253a6c50cbe21eda1deef2d72c4783982a2260cb",
-      "bytes": 3452,
-      "original_sources": [
-        "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-desktop-rootfs-v2.sh",
-        "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-desktop-rootfs-v2.sh",
-        "2026-11-25-Codex/build/linux-7.3.6/scripts/build-desktop-rootfs-v2.sh",
-        "ssh://trash/home/k/codex-workdir-nov-24-2026/scripts/build-desktop-rootfs-v2.sh"
-      ]
+      "sha256": "1dd3b57a5f38a4d3c0fc9ad206bd601baf2ee7c482bf5d3acefb7c91abc57548",
+      "bytes": 4491,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/scripts/build-display-fix.sh",
@@ -2172,6 +2224,18 @@
       ]
     },
     {
+      "path": "build/linux-7.3.6/scripts/build-wifi-image.sh",
+      "sha256": "c2801d9cb0c7ebcbd2130317e24f3694b811ccb0c44c26046ef3eb54638c7ae1",
+      "bytes": 916,
+      "original_sources": []
+    },
+    {
+      "path": "build/linux-7.3.6/scripts/build-wifi-kernel.sh",
+      "sha256": "8b3248b26b4822d203a9067d7dd72636ce500867684fe717d56f6a5d3dc96cdf",
+      "bytes": 2984,
+      "original_sources": []
+    },
+    {
       "path": "build/linux-7.3.6/scripts/check-userspace.sh",
       "sha256": "1b8b1175aa8b70568c11714419d1c1362c933b00a054a3a80421ab969436e968",
       "bytes": 622,
@@ -2183,15 +2247,16 @@
       ]
     },
     {
+      "path": "build/linux-7.3.6/scripts/fetch-mt7663-firmware.sh",
+      "sha256": "7450124939504f68d3efea7aba8c061a9b4f083f129a1175bd0d3de958277e27",
+      "bytes": 1885,
+      "original_sources": []
+    },
+    {
       "path": "build/linux-7.3.6/scripts/finalize-kernel-symbols.sh",
-      "sha256": "fcd71cb7575fc0cbd70b0d7a99f7d175e5b324a55d2451f5912e06fd423dc868",
-      "bytes": 1151,
-      "original_sources": [
-        "2026-11-24-Codex2/linux-7.3.6-build/scripts/finalize-kernel-symbols.sh",
-        "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/finalize-kernel-symbols.sh",
-        "2026-11-25-Codex/build/linux-7.3.6/scripts/finalize-kernel-symbols.sh",
-        "ssh://trash/home/k/codex-workdir-nov-24-2026/scripts/finalize-kernel-symbols.sh"
-      ]
+      "sha256": "3ad0c32359ef51bc9dd5ad2bd1609ea004fca18dd97c0c52c037ff6d0fee95c2",
+      "bytes": 1169,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/scripts/flash-usb-native.py",
@@ -2203,6 +2268,18 @@
         "2026-11-25-Codex/build/linux-7.3.6/scripts/flash-usb-native.py",
         "ssh://trash/home/k/codex-workdir-nov-24-2026/scripts/flash-usb-native.py"
       ]
+    },
+    {
+      "path": "build/linux-7.3.6/scripts/install-touchpad-dtb-live.py",
+      "sha256": "9bd5dee78804d4124ca59eaa7aacd779fa8e71dae8dce9a5d413d69a7196db1c",
+      "bytes": 8290,
+      "original_sources": []
+    },
+    {
+      "path": "build/linux-7.3.6/scripts/install-wifi-support-live.py",
+      "sha256": "ab8964adffae92db635ffc839fe752938c8a06c22ffff98ab666ccc0528b65d3",
+      "bytes": 4947,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/scripts/normalize-container-markers.sh",
@@ -2250,14 +2327,9 @@
     },
     {
       "path": "build/linux-7.3.6/scripts/validate-board.py",
-      "sha256": "e36f6dc0ab833b547cf320a6ecbf992c70a91a30402fd70f3939bc93ec90a9c0",
-      "bytes": 2833,
-      "original_sources": [
-        "2026-11-24-Codex2/linux-7.3.6-build/scripts/validate-board.py",
-        "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/validate-board.py",
-        "2026-11-25-Codex/build/linux-7.3.6/scripts/validate-board.py",
-        "ssh://trash/home/k/codex-workdir-nov-24-2026/scripts/validate-board.py"
-      ]
+      "sha256": "cd5cfba446968ad9ee04c36dbefe2f8d16562b16d5e23420f0638caa10e6467f",
+      "bytes": 5001,
+      "original_sources": []
     },
     {
       "path": "build/linux-7.3.6/scripts/validate-kernel-config.py",
@@ -2284,19 +2356,15 @@
     },
     {
       "path": "docs/BUILD-CURRENT.md",
-      "sha256": "dd959d1c1b23b648c018a8e285a6ffaeb8c21d1a99cff056b56df4a390559130",
-      "bytes": 5245,
+      "sha256": "ac34a9cf74c892eb4b82c220e2d4a87625108d325c42bd57b349705c8f988e15",
+      "bytes": 6167,
       "original_sources": []
     },
     {
       "path": "docs/BUILD-SIMPLE.md",
-      "sha256": "4043fda6ffe4e80e7e9a6d987b6be3afe9f15d00ce64e2f2bb21d053df1840e9",
-      "bytes": 1910,
-      "original_sources": [
-        "2026-11-24-Codex2/BUILD-SIMPLE.md",
-        "2026-11-25-Codex/archive/2026-11-24-Codex2/BUILD-SIMPLE.md",
-        "2026-11-25-Codex/docs/BUILD-SIMPLE.md"
-      ]
+      "sha256": "a8c1c8d07cbe565390a3ab7d3ad75400c4df25ca0ead9d180463ec9a5bb1c5fa",
+      "bytes": 1677,
+      "original_sources": []
     },
     {
       "path": "docs/DEBUGGING.md",
@@ -2308,14 +2376,14 @@
     },
     {
       "path": "docs/DEVICE-TREE.md",
-      "sha256": "200df81a856b29cf68064d68e4c7cefc45415b8306f71871ffd2a74b1ca82c6c",
-      "bytes": 4063,
+      "sha256": "f4a0749442800c0e60d20eb5877bbd47466352b6d901add72e1784b061232a08",
+      "bytes": 4842,
       "original_sources": []
     },
     {
       "path": "docs/DIY-FROM-UPSTREAM.md",
-      "sha256": "51601efbba0a895f9e6a83fba097a6df9441b1c91e9c3434e59bd5b40af9fe71",
-      "bytes": 8568,
+      "sha256": "373465f86b53f1b8fe4561610b612030eec0588bfdb5175c2a576cf2649a0f35",
+      "bytes": 9372,
       "original_sources": []
     },
     {
@@ -2332,8 +2400,8 @@
     },
     {
       "path": "docs/PARTITIONS-AND-HARDWARE.md",
-      "sha256": "f180a1656f9392848754d593be7adccc06668417ff924f62fc96cb89f1f37eae",
-      "bytes": 5098,
+      "sha256": "f879d96bab322002493c5818c2e07387481db7f3f5bab4c837a39d9ba22b96af",
+      "bytes": 5307,
       "original_sources": []
     },
     {
@@ -2353,6 +2421,12 @@
         "2026-11-25-Codex/docs/ROOTFS-CONTAINER-MARKERS.md",
         "ssh://trash/home/k/codex-workdir-nov-24-2026/docs/ROOTFS-CONTAINER-MARKERS.md"
       ]
+    },
+    {
+      "path": "docs/TRACKPAD-AND-WIFI.md",
+      "sha256": "ebcc76071dec18001429b8f3e593f9052e89f88a93177cdf3a6fe6e3479f71d2",
+      "bytes": 18815,
+      "original_sources": []
     },
     {
       "path": "docs/USB-KERNEL-UPDATED-AND-CURSOR.md",
@@ -3170,6 +3244,84 @@
       ]
     },
     {
+      "path": "logs/live-20261125-input-network/codex_ed25519",
+      "sha256": "0dbd6ce7348ccf4de7e267a6f676fc2605566535463cc1d49b13d65e922d526b",
+      "bytes": 411,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/codex_ed25519.pub",
+      "sha256": "fa4934e71b83b0de6019a67266a1f90d4d9f134136d166b264e18cea27afa010",
+      "bytes": 102,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/known_hosts",
+      "sha256": "6bf1cbaaf6380f4b85f2d29788d445799fb494e568543ebabf1f658b991cf3dd",
+      "bytes": 204,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/known_hosts-wifi-final",
+      "sha256": "2e623940faba42facfbc198b8cd0182ad598004bce42dfb5471b7e199402f266",
+      "bytes": 102,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/known_hosts-wifi-v6",
+      "sha256": "3f4f29e055b109b4e3946803a7a3cfe56b628d52d9521e81b2d288d80731bbb6",
+      "bytes": 102,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/known_hosts.old",
+      "sha256": "b72b51d86e538c1f044deac1500d996b267a2ee7dfe7d861ac65ab853de2b59a",
+      "bytes": 204,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/radio-board-guards-install.txt",
+      "sha256": "9f3fccb6ee180773d421e8674eeb404462f0e924056fdbff258482c71277b7be",
+      "bytes": 210,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/serial-20261125T121618-398018+0800.jsonl",
+      "sha256": "edcc6b0d0e50fdc67d6a391d0e89cb44aaeb034b872d0915c03dd738bca84974",
+      "bytes": 1758424,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/serial-20261125T121618-398018+0800.rx.bin",
+      "sha256": "3f31a2ed4c6ca58a6b143b67b4713e4111ba07c8343ff1198a201af6b77547cd",
+      "bytes": 376696,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/serial-20261125T121618-398018+0800.tx.bin",
+      "sha256": "d9339b377aa44063d47ab6979ee078d699f23d37cae617c037f0958cf8c0e6e1",
+      "bytes": 9521,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/wifi-final-regression.txt",
+      "sha256": "8c5e6afa1aaf981a8f344f29c411625a709061e5f0bdc85c0c3d46a90ef210cf",
+      "bytes": 8086,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/wifi-install.txt",
+      "sha256": "0ff1926b19abb8e19eefe0aad369a66b4aed5f66f3c3dc2bed28db430ef4f8a5",
+      "bytes": 3136,
+      "original_sources": []
+    },
+    {
+      "path": "logs/live-20261125-input-network/wifi-v6-initial-diagnostics.txt",
+      "sha256": "fb30852b46d3a0ed0262d99e570c0915d321ddd2377f06ff712856ba9327e51d",
+      "bytes": 2667,
+      "original_sources": []
+    },
+    {
       "path": "logs/ref-2026-11-11/serial_log1.txt",
       "sha256": "433dea9dede43912d490f1f073895aca230bb7744811973d9aa406fc7154488c",
       "bytes": 32697,
@@ -3885,6 +4037,12 @@
         "2026-11-25-Codex/reference/download-metadata/kernel-org-releases-20261124.json",
         "ssh://trash/home/k/codex-workdir-nov-24-2026/downloads/kernel-org-releases-20261124.json"
       ]
+    },
+    {
+      "path": "reference/download-metadata/mt7663s-firmware.json",
+      "sha256": "355c99c4458595f4dad4880f9a15429e147fb1e73c58f62d0ef1ed4e612f0fbf",
+      "bytes": 1098,
+      "original_sources": []
     },
     {
       "path": "reference/download-metadata/ubuntu-base-SHA256SUMS",
