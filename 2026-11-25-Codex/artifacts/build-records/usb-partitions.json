@@ -1,0 +1,23 @@
+{
+   "partitiontable": {
+      "label": "dos",
+      "id": "0x24c0d202",
+      "device": "/home/k/codex-workdir-nov-24-2026/artifacts/w600d-ubuntu-xfce-7.3.6-20261124.img",
+      "unit": "sectors",
+      "sectorsize": 512,
+      "partitions": [
+         {
+            "node": "/home/k/codex-workdir-nov-24-2026/artifacts/w600d-ubuntu-xfce-7.3.6-20261124.img1",
+            "start": 2048,
+            "size": 1048576,
+            "type": "c",
+            "bootable": true
+         },{
+            "node": "/home/k/codex-workdir-nov-24-2026/artifacts/w600d-ubuntu-xfce-7.3.6-20261124.img2",
+            "start": 1050624,
+            "size": 11532288,
+            "type": "83"
+         }
+      ]
+   }
+}

@@ -1,0 +1,3722 @@
+[
+  {
+    "path": "2026-11-24-Codex/README.md",
+    "sha256": "dcfa995bcc0c32ea8033aeb3c86dfb868317436980ccac88b0ee0bdf83a9d8d6",
+    "bytes": 5953
+  },
+  {
+    "path": "2026-11-24-Codex/dtb_inventory.py",
+    "sha256": "c3deaa9be95b575c8d5f8dc8bae79d13180a03eaf0c9ef102aab9539fe362e4f",
+    "bytes": 3263
+  },
+  {
+    "path": "2026-11-24-Codex/memory.md",
+    "sha256": "f961891952ccdb03f8d2e9a54f35bab2ce8110fac053a051fdab477ee387db7b",
+    "bytes": 5463
+  },
+  {
+    "path": "2026-11-24-Codex/serial_console.py",
+    "sha256": "5514656b402f839644691cfdddda51cc437908d1b0f82d92227dfb5951626ba7",
+    "bytes": 4035
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T095048-291859+0800.jsonl",
+    "sha256": "8bec9f57aeaf671dcd40d894d00ed76d9999c34c5f9e40f65c730075b83046a9",
+    "bytes": 174
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T095048-291859+0800.rx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T095048-291859+0800.tx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T095850-612659+0800.jsonl",
+    "sha256": "2c1f596a01dab91e10a5d3026a2a6c5d1688608829d126c661fdc74300acc561",
+    "bytes": 174
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T095850-612659+0800.rx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T095850-612659+0800.tx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T100424-368782+0800.jsonl",
+    "sha256": "b7b997f23bc3ad0b01cf6474cc16cedd4b4687cd12a634feb5bf237c56a043ba",
+    "bytes": 334494
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T100424-368782+0800.rx.bin",
+    "sha256": "4fb4682e3fd77d97143c44de9928e0e9edffbce9b5198f6ab53f878310471347",
+    "bytes": 70647
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T100424-368782+0800.tx.bin",
+    "sha256": "7159871c9a8f7bb494fdd6e6e23568bac54e0ea39da6f7b9289ba0f3b5ba664a",
+    "bytes": 3321
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T110331-297137+0800.jsonl",
+    "sha256": "af3604d8b0b15ae3432e6f796c71ee435501499045d4d8da84d9b4ff87ec027c",
+    "bytes": 152780
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T110331-297137+0800.rx.bin",
+    "sha256": "0ab16b2f1c9e77fdc4c6355252a1ea1cfb58239dc4087433face7bf0f8747cd3",
+    "bytes": 31447
+  },
+  {
+    "path": "2026-11-24-Codex/logs/serial-20261124T110331-297137+0800.tx.bin",
+    "sha256": "c020e3c57bc749096e926a58ada834e4e3597bcabd7018573b77619432016d98",
+    "bytes": 2292
+  },
+  {
+    "path": "2026-11-24-Codex2/BUILD-SIMPLE.md",
+    "sha256": "4043fda6ffe4e80e7e9a6d987b6be3afe9f15d00ce64e2f2bb21d053df1840e9",
+    "bytes": 1910
+  },
+  {
+    "path": "2026-11-24-Codex2/CURRENT.md",
+    "sha256": "52e974d8c6b4632ade8a68d305485b93344118868918aa2bee3d260d8a7bfac7",
+    "bytes": 4796
+  },
+  {
+    "path": "2026-11-24-Codex2/DIY-FROM-UPSTREAM.md",
+    "sha256": "7eeda04623e7452af2771108c83c5cd8d127bdfe184e22647a006178daa6148e",
+    "bytes": 8232
+  },
+  {
+    "path": "2026-11-24-Codex2/FLASH-COMPLETE-READBACK-SKIPPED.md",
+    "sha256": "509f6d3d9c720feeaf01cc71ac78e915d4959b77fe51838fad39a2090d618278",
+    "bytes": 4569
+  },
+  {
+    "path": "2026-11-24-Codex2/MAINLINE-FIRST-BOOT.md",
+    "sha256": "8507af6a9d50d8d0c414ff9ff3e4dec8788d9b09386b98f61f4b8a51c1f198b4",
+    "bytes": 4400
+  },
+  {
+    "path": "2026-11-24-Codex2/NEW-USB-RELEASE.md",
+    "sha256": "47de0accec5ea223f69e79ee7fb243d1b7755fedbda82be50147d64e8033735c",
+    "bytes": 8978
+  },
+  {
+    "path": "2026-11-24-Codex2/README.md",
+    "sha256": "2249f008ae1fc7de9d9f62e766e19e4215d5922c79e5eef5b7b32309afe899dc",
+    "bytes": 2694
+  },
+  {
+    "path": "2026-11-24-Codex2/ROOTFS-CONTAINER-MARKERS.md",
+    "sha256": "261aeb5310849a3dbdda3384649d9f9531ad7ac32276cb01bc6a0910a51c4586",
+    "bytes": 1948
+  },
+  {
+    "path": "2026-11-24-Codex2/USB-FILE-ONLY-DEBUG.md",
+    "sha256": "63e712c676f517e9d7ab4aa2cdf8ba62b20d4932cbc0743f9fa92e32a72f0f61",
+    "bytes": 4876
+  },
+  {
+    "path": "2026-11-24-Codex2/USB-KERNEL-UPDATED-AND-CURSOR.md",
+    "sha256": "6903f1e48ade545c3a17e5a280a26fc66425a6465b14c7a372f05c1f2d7b98cc",
+    "bytes": 3622
+  },
+  {
+    "path": "2026-11-24-Codex2/bootflow-clarification.md",
+    "sha256": "cfbc994e45375b5460f6db830d1ac57f47ca994106126397e13c459e83d76b21",
+    "bytes": 2936
+  },
+  {
+    "path": "2026-11-24-Codex2/display-success.md",
+    "sha256": "d6ba2f63e0e9cef50d5597662163ed8e2dcf69bc24aab328ab686d86937f0e07",
+    "bytes": 9804
+  },
+  {
+    "path": "2026-11-24-Codex2/extlinux-display.conf",
+    "sha256": "24ec0bdbf79d5551f2dec3028e774e65c5fd0e6aed74d2624209a38ce74e31a2",
+    "bytes": 571
+  },
+  {
+    "path": "2026-11-24-Codex2/fb-white-test.sh",
+    "sha256": "71a9e65def791038a3e43af6808dc239ab92ea20d4d1fc1654c4afa7535df5a6",
+    "bytes": 815
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-build-progress.md",
+    "sha256": "58af18baffa32e8311aa6e0ae34c6a25f4ec8b7fa6893b083053332352ab31e1",
+    "bytes": 3248
+  },
+  {
+    "path": "2026-11-24-Codex2/memory.md",
+    "sha256": "90532a9ed12bdb3b8605cf0a3c49dd08be432847a2227bda850ad44aa48a51c5",
+    "bytes": 7684
+  },
+  {
+    "path": "2026-11-24-Codex2/persistent-boot-test.md",
+    "sha256": "450c804eea56346f145ba941ed4dd273108c2a1c2fb6eed937264366872be9ee",
+    "bytes": 9719
+  },
+  {
+    "path": "2026-11-24-Codex2/persistent-display-manifest.json",
+    "sha256": "4039680357c4a1f05ea2360e02ad4a5732610b77aeb867338832f62e0e4c2c3f",
+    "bytes": 836
+  },
+  {
+    "path": "2026-11-24-Codex2/prepare_persistent_display.py",
+    "sha256": "9c3203e2e71b022162fd7455477ee5ed507e5d1ceefe271914c5d432a9673895",
+    "bytes": 4840
+  },
+  {
+    "path": "2026-11-24-Codex2/ram-display-test.md",
+    "sha256": "fe6fa7315a29b23ce138485d4326382ecb37e920801694bfcdc95a2a598d1189",
+    "bytes": 3144
+  },
+  {
+    "path": "2026-11-24-Codex2/rk3568-laptop-zte-edp-20261124.dtb",
+    "sha256": "ae39fab24eba06fcee147abcf76e7ba3f374bcf874b3fc123d54b09c83fdb7d0",
+    "bytes": 165657
+  },
+  {
+    "path": "2026-11-24-Codex2/usb-persistence-complete.md",
+    "sha256": "920433af1c522d2a14e1fb02cf49d1063aba1b650f03da6fcd697eb6d110582c",
+    "bytes": 9053
+  },
+  {
+    "path": "2026-11-24-Codex2/usb-persistence-pending.md",
+    "sha256": "4c9dbbde3ece49528a5fe9bef83fa7586f954bd5627a19933d4d5e4ba4d39fd5",
+    "bytes": 5772
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/.dockerignore",
+    "sha256": "20ab47dc66c56f58211b4f81501ab7504d23d936e03eed9a71f07c7008c8c86f",
+    "bytes": 110
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/BUILD-READY.md",
+    "sha256": "385e268be60dd2488f06ac5c9c6a922e696b7655fd0a9832862d4f958df2e8c1",
+    "bytes": 2106
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/BUILD-VERIFIED.md",
+    "sha256": "46386ac79ee9fd9fbf468b6dadbc360dcd5fb8208304b9a31b1955dab0ec18b2",
+    "bytes": 4674
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/FACTORY-UBOOT.md",
+    "sha256": "5249007566d25303ec757abb99a2cd8d5f25fac478b5854e711f2f6d7e402e9e",
+    "bytes": 3763
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/FLASH-NATIVE.md",
+    "sha256": "0074e89582aeedaaaa7e61d2ad43c2b8b6bf539cf8a3fffe7f9553a17bb19984",
+    "bytes": 2543
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/README.md",
+    "sha256": "0c96cb8f9c0f7310a22a99caf1a9113bccb18b0b62ede3571fc6f6e746332f58",
+    "bytes": 11688
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/START-HERE.md",
+    "sha256": "e0289bf193121a29396378f583f9a6e24e775c4fa8499181842320b885216e15",
+    "bytes": 1995
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/USB-CAPACITY.md",
+    "sha256": "be84a751f5a1935c430f6c4fa6b589222b55b1e204af0e0c467bd73e29bbb6e9",
+    "bytes": 2358
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/extlinux.conf",
+    "sha256": "3d48413598eef21edad27bf6e95d078c443b5e5ea3e2516bcbb9770b50f3b0a5",
+    "bytes": 1157
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/panel-edid.base64",
+    "sha256": "62dc1d1de1264d8df8856a016f17119d5c6f53c0d7e0ee02cabec43577442e49",
+    "bytes": 175
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rk3568-zte-w600d-mainline-v2.dts",
+    "sha256": "d561f7e8e5bc608dbac092c138c045d4201e696321d8d3f2ab419bd1583e7f5e",
+    "bytes": 303
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rk3568-zte-w600d-mainline-v3.dts",
+    "sha256": "ca3b89a84e0be798c08a03ca5b21b0a48e703911a5bc4a8ba00ae33f4a6a4f8f",
+    "bytes": 348
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rk3568-zte-w600d-mainline.dts",
+    "sha256": "6ffed682e708a548186f80bd3e48fde7bb0e76831ad839babed727d41c8e0335",
+    "bytes": 9232
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/patches/0002-rk3568-analogix-7.3.patch",
+    "sha256": "f20dda5aa8242dd0574abc2d938e11aa504bed828e8c30666ad65072d8cb0442",
+    "bytes": 1464
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/patches/0003-kdc-141020khz-vpll.patch",
+    "sha256": "dc134658e677810d7e0272b68f17c4d0f4cf3d2cda3753b03efbf08abe437e27",
+    "bytes": 449
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/patches/0004-analogix-complete-phy-lanes.patch",
+    "sha256": "f5b6732f808236368230c770a2c33b56cfdfdb4f33181caef84ecb7dffc7c0c8",
+    "bytes": 612
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile",
+    "sha256": "d19ccdfc97bde25ec787d2811bca3adb39154e4f00b6bafe67e06b5eb115d003",
+    "bytes": 3394
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.final",
+    "sha256": "dea9677947fbdde868264eee25b602cfc8ab7a18948e7e0a04d9c3c0872dc1d5",
+    "bytes": 617
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.mtools",
+    "sha256": "ff216f51995a722ef2c560d5a5b9af464d1a92a9e4a282253a076728af4ea5e0",
+    "bytes": 28
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.v2",
+    "sha256": "351beab54b85e01112f70d541ce5194d36ea9538e8f67e4a922ed54c2f6e5383",
+    "bytes": 3431
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.v3",
+    "sha256": "e3ed966ed196fb6301ff7ea986905b90c11c881b76a47bfb2952efe90b0c10ad",
+    "bytes": 2978
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rootfs/FIRST-STEPS.txt",
+    "sha256": "4e3a9f757d2a7e5ec227b3e42801f16635577d3acabce6d7be48667dd7367c02",
+    "bytes": 1017
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rootfs/image-hostname",
+    "sha256": "6e800c4dfb15d468620834fba8ccf43c1b72854cdc6c023e66cb0b984fa2c845",
+    "bytes": 12
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/rootfs/image-hosts",
+    "sha256": "57004470b3f698d1921d7e909885ce6cff1387d48bd66649d04543200eee4527",
+    "bytes": 83
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/apply-edp-lane-fix.sh",
+    "sha256": "55fb55a061220c56392ea8a0d3125932e05df71a07db5936d9ccaaa1993f4e0f",
+    "bytes": 426
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/assemble-capacity-image.sh",
+    "sha256": "0a4796a6f5a8f92076bba0b68ac26bcfa4bde11a2df7cb384696348a2d0172c1",
+    "bytes": 2597
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/assemble-image.sh",
+    "sha256": "da922d662be5ce577478af2ca3c0423f3df3c13a0a41710db7b2da4f43fcef40",
+    "bytes": 2321
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-all.sh",
+    "sha256": "89414bde5ca7c417aa88a5c2308ccb3148cdce7ebfde936946385dccab687168",
+    "bytes": 428
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-desktop-rootfs-v2.sh",
+    "sha256": "754a1920e6d1ec408444f37d253a6c50cbe21eda1deef2d72c4783982a2260cb",
+    "bytes": 3452
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-desktop-rootfs.sh",
+    "sha256": "5c388014f2c80f31c846d56cfbe6b6e0690f3459b5681faa79d408030711ceb8",
+    "bytes": 1459
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-display-fix.sh",
+    "sha256": "1c0ee4334b7b1ceb88b2afd472208637971ee59de58966c9fe91e8792b6a02d6",
+    "bytes": 1318
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-display-fixed-image.sh",
+    "sha256": "8a28ea055e852e38b41af810b4cf015be9249d4a1c3d3d2aa4d17cca8d089a42",
+    "bytes": 398
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-kernel-v2.sh",
+    "sha256": "165ebde5e066827a15d788729af574ecc9f706a37fb89a34a3c62ce8f3d497b5",
+    "bytes": 3080
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-kernel.sh",
+    "sha256": "403aad56bc6a3e434ecffb74d2d09a1e2c00f0a1f4a9bb7ca8da1f9d6f1942e0",
+    "bytes": 3017
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-native-mtools.sh",
+    "sha256": "4deeeba11924d4539232939f916dc59676645a8159c9ff8f97149c90a283dc6e",
+    "bytes": 914
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-ready-image.sh",
+    "sha256": "4b35e72f7bbd5270c4a3e084c77f3f15865edabd5ca8f3f6ad07d67b1f9bb7d8",
+    "bytes": 446
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-release.sh",
+    "sha256": "d43a9a3d7ecb603fcb42f6bc2f11c20b75977fc0507eed84df468d9d2fe41c1f",
+    "bytes": 413
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-rootfs-v2.sh",
+    "sha256": "c4daea2ab94344ef6a408b18a8441913241555ec0062027d1dfbf0542e62be2d",
+    "bytes": 987
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-rootfs.sh",
+    "sha256": "3b689b8fc589f4ac6d021393050d763314afa1bd29f2668f1c5a91987fe2597f",
+    "bytes": 984
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-userspace-v2.sh",
+    "sha256": "cc25d9310d08fb06fe0a8d1af582e18b1839ea4b669fbde18046c8f2b8d8d5de",
+    "bytes": 550
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-userspace.sh",
+    "sha256": "1b0747e51bd4c75b0055ff6a312f29d751b2c05809bf8e84f877ec2b8edf401e",
+    "bytes": 362
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/build-verified-image.sh",
+    "sha256": "74d9fcc4cf80946f40e47be4be9c61a84b77d5b5257ef3d643654bba8332c323",
+    "bytes": 319
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/check-userspace.sh",
+    "sha256": "1b8b1175aa8b70568c11714419d1c1362c933b00a054a3a80421ab969436e968",
+    "bytes": 622
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/fetch-debian.py",
+    "sha256": "7fe1460e027d806e9cd9e4221f2c4c38b730e05ecf05204b3aa2a2c3afbeaaa0",
+    "bytes": 3829
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/finalize-kernel-symbols.sh",
+    "sha256": "fcd71cb7575fc0cbd70b0d7a99f7d175e5b324a55d2451f5912e06fd423dc868",
+    "bytes": 1151
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/finalize-kernel.sh",
+    "sha256": "5f78b01bc0c7f0005dde0ae779cdd2a5eb865db58f6447e87cd469ea32fa995b",
+    "bytes": 1138
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/flash-usb-native.py",
+    "sha256": "f21184246fd8b102edca927a567a222e051554c9dfe7c9d7663e8137adbf9c2d",
+    "bytes": 4462
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/flash-usb.py",
+    "sha256": "d8679b5868697487144d815f2a300180692115299f2abb1371394b135138be8b",
+    "bytes": 2938
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/normalize-container-markers.sh",
+    "sha256": "ff395d91b4fe9218a4321112951e6e8b5ad1ebb75cbad43b12c3a70cc48462bc",
+    "bytes": 570
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/package-release-recipe.sh",
+    "sha256": "64f59bcc3c96f89938dabf00a83a74a13a3049a3e5b5047f6654d48348a3e4d9",
+    "bytes": 2463
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/prepare-sources.sh",
+    "sha256": "ea3e504e4c03ea5af8b4211a75dec171d1f679e3395b307224702587bf0bda5b",
+    "bytes": 1860
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/strip-container-runtime-markers.py",
+    "sha256": "7ca07a9d063ef037f5f623e5e5204a61d2e7e87a0667da809acd3827ad026721",
+    "bytes": 1908
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/update-usb-kernel-files.py",
+    "sha256": "85278e4358a8f604fd86cd1a6e81a37e53f480300fcc9a8213067713cff2ec1b",
+    "bytes": 5506
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/validate-board.py",
+    "sha256": "e36f6dc0ab833b547cf320a6ecbf992c70a91a30402fd70f3939bc93ec90a9c0",
+    "bytes": 2833
+  },
+  {
+    "path": "2026-11-24-Codex2/linux-7.3.6-build/scripts/validate-kernel-config.py",
+    "sha256": "63f1a085f3fd151075d6afcaab2eccb81b2d278318de06f25fed81cf8341d625",
+    "bytes": 831
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T112837-414518+0800.jsonl",
+    "sha256": "95e9f85c68c954d07f4a54362de466a807c19b8666e7a41ba6da8e2fdeef884c",
+    "bytes": 31122
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T112837-414518+0800.rx.bin",
+    "sha256": "4d7f213c29a6dd1eb8dc6f2d1499cf39631672a9e973188d8e51ed05f0c7b1cd",
+    "bytes": 341
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T112837-414518+0800.tx.bin",
+    "sha256": "e0fb00381700cca45751382b879e5ee1c71f84895e52c195758f9b7968e6070b",
+    "bytes": 192
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T113221-669340+0800.jsonl",
+    "sha256": "ef45739cf49e8f39af6836da54667ced327ab3ca509d90e61e110b79acd3c3cc",
+    "bytes": 432246
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T113221-669340+0800.rx.bin",
+    "sha256": "747ebc93d534dba4f09fa30136e681cab5404a80a8f2c1691eab6e3f553193de",
+    "bytes": 87095
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T113221-669340+0800.tx.bin",
+    "sha256": "8b4835965991158c989734e83fd34d185fc1c3df9531bbe0dd1decac308a1ee5",
+    "bytes": 4707
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T115429-417313+0800.jsonl",
+    "sha256": "ece5e938657c42732f195272eab782a0724e07c1afa4640561aa146a2b8ae52b",
+    "bytes": 1926
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T115429-417313+0800.rx.bin",
+    "sha256": "c7cffd1e848ce4472b0a17adf5831018fb13429b87c336270b1dc4a4a058b5c5",
+    "bytes": 45
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T115429-417313+0800.tx.bin",
+    "sha256": "d4e3e27399742af6a1d58f44d045f542c628397593fa5d004ce9aa34e84e0b84",
+    "bytes": 48
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T120921-403566+0800.jsonl",
+    "sha256": "8c9c3ca8d84b48cb806867ea18c4ef0f83ec13da436f675f679ab50fe0320c5d",
+    "bytes": 377589
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T120921-403566+0800.rx.bin",
+    "sha256": "5392802efb9f33af5886fe2b0bdab1945c5824f7cb03cb84189009d5efa70703",
+    "bytes": 77510
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T120921-403566+0800.tx.bin",
+    "sha256": "afe7d5ccda861e34d33263acb25badf606e8deab86b44f16d440dd7fc144d36d",
+    "bytes": 8005
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T144142-546518+0800.jsonl",
+    "sha256": "3b4dd2997841db3bd7f3b3adc898569668fb991cca87d821bf5c0d01d6fb84e1",
+    "bytes": 5276
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T144142-546518+0800.rx.bin",
+    "sha256": "6cea5b73b3cc2021bdf1cb086e9089c41049698c1681fd7afd410167b0730abd",
+    "bytes": 904
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T144142-546518+0800.tx.bin",
+    "sha256": "0e9ea70f4abf1f7c29294111acba0b9c9f60ff286c0005d29886c0775da92820",
+    "bytes": 188
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T165530-131412+0800.jsonl",
+    "sha256": "644ffdde1e7e6088da93a7930f84298c9980e217a93f828c5747499798a68d56",
+    "bytes": 768129
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T165530-131412+0800.rx.bin",
+    "sha256": "ddac08d29671dedcb2b488ff5574db73d3a0766d9922f7add9790c0e20b6ce67",
+    "bytes": 158406
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-20261124T165530-131412+0800.tx.bin",
+    "sha256": "a2f50cbd97cb00045e25d6e265549fa7ba2cd8da4e5ad27bea1e378b4ef27ea9",
+    "bytes": 2318
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-crlf-20261124T120208+0800.jsonl",
+    "sha256": "d0f846b8df092f17d6aba621901103dcaee6916fd8b10c92fafc5f2d791d8f94",
+    "bytes": 168
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-crlf-20261124T120208+0800.rx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-24-Codex2/logs/serial-crlf-20261124T120208+0800.tx.bin",
+    "sha256": "2bb97a7e70a28c1f26b8898fac10ec8aac9070881fab1f8895864565718f8181",
+    "bytes": 24
+  },
+  {
+    "path": "2026-11-25-Codex/CURRENT.md",
+    "sha256": "e384d741b0255eb720b5b93815f8f56ed1ede38c7e2888953422def64f588f33",
+    "bytes": 4303
+  },
+  {
+    "path": "2026-11-25-Codex/README.md",
+    "sha256": "a5fb5119a40d1277ce0b6bc08d762adc9df4616ba07e16b444905c04ab324169",
+    "bytes": 4634
+  },
+  {
+    "path": "2026-11-25-Codex/archive/README.md",
+    "sha256": "16962e2f8a8cd96583456d17dbabdebc37419d3fb66bbb0ce36a19cd4535436c",
+    "bytes": 880
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex/README.md",
+    "sha256": "dcfa995bcc0c32ea8033aeb3c86dfb868317436980ccac88b0ee0bdf83a9d8d6",
+    "bytes": 5953
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex/dtb_inventory.py",
+    "sha256": "c3deaa9be95b575c8d5f8dc8bae79d13180a03eaf0c9ef102aab9539fe362e4f",
+    "bytes": 3263
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex/memory.md",
+    "sha256": "f961891952ccdb03f8d2e9a54f35bab2ce8110fac053a051fdab477ee387db7b",
+    "bytes": 5463
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex/serial_console.py",
+    "sha256": "5514656b402f839644691cfdddda51cc437908d1b0f82d92227dfb5951626ba7",
+    "bytes": 4035
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/BUILD-SIMPLE.md",
+    "sha256": "4043fda6ffe4e80e7e9a6d987b6be3afe9f15d00ce64e2f2bb21d053df1840e9",
+    "bytes": 1910
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/CURRENT.md",
+    "sha256": "52e974d8c6b4632ade8a68d305485b93344118868918aa2bee3d260d8a7bfac7",
+    "bytes": 4796
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/DIY-FROM-UPSTREAM.md",
+    "sha256": "7eeda04623e7452af2771108c83c5cd8d127bdfe184e22647a006178daa6148e",
+    "bytes": 8232
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/FLASH-COMPLETE-READBACK-SKIPPED.md",
+    "sha256": "509f6d3d9c720feeaf01cc71ac78e915d4959b77fe51838fad39a2090d618278",
+    "bytes": 4569
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/MAINLINE-FIRST-BOOT.md",
+    "sha256": "8507af6a9d50d8d0c414ff9ff3e4dec8788d9b09386b98f61f4b8a51c1f198b4",
+    "bytes": 4400
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/NEW-USB-RELEASE.md",
+    "sha256": "47de0accec5ea223f69e79ee7fb243d1b7755fedbda82be50147d64e8033735c",
+    "bytes": 8978
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/README.md",
+    "sha256": "2249f008ae1fc7de9d9f62e766e19e4215d5922c79e5eef5b7b32309afe899dc",
+    "bytes": 2694
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/ROOTFS-CONTAINER-MARKERS.md",
+    "sha256": "261aeb5310849a3dbdda3384649d9f9531ad7ac32276cb01bc6a0910a51c4586",
+    "bytes": 1948
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/USB-FILE-ONLY-DEBUG.md",
+    "sha256": "63e712c676f517e9d7ab4aa2cdf8ba62b20d4932cbc0743f9fa92e32a72f0f61",
+    "bytes": 4876
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/USB-KERNEL-UPDATED-AND-CURSOR.md",
+    "sha256": "6903f1e48ade545c3a17e5a280a26fc66425a6465b14c7a372f05c1f2d7b98cc",
+    "bytes": 3622
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/bootflow-clarification.md",
+    "sha256": "cfbc994e45375b5460f6db830d1ac57f47ca994106126397e13c459e83d76b21",
+    "bytes": 2936
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/display-success.md",
+    "sha256": "d6ba2f63e0e9cef50d5597662163ed8e2dcf69bc24aab328ab686d86937f0e07",
+    "bytes": 9804
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/extlinux-display.conf",
+    "sha256": "24ec0bdbf79d5551f2dec3028e774e65c5fd0e6aed74d2624209a38ce74e31a2",
+    "bytes": 571
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/fb-white-test.sh",
+    "sha256": "71a9e65def791038a3e43af6808dc239ab92ea20d4d1fc1654c4afa7535df5a6",
+    "bytes": 815
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-build-progress.md",
+    "sha256": "58af18baffa32e8311aa6e0ae34c6a25f4ec8b7fa6893b083053332352ab31e1",
+    "bytes": 3248
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/memory.md",
+    "sha256": "90532a9ed12bdb3b8605cf0a3c49dd08be432847a2227bda850ad44aa48a51c5",
+    "bytes": 7684
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/persistent-boot-test.md",
+    "sha256": "450c804eea56346f145ba941ed4dd273108c2a1c2fb6eed937264366872be9ee",
+    "bytes": 9719
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/persistent-display-manifest.json",
+    "sha256": "4039680357c4a1f05ea2360e02ad4a5732610b77aeb867338832f62e0e4c2c3f",
+    "bytes": 836
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/prepare_persistent_display.py",
+    "sha256": "9c3203e2e71b022162fd7455477ee5ed507e5d1ceefe271914c5d432a9673895",
+    "bytes": 4840
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/ram-display-test.md",
+    "sha256": "fe6fa7315a29b23ce138485d4326382ecb37e920801694bfcdc95a2a598d1189",
+    "bytes": 3144
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/rk3568-laptop-zte-edp-20261124.dtb",
+    "sha256": "ae39fab24eba06fcee147abcf76e7ba3f374bcf874b3fc123d54b09c83fdb7d0",
+    "bytes": 165657
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/usb-persistence-complete.md",
+    "sha256": "920433af1c522d2a14e1fb02cf49d1063aba1b650f03da6fcd697eb6d110582c",
+    "bytes": 9053
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/usb-persistence-pending.md",
+    "sha256": "4c9dbbde3ece49528a5fe9bef83fa7586f954bd5627a19933d4d5e4ba4d39fd5",
+    "bytes": 5772
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/.dockerignore",
+    "sha256": "20ab47dc66c56f58211b4f81501ab7504d23d936e03eed9a71f07c7008c8c86f",
+    "bytes": 110
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/BUILD-READY.md",
+    "sha256": "385e268be60dd2488f06ac5c9c6a922e696b7655fd0a9832862d4f958df2e8c1",
+    "bytes": 2106
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/BUILD-VERIFIED.md",
+    "sha256": "46386ac79ee9fd9fbf468b6dadbc360dcd5fb8208304b9a31b1955dab0ec18b2",
+    "bytes": 4674
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/FACTORY-UBOOT.md",
+    "sha256": "5249007566d25303ec757abb99a2cd8d5f25fac478b5854e711f2f6d7e402e9e",
+    "bytes": 3763
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/FLASH-NATIVE.md",
+    "sha256": "0074e89582aeedaaaa7e61d2ad43c2b8b6bf539cf8a3fffe7f9553a17bb19984",
+    "bytes": 2543
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/README.md",
+    "sha256": "0c96cb8f9c0f7310a22a99caf1a9113bccb18b0b62ede3571fc6f6e746332f58",
+    "bytes": 11688
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/START-HERE.md",
+    "sha256": "e0289bf193121a29396378f583f9a6e24e775c4fa8499181842320b885216e15",
+    "bytes": 1995
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/USB-CAPACITY.md",
+    "sha256": "be84a751f5a1935c430f6c4fa6b589222b55b1e204af0e0c467bd73e29bbb6e9",
+    "bytes": 2358
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/extlinux.conf",
+    "sha256": "3d48413598eef21edad27bf6e95d078c443b5e5ea3e2516bcbb9770b50f3b0a5",
+    "bytes": 1157
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/panel-edid.base64",
+    "sha256": "62dc1d1de1264d8df8856a016f17119d5c6f53c0d7e0ee02cabec43577442e49",
+    "bytes": 175
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rk3568-zte-w600d-mainline-v2.dts",
+    "sha256": "d561f7e8e5bc608dbac092c138c045d4201e696321d8d3f2ab419bd1583e7f5e",
+    "bytes": 303
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rk3568-zte-w600d-mainline-v3.dts",
+    "sha256": "ca3b89a84e0be798c08a03ca5b21b0a48e703911a5bc4a8ba00ae33f4a6a4f8f",
+    "bytes": 348
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rk3568-zte-w600d-mainline.dts",
+    "sha256": "6ffed682e708a548186f80bd3e48fde7bb0e76831ad839babed727d41c8e0335",
+    "bytes": 9232
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/patches/0002-rk3568-analogix-7.3.patch",
+    "sha256": "f20dda5aa8242dd0574abc2d938e11aa504bed828e8c30666ad65072d8cb0442",
+    "bytes": 1464
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/patches/0003-kdc-141020khz-vpll.patch",
+    "sha256": "dc134658e677810d7e0272b68f17c4d0f4cf3d2cda3753b03efbf08abe437e27",
+    "bytes": 449
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/patches/0004-analogix-complete-phy-lanes.patch",
+    "sha256": "f5b6732f808236368230c770a2c33b56cfdfdb4f33181caef84ecb7dffc7c0c8",
+    "bytes": 612
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile",
+    "sha256": "d19ccdfc97bde25ec787d2811bca3adb39154e4f00b6bafe67e06b5eb115d003",
+    "bytes": 3394
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.final",
+    "sha256": "dea9677947fbdde868264eee25b602cfc8ab7a18948e7e0a04d9c3c0872dc1d5",
+    "bytes": 617
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.mtools",
+    "sha256": "ff216f51995a722ef2c560d5a5b9af464d1a92a9e4a282253a076728af4ea5e0",
+    "bytes": 28
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.v2",
+    "sha256": "351beab54b85e01112f70d541ce5194d36ea9538e8f67e4a922ed54c2f6e5383",
+    "bytes": 3431
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/Dockerfile.v3",
+    "sha256": "e3ed966ed196fb6301ff7ea986905b90c11c881b76a47bfb2952efe90b0c10ad",
+    "bytes": 2978
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/FIRST-STEPS.txt",
+    "sha256": "4e3a9f757d2a7e5ec227b3e42801f16635577d3acabce6d7be48667dd7367c02",
+    "bytes": 1017
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/image-hostname",
+    "sha256": "6e800c4dfb15d468620834fba8ccf43c1b72854cdc6c023e66cb0b984fa2c845",
+    "bytes": 12
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/rootfs/image-hosts",
+    "sha256": "57004470b3f698d1921d7e909885ce6cff1387d48bd66649d04543200eee4527",
+    "bytes": 83
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/apply-edp-lane-fix.sh",
+    "sha256": "55fb55a061220c56392ea8a0d3125932e05df71a07db5936d9ccaaa1993f4e0f",
+    "bytes": 426
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/assemble-capacity-image.sh",
+    "sha256": "0a4796a6f5a8f92076bba0b68ac26bcfa4bde11a2df7cb384696348a2d0172c1",
+    "bytes": 2597
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/assemble-image.sh",
+    "sha256": "da922d662be5ce577478af2ca3c0423f3df3c13a0a41710db7b2da4f43fcef40",
+    "bytes": 2321
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-all.sh",
+    "sha256": "89414bde5ca7c417aa88a5c2308ccb3148cdce7ebfde936946385dccab687168",
+    "bytes": 428
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-desktop-rootfs-v2.sh",
+    "sha256": "754a1920e6d1ec408444f37d253a6c50cbe21eda1deef2d72c4783982a2260cb",
+    "bytes": 3452
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-desktop-rootfs.sh",
+    "sha256": "5c388014f2c80f31c846d56cfbe6b6e0690f3459b5681faa79d408030711ceb8",
+    "bytes": 1459
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-display-fix.sh",
+    "sha256": "1c0ee4334b7b1ceb88b2afd472208637971ee59de58966c9fe91e8792b6a02d6",
+    "bytes": 1318
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-display-fixed-image.sh",
+    "sha256": "8a28ea055e852e38b41af810b4cf015be9249d4a1c3d3d2aa4d17cca8d089a42",
+    "bytes": 398
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-kernel-v2.sh",
+    "sha256": "165ebde5e066827a15d788729af574ecc9f706a37fb89a34a3c62ce8f3d497b5",
+    "bytes": 3080
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-kernel.sh",
+    "sha256": "403aad56bc6a3e434ecffb74d2d09a1e2c00f0a1f4a9bb7ca8da1f9d6f1942e0",
+    "bytes": 3017
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-native-mtools.sh",
+    "sha256": "4deeeba11924d4539232939f916dc59676645a8159c9ff8f97149c90a283dc6e",
+    "bytes": 914
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-ready-image.sh",
+    "sha256": "4b35e72f7bbd5270c4a3e084c77f3f15865edabd5ca8f3f6ad07d67b1f9bb7d8",
+    "bytes": 446
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-release.sh",
+    "sha256": "d43a9a3d7ecb603fcb42f6bc2f11c20b75977fc0507eed84df468d9d2fe41c1f",
+    "bytes": 413
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-rootfs-v2.sh",
+    "sha256": "c4daea2ab94344ef6a408b18a8441913241555ec0062027d1dfbf0542e62be2d",
+    "bytes": 987
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-rootfs.sh",
+    "sha256": "3b689b8fc589f4ac6d021393050d763314afa1bd29f2668f1c5a91987fe2597f",
+    "bytes": 984
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-userspace-v2.sh",
+    "sha256": "cc25d9310d08fb06fe0a8d1af582e18b1839ea4b669fbde18046c8f2b8d8d5de",
+    "bytes": 550
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-userspace.sh",
+    "sha256": "1b0747e51bd4c75b0055ff6a312f29d751b2c05809bf8e84f877ec2b8edf401e",
+    "bytes": 362
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/build-verified-image.sh",
+    "sha256": "74d9fcc4cf80946f40e47be4be9c61a84b77d5b5257ef3d643654bba8332c323",
+    "bytes": 319
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/check-userspace.sh",
+    "sha256": "1b8b1175aa8b70568c11714419d1c1362c933b00a054a3a80421ab969436e968",
+    "bytes": 622
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/fetch-debian.py",
+    "sha256": "7fe1460e027d806e9cd9e4221f2c4c38b730e05ecf05204b3aa2a2c3afbeaaa0",
+    "bytes": 3829
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/finalize-kernel-symbols.sh",
+    "sha256": "fcd71cb7575fc0cbd70b0d7a99f7d175e5b324a55d2451f5912e06fd423dc868",
+    "bytes": 1151
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/finalize-kernel.sh",
+    "sha256": "5f78b01bc0c7f0005dde0ae779cdd2a5eb865db58f6447e87cd469ea32fa995b",
+    "bytes": 1138
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/flash-usb-native.py",
+    "sha256": "f21184246fd8b102edca927a567a222e051554c9dfe7c9d7663e8137adbf9c2d",
+    "bytes": 4462
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/flash-usb.py",
+    "sha256": "d8679b5868697487144d815f2a300180692115299f2abb1371394b135138be8b",
+    "bytes": 2938
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/normalize-container-markers.sh",
+    "sha256": "ff395d91b4fe9218a4321112951e6e8b5ad1ebb75cbad43b12c3a70cc48462bc",
+    "bytes": 570
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/package-release-recipe.sh",
+    "sha256": "64f59bcc3c96f89938dabf00a83a74a13a3049a3e5b5047f6654d48348a3e4d9",
+    "bytes": 2463
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/prepare-sources.sh",
+    "sha256": "ea3e504e4c03ea5af8b4211a75dec171d1f679e3395b307224702587bf0bda5b",
+    "bytes": 1860
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/strip-container-runtime-markers.py",
+    "sha256": "7ca07a9d063ef037f5f623e5e5204a61d2e7e87a0667da809acd3827ad026721",
+    "bytes": 1908
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/update-usb-kernel-files.py",
+    "sha256": "85278e4358a8f604fd86cd1a6e81a37e53f480300fcc9a8213067713cff2ec1b",
+    "bytes": 5506
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/validate-board.py",
+    "sha256": "e36f6dc0ab833b547cf320a6ecbf992c70a91a30402fd70f3939bc93ec90a9c0",
+    "bytes": 2833
+  },
+  {
+    "path": "2026-11-25-Codex/archive/2026-11-24-Codex2/linux-7.3.6-build/scripts/validate-kernel-config.py",
+    "sha256": "63f1a085f3fd151075d6afcaab2eccb81b2d278318de06f25fed81cf8341d625",
+    "bytes": 831
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/BUILD-VERIFIED.md",
+    "sha256": "46386ac79ee9fd9fbf468b6dadbc360dcd5fb8208304b9a31b1955dab0ec18b2",
+    "bytes": 4674
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/FLASH-COMPLETE-READBACK-SKIPPED.md",
+    "sha256": "509f6d3d9c720feeaf01cc71ac78e915d4959b77fe51838fad39a2090d618278",
+    "bytes": 4569
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/FLASH-NATIVE.md",
+    "sha256": "0074e89582aeedaaaa7e61d2ad43c2b8b6bf539cf8a3fffe7f9553a17bb19984",
+    "bytes": 2543
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/MAINLINE-FIRST-BOOT.md",
+    "sha256": "8507af6a9d50d8d0c414ff9ff3e4dec8788d9b09386b98f61f4b8a51c1f198b4",
+    "bytes": 4400
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/NEW-USB-RELEASE.md",
+    "sha256": "47de0accec5ea223f69e79ee7fb243d1b7755fedbda82be50147d64e8033735c",
+    "bytes": 8978
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/ROOTFS-CONTAINER-MARKERS.md",
+    "sha256": "261aeb5310849a3dbdda3384649d9f9531ad7ac32276cb01bc6a0910a51c4586",
+    "bytes": 1948
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/USB-CAPACITY.md",
+    "sha256": "be84a751f5a1935c430f6c4fa6b589222b55b1e204af0e0c467bd73e29bbb6e9",
+    "bytes": 2358
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/USB-FILE-ONLY-DEBUG.md",
+    "sha256": "63e712c676f517e9d7ab4aa2cdf8ba62b20d4932cbc0743f9fa92e32a72f0f61",
+    "bytes": 4876
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/USB-KERNEL-UPDATED-AND-CURSOR.md",
+    "sha256": "6903f1e48ade545c3a17e5a280a26fc66425a6465b14c7a372f05c1f2d7b98cc",
+    "bytes": 3622
+  },
+  {
+    "path": "2026-11-25-Codex/archive/trash/docs/linux-build-progress.md",
+    "sha256": "58af18baffa32e8311aa6e0ae34c6a25f4ec8b7fa6893b083053332352ab31e1",
+    "bytes": 3248
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/README.md",
+    "sha256": "e7a682df6ac3d81474f3a693fda187c16ff274c3c4fd7dd37622fd5aaac1bce5",
+    "bytes": 1784
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/build-records/build-host-environment.txt",
+    "sha256": "b06ffeef9e62ce14f152cd3f2bf5f0b140ca963337f0ee3e62ce478fea54f297",
+    "bytes": 1980
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/build-records/clean-recipe-package-versions.txt",
+    "sha256": "0ac95f2f973463a11ebb647d638cb321b08db75f8b2b9bf45d80b90b37ef8c76",
+    "bytes": 21837
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/build-records/rootfs-SHA256SUMS",
+    "sha256": "e3627d4ea72816567094b90aced48cf43dc4b748bdc7cc840a7441b5891fabc9",
+    "bytes": 100
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/build-records/rootfs-package-versions.txt",
+    "sha256": "68c494da6db7a7c288b46a33ccaa4d223428e1ed3cd8fa3fe54b2059305a8e7c",
+    "bytes": 21938
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/build-records/usb-capacity-29510MiB-SHA256SUMS",
+    "sha256": "e10bf0a45dc33319e6ce8b3e8848e371af997fe80b8d6c12152c44e04a6e9b51",
+    "bytes": 236
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/build-records/usb-capacity-29510MiB-partitions.json",
+    "sha256": "9ae280439df58fb5004a1fcaae7dc8772a782426cc03ec5c34c23a53eecda634",
+    "bytes": 739
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/build-records/usb-image-SHA256SUMS",
+    "sha256": "019aaa663ce8f685bb3ad5970f13f889ec9d4c6938789533bbb59552101f1b41",
+    "bytes": 210
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/build-records/usb-partitions.json",
+    "sha256": "e237ff6dd84b038c24bad835b841ce48f45b6625922ebb3424d77a4bfe98f022",
+    "bytes": 700
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/kernel-tested/Image",
+    "sha256": "0b0c71f33eed1057e9857e65ff60b9fecb248d7ed394408af4c240fb64c8638d",
+    "bytes": 43792896
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/kernel-tested/SHA256SUMS",
+    "sha256": "49e7d26ec2d3e4d7090c48afe952eb4db00fdb85e61eb6fce2dd63dda15380ee",
+    "bytes": 350
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/kernel-tested/System.map-7.3.6-w600d-usb",
+    "sha256": "95bd2d3c69017ce811bc3cfebe745314f111155dea49951a9feb3c1a21460641",
+    "bytes": 9621032
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/kernel-tested/config-7.3.6-w600d-usb",
+    "sha256": "13a567071ccd42b1dab2baa32cc58e7f9471f1ec19a19969b5e9fbdfc9bd597a",
+    "bytes": 323998
+  },
+  {
+    "path": "2026-11-25-Codex/artifacts/kernel-tested/rk3568-zte-w600d-mainline.dtb",
+    "sha256": "4e7156892cfaa29da5d73b217d6e846c01af9b6e6d449323192463dc551e942d",
+    "bytes": 120868
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/.dockerignore",
+    "sha256": "20ab47dc66c56f58211b4f81501ab7504d23d936e03eed9a71f07c7008c8c86f",
+    "bytes": 110
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/BUILD-READY.md",
+    "sha256": "385e268be60dd2488f06ac5c9c6a922e696b7655fd0a9832862d4f958df2e8c1",
+    "bytes": 2106
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/FACTORY-UBOOT.md",
+    "sha256": "5249007566d25303ec757abb99a2cd8d5f25fac478b5854e711f2f6d7e402e9e",
+    "bytes": 3763
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/README.md",
+    "sha256": "0c96cb8f9c0f7310a22a99caf1a9113bccb18b0b62ede3571fc6f6e746332f58",
+    "bytes": 11688
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/START-HERE.md",
+    "sha256": "e0289bf193121a29396378f583f9a6e24e775c4fa8499181842320b885216e15",
+    "bytes": 1995
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/extlinux.conf",
+    "sha256": "3d48413598eef21edad27bf6e95d078c443b5e5ea3e2516bcbb9770b50f3b0a5",
+    "bytes": 1157
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/panel-edid.base64",
+    "sha256": "62dc1d1de1264d8df8856a016f17119d5c6f53c0d7e0ee02cabec43577442e49",
+    "bytes": 175
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rk3568-zte-w600d-mainline-v2.dts",
+    "sha256": "d561f7e8e5bc608dbac092c138c045d4201e696321d8d3f2ab419bd1583e7f5e",
+    "bytes": 303
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rk3568-zte-w600d-mainline-v3.dts",
+    "sha256": "ca3b89a84e0be798c08a03ca5b21b0a48e703911a5bc4a8ba00ae33f4a6a4f8f",
+    "bytes": 348
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rk3568-zte-w600d-mainline.dts",
+    "sha256": "6ffed682e708a548186f80bd3e48fde7bb0e76831ad839babed727d41c8e0335",
+    "bytes": 9232
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/config/config-7.3.6-w600d-usb",
+    "sha256": "13a567071ccd42b1dab2baa32cc58e7f9471f1ec19a19969b5e9fbdfc9bd597a",
+    "bytes": 323998
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/patches/0002-rk3568-analogix-7.3.patch",
+    "sha256": "f20dda5aa8242dd0574abc2d938e11aa504bed828e8c30666ad65072d8cb0442",
+    "bytes": 1464
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/patches/0003-kdc-141020khz-vpll.patch",
+    "sha256": "dc134658e677810d7e0272b68f17c4d0f4cf3d2cda3753b03efbf08abe437e27",
+    "bytes": 449
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/patches/0004-analogix-complete-phy-lanes.patch",
+    "sha256": "f5b6732f808236368230c770a2c33b56cfdfdb4f33181caef84ecb7dffc7c0c8",
+    "bytes": 612
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/HOWTO-patch-uboot.md",
+    "sha256": "ae8ed920e358d657ce098d504eb8ea1cd1bba3fb38a710a440ec7342c97e484e",
+    "bytes": 25611
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/bootflow-clarification.md",
+    "sha256": "cfbc994e45375b5460f6db830d1ac57f47ca994106126397e13c459e83d76b21",
+    "bytes": 2936
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/display-success.md",
+    "sha256": "d6ba2f63e0e9cef50d5597662163ed8e2dcf69bc24aab328ab686d86937f0e07",
+    "bytes": 9804
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/partitions.md",
+    "sha256": "73992f17ba4b6078e2204e8c80118d6050684d3a1816d4323119d6df3b95eca3",
+    "bytes": 8823
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/patch-uboot-env.py",
+    "sha256": "e7523d35497179e00a7dbbcfbaa1b8d687904b18c5708a0911fae28e675a706c",
+    "bytes": 4173
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/persistent-boot-test.md",
+    "sha256": "450c804eea56346f145ba941ed4dd273108c2a1c2fb6eed937264366872be9ee",
+    "bytes": 9719
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/rk3568-laptop-zte-bsp.dts",
+    "sha256": "67aaf1aa20e19bb919612f4f7634034af7d616883a1dd36a53579b93a37c9d2a",
+    "bytes": 198933
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/rk3568-laptop-zte.dtb",
+    "sha256": "4578807d00d97eed27227955e10251ff195f2de38d3d3b783965dc2b5057aa8e",
+    "bytes": 165657
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/usb-persistence-complete.md",
+    "sha256": "920433af1c522d2a14e1fb02cf49d1063aba1b650f03da6fcd697eb6d110582c",
+    "bytes": 9053
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/README.md",
+    "sha256": "befb77f3d6282048fccf16a79f6a22b0f950b3d7761840541556a9432e1a1278",
+    "bytes": 2012
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/TESTPLAN.md",
+    "sha256": "4764ce415cd2d6ce99aeed040c768f659fda244a840b00704b393e1efc40d668",
+    "bytes": 1967
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/config-6.12.117-cloudbook",
+    "sha256": "8f4e9311648e24ad10fada6d84fe35974f97fd119ebdc00042e1d5671072e303",
+    "bytes": 235145
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v10-419align-edp.dts",
+    "sha256": "a594ea91db0b2742296c15aefbb4253a0f7f44973671c2c29bdfd8179e06cd32",
+    "bytes": 927
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v11-touchpad.dts",
+    "sha256": "36056e6c814d4c835216e1411640be87fd1494e6021a296d721e16cdb70d1c49",
+    "bytes": 361
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v12-gpu.dts",
+    "sha256": "2085fa27de7f4b356fa5f75bff3c4172ee56363811da9ee28a44014da97fc850",
+    "bytes": 369
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v13-hdmi.dts",
+    "sha256": "1b75d1b91f988adcd974ec221f1da401b8846309c14b8a61db5b303a224ca128",
+    "bytes": 324
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v14-audio.dts",
+    "sha256": "0c789675b6cd0576f64d8b72ff7ed01ea6abd9ee3736b5bfd1dbcc3c214b172b",
+    "bytes": 592
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v15-battery.dts",
+    "sha256": "e0fe0c535aac12ecf1c50f822128337ed2c7b83c632b92e1df0a787189ac760d",
+    "bytes": 522
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v16-tsadc.dts",
+    "sha256": "0de2bcf9bebfa528b16cebb4156e15f19e990a956c5d55e247ca89b534749901",
+    "bytes": 341
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v17-saradc.dts",
+    "sha256": "dc773d3bcaca2a7b8c2a9d3903a6f7fc01aef883b60a9034a1f572fd89994825",
+    "bytes": 296
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v18-hdmi-audio.dts",
+    "sha256": "275cc8cab2b86c3a56a20829f985fbff642a28ca0d5cbdd99b9836a26774d64e",
+    "bytes": 417
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v19-pdm.dts",
+    "sha256": "c9d43c602c84727cab567aab124c9dcf5f0b63a2a0971597004dbb8666fa6198",
+    "bytes": 438
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v2-no-sdio.dts",
+    "sha256": "d7ea36ebcd4eee7e26d6c45bf8c82624419c51c6c2128049e7ecb4445a9fc952",
+    "bytes": 39279
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v20-wifi-bt.dts",
+    "sha256": "af005cf0ec61989b284006ab9af47ac612824556953dfd5349b22e4a3388ead0",
+    "bytes": 320
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v21-wl-power-pol.dts",
+    "sha256": "b6bf2484bdf06a6aab6df8ca29f0bfa17743735a7556cf4314d9e1cc48477420",
+    "bytes": 195
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v22-sdio-reset-pol.dts",
+    "sha256": "15f0c5ba96af4efe666ed7840b21d36d6b58461650be1298e0dcc1e4f5e8f076",
+    "bytes": 174
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v23-sdio-cmd11.dts",
+    "sha256": "8ca363c42c0d2add3207ba33a88e27982afc1d81cf3cf61814c14e4b64f4971d",
+    "bytes": 162
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v24-audio-route.dts",
+    "sha256": "e4771377a771a50b925b2dd6351064ac87995a4855757ed8929f6bc26176de6f",
+    "bytes": 466
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v25-charger-pd.dts",
+    "sha256": "3a70873ff4bd5d9ec9289af3a500b0e6e27ef5c1c9d86b0221427f58b823ee1b",
+    "bytes": 779
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v26-hall-pmdebug.dts",
+    "sha256": "e19b62e04bedb663892f308b5704080b83b9a157329840a1d9c16349bbf56132",
+    "bytes": 668
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v27-hall-pmdebug.dts",
+    "sha256": "168846f86c04fc3e92665600019cbc4470494b5e0f980a41692195f10e5d70d8",
+    "bytes": 588
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v28-usb2-pm-fix.dts",
+    "sha256": "71e8af6c28f5aa0bb8d55cfdb58ca955c4e2052ea830643c01a5bdf58469ff8d",
+    "bytes": 1096
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v29-emmc-rootfs.dts",
+    "sha256": "3a1f44d379c4bc28a7a26a46ae7688582808a69fe375904e2f691885f51ceb77",
+    "bytes": 775
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v3-clkpd-debug.dts",
+    "sha256": "26b36d19117dfadeeead421c84b320fe867db39ad19b6fba2fcb341c285b0d85",
+    "bytes": 39329
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v30-charging-led.dts",
+    "sha256": "65c4835f91678361d7b4b495329b4f98874f266b27441184b472549168617566",
+    "bytes": 3328
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v5-g3-clean.dts",
+    "sha256": "242a0a1c0572dbc8822f7c00e7ae58782cc98a4a086b2b7c5c83ca3c9deec861",
+    "bytes": 39528
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v8-419align-nogic.dts",
+    "sha256": "bce31b893da29b8909f478e6e890511af676f06d9f36cf60dea2edcafba8af9a",
+    "bytes": 569
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v8-419align-rootfs.dts",
+    "sha256": "8f4e65dd766a9af82944a8b43cfda10782c0c4fe4165cd48d8f8fd4075bf7691",
+    "bytes": 580
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v8-419align.dts",
+    "sha256": "5701444e0d60abfe9513e1491f35f5759d537ba7bc9e607cdecb1ca71d622123",
+    "bytes": 3333
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v8-only-pmic-hwreset.dts",
+    "sha256": "ef38ab7b51dcd7f483c1dfc20cae12570292a62d0cf9487542748fb29a6a7e35",
+    "bytes": 1218
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v9-419align-edp.dts",
+    "sha256": "8f93da269231e313022a5b423c100dbbf49eab77e1137d84b4b558719c4937ce",
+    "bytes": 3547
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw-v9-edp.dts",
+    "sha256": "23601f634b0660b25d8d542307317b30a6ba29a1e4f7bb462f723a55e1c6857d",
+    "bytes": 39516
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/rk3568-ecloudbook-air-24rtw.dts",
+    "sha256": "82852f8e8ef85232f3219e5d79b2e0c23749cf6d42139ff29391a1578f1e90b8",
+    "bytes": 39381
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0001-r8152-add-sr9900-id.patch",
+    "sha256": "2e1eff4629dc2bfa06ed634cdb463b4732a91b8a078c054306581ce4fd20688c",
+    "bytes": 1027
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0002-dw-wdt-early-diagnostics.patch",
+    "sha256": "22f57b9a7bb29c1e3a2f7e3ffb74e8eed044761db64a96521061f8cccf6ccb44",
+    "bytes": 3566
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0003-clk-rk3568-add-659mhz-vpll-rate.patch",
+    "sha256": "5746b314ab588c29d2351e939eef147456ef62df9f620322d16d4da0f500c79f",
+    "bytes": 447
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0004-mmc-sdio-skip-cmd11-fixed-1v8.patch",
+    "sha256": "5f180673b87d5440d4f35db1ab2a05aad127d96a3b4f0f17a640f3d7dab0fb0e",
+    "bytes": 1368
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0005-mt76-mt7663s-w103d-isolated.patch",
+    "sha256": "2833fd393ca3ca82000308ab44219aeae2b49b629394635e21da3104b6e431a0",
+    "bytes": 114455
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0006-mt7663-w103d-combo-lifecycle.patch",
+    "sha256": "af1345f1096c506275fce9dda7b5e06a610e1c097906a780c895ddb599334d5b",
+    "bytes": 10764
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0007-mac80211-data-rate-reporting.patch",
+    "sha256": "77a7dcb6686bc84650ebf30f0af55bf9b13d4019570318a07f846cf99ab13541",
+    "bytes": 1195
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0008-power-supply-sc2021-bq25703a.patch",
+    "sha256": "a88666ef67e13dcbb154dde5fa644393843d311ecf04dbbdcdf35916ff8b6a46",
+    "bytes": 43179
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0009-phy-rockchip-naneng-edp.patch",
+    "sha256": "ef481a69c1eebc3b1de7fd4c5a7dad77c65cad7a789086ab32496d06c299379f",
+    "bytes": 13753
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0010-drm-analogix-dp-rk3568-and-boe-nv140wum-n44.patch",
+    "sha256": "b5409e992a87468c38835e9c9a6152b3896412209c413bdabb98bf1eeb5ca294",
+    "bytes": 10424
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0011-mt76-mt7663s-w103d-sanitize-wiphy.patch",
+    "sha256": "7bc84c66ec5e742d8caf2bc8b04cbf9ae7f8df03f2de4abeb81b79255eabce66",
+    "bytes": 4377
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0012-mt76-mt7663s-w103d-fix-band-switch-disconnect.patch",
+    "sha256": "3cea2ddce2b410aaba501823b52bc5a5d6c8e018fc1f53ecd17ab8f0d4ea6241",
+    "bytes": 10183
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0013-mt76-mt7663s-w103d-tx-ampdu-and-sdio-throughput.patch",
+    "sha256": "b4fbd920df011b0957aad3a338af3e9caba9e316a7301d876e5bcafd7c1ad796",
+    "bytes": 25318
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/reference/cloudbook-mainline-6.12/patches/0014-power-supply-sbs-align-charging-led-status.patch",
+    "sha256": "6b57068e3122b93bb09861c758f2ca2117dccf853bd5f578c78fc5739ce60ee6",
+    "bytes": 5516
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rootfs/Dockerfile",
+    "sha256": "d19ccdfc97bde25ec787d2811bca3adb39154e4f00b6bafe67e06b5eb115d003",
+    "bytes": 3394
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rootfs/Dockerfile.final",
+    "sha256": "dea9677947fbdde868264eee25b602cfc8ab7a18948e7e0a04d9c3c0872dc1d5",
+    "bytes": 617
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rootfs/Dockerfile.mtools",
+    "sha256": "ff216f51995a722ef2c560d5a5b9af464d1a92a9e4a282253a076728af4ea5e0",
+    "bytes": 28
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rootfs/Dockerfile.v2",
+    "sha256": "351beab54b85e01112f70d541ce5194d36ea9538e8f67e4a922ed54c2f6e5383",
+    "bytes": 3431
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rootfs/Dockerfile.v3",
+    "sha256": "e3ed966ed196fb6301ff7ea986905b90c11c881b76a47bfb2952efe90b0c10ad",
+    "bytes": 2978
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rootfs/FIRST-STEPS.txt",
+    "sha256": "4e3a9f757d2a7e5ec227b3e42801f16635577d3acabce6d7be48667dd7367c02",
+    "bytes": 1017
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rootfs/image-hostname",
+    "sha256": "6e800c4dfb15d468620834fba8ccf43c1b72854cdc6c023e66cb0b984fa2c845",
+    "bytes": 12
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/rootfs/image-hosts",
+    "sha256": "57004470b3f698d1921d7e909885ce6cff1387d48bd66649d04543200eee4527",
+    "bytes": 83
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/apply-edp-lane-fix.sh",
+    "sha256": "55fb55a061220c56392ea8a0d3125932e05df71a07db5936d9ccaaa1993f4e0f",
+    "bytes": 426
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/assemble-capacity-image.sh",
+    "sha256": "0a4796a6f5a8f92076bba0b68ac26bcfa4bde11a2df7cb384696348a2d0172c1",
+    "bytes": 2597
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/assemble-image.sh",
+    "sha256": "da922d662be5ce577478af2ca3c0423f3df3c13a0a41710db7b2da4f43fcef40",
+    "bytes": 2321
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-all.sh",
+    "sha256": "89414bde5ca7c417aa88a5c2308ccb3148cdce7ebfde936946385dccab687168",
+    "bytes": 428
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-desktop-rootfs-v2.sh",
+    "sha256": "754a1920e6d1ec408444f37d253a6c50cbe21eda1deef2d72c4783982a2260cb",
+    "bytes": 3452
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-desktop-rootfs.sh",
+    "sha256": "5c388014f2c80f31c846d56cfbe6b6e0690f3459b5681faa79d408030711ceb8",
+    "bytes": 1459
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-display-fix.sh",
+    "sha256": "1c0ee4334b7b1ceb88b2afd472208637971ee59de58966c9fe91e8792b6a02d6",
+    "bytes": 1318
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-display-fixed-image.sh",
+    "sha256": "8a28ea055e852e38b41af810b4cf015be9249d4a1c3d3d2aa4d17cca8d089a42",
+    "bytes": 398
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-kernel-v2.sh",
+    "sha256": "165ebde5e066827a15d788729af574ecc9f706a37fb89a34a3c62ce8f3d497b5",
+    "bytes": 3080
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-kernel.sh",
+    "sha256": "403aad56bc6a3e434ecffb74d2d09a1e2c00f0a1f4a9bb7ca8da1f9d6f1942e0",
+    "bytes": 3017
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-native-mtools.sh",
+    "sha256": "4deeeba11924d4539232939f916dc59676645a8159c9ff8f97149c90a283dc6e",
+    "bytes": 914
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-ready-image.sh",
+    "sha256": "4b35e72f7bbd5270c4a3e084c77f3f15865edabd5ca8f3f6ad07d67b1f9bb7d8",
+    "bytes": 446
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-release.sh",
+    "sha256": "d43a9a3d7ecb603fcb42f6bc2f11c20b75977fc0507eed84df468d9d2fe41c1f",
+    "bytes": 413
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-rootfs-v2.sh",
+    "sha256": "c4daea2ab94344ef6a408b18a8441913241555ec0062027d1dfbf0542e62be2d",
+    "bytes": 987
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-rootfs.sh",
+    "sha256": "3b689b8fc589f4ac6d021393050d763314afa1bd29f2668f1c5a91987fe2597f",
+    "bytes": 984
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-userspace-v2.sh",
+    "sha256": "cc25d9310d08fb06fe0a8d1af582e18b1839ea4b669fbde18046c8f2b8d8d5de",
+    "bytes": 550
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-userspace.sh",
+    "sha256": "1b0747e51bd4c75b0055ff6a312f29d751b2c05809bf8e84f877ec2b8edf401e",
+    "bytes": 362
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/build-verified-image.sh",
+    "sha256": "74d9fcc4cf80946f40e47be4be9c61a84b77d5b5257ef3d643654bba8332c323",
+    "bytes": 319
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/check-userspace.sh",
+    "sha256": "1b8b1175aa8b70568c11714419d1c1362c933b00a054a3a80421ab969436e968",
+    "bytes": 622
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/fetch-debian.py",
+    "sha256": "7fe1460e027d806e9cd9e4221f2c4c38b730e05ecf05204b3aa2a2c3afbeaaa0",
+    "bytes": 3829
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/finalize-kernel-symbols.sh",
+    "sha256": "fcd71cb7575fc0cbd70b0d7a99f7d175e5b324a55d2451f5912e06fd423dc868",
+    "bytes": 1151
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/finalize-kernel.sh",
+    "sha256": "5f78b01bc0c7f0005dde0ae779cdd2a5eb865db58f6447e87cd469ea32fa995b",
+    "bytes": 1138
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/flash-usb-native.py",
+    "sha256": "f21184246fd8b102edca927a567a222e051554c9dfe7c9d7663e8137adbf9c2d",
+    "bytes": 4462
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/flash-usb.py",
+    "sha256": "d8679b5868697487144d815f2a300180692115299f2abb1371394b135138be8b",
+    "bytes": 2938
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/normalize-container-markers.sh",
+    "sha256": "ff395d91b4fe9218a4321112951e6e8b5ad1ebb75cbad43b12c3a70cc48462bc",
+    "bytes": 570
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/package-release-recipe.sh",
+    "sha256": "64f59bcc3c96f89938dabf00a83a74a13a3049a3e5b5047f6654d48348a3e4d9",
+    "bytes": 2463
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/prepare-sources.sh",
+    "sha256": "ea3e504e4c03ea5af8b4211a75dec171d1f679e3395b307224702587bf0bda5b",
+    "bytes": 1860
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/strip-container-runtime-markers.py",
+    "sha256": "7ca07a9d063ef037f5f623e5e5204a61d2e7e87a0667da809acd3827ad026721",
+    "bytes": 1908
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/update-usb-kernel-files.py",
+    "sha256": "85278e4358a8f604fd86cd1a6e81a37e53f480300fcc9a8213067713cff2ec1b",
+    "bytes": 5506
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/validate-board.py",
+    "sha256": "e36f6dc0ab833b547cf320a6ecbf992c70a91a30402fd70f3939bc93ec90a9c0",
+    "bytes": 2833
+  },
+  {
+    "path": "2026-11-25-Codex/build/linux-7.3.6/scripts/validate-kernel-config.py",
+    "sha256": "63f1a085f3fd151075d6afcaab2eccb81b2d278318de06f25fed81cf8341d625",
+    "bytes": 831
+  },
+  {
+    "path": "2026-11-25-Codex/docs/BOOTFLOW.md",
+    "sha256": "a3fc04ae5edf796f017043274c165029b763bbfa4e21acdbcb0d67975eb9bde1",
+    "bytes": 3523
+  },
+  {
+    "path": "2026-11-25-Codex/docs/BUILD-CURRENT.md",
+    "sha256": "69e75de4e6d7537e540051174665479982599fb81a1a84c49ec8c7ef80f71d07",
+    "bytes": 5262
+  },
+  {
+    "path": "2026-11-25-Codex/docs/BUILD-SIMPLE.md",
+    "sha256": "4043fda6ffe4e80e7e9a6d987b6be3afe9f15d00ce64e2f2bb21d053df1840e9",
+    "bytes": 1910
+  },
+  {
+    "path": "2026-11-25-Codex/docs/DEBUGGING.md",
+    "sha256": "456cd6190275b867bd343c7dcd651917fb5d23713250b0138730c05d2c9ebab0",
+    "bytes": 4408
+  },
+  {
+    "path": "2026-11-25-Codex/docs/DEVICE-TREE.md",
+    "sha256": "539286125d9537003a21ca3616ca02c245e3a6593d98080a726195cf7f4f3129",
+    "bytes": 3838
+  },
+  {
+    "path": "2026-11-25-Codex/docs/DIY-FROM-UPSTREAM.md",
+    "sha256": "2b43fa94c0ebc961036977429bf8ac26898a0335320cca223d96589dc3156fe7",
+    "bytes": 8583
+  },
+  {
+    "path": "2026-11-25-Codex/docs/ROOTFS-CONTAINER-MARKERS.md",
+    "sha256": "261aeb5310849a3dbdda3384649d9f9531ad7ac32276cb01bc6a0910a51c4586",
+    "bytes": 1948
+  },
+  {
+    "path": "2026-11-25-Codex/docs/USB-KERNEL-UPDATED-AND-CURSOR.md",
+    "sha256": "6903f1e48ade545c3a17e5a280a26fc66425a6465b14c7a372f05c1f2d7b98cc",
+    "bytes": 3622
+  },
+  {
+    "path": "2026-11-25-Codex/logs/README.md",
+    "sha256": "be2f57ccdc0624078d087caf1771dd3f0881f0d8f8b6f8bccddff1c97b34f5b5",
+    "bytes": 930
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T095048-291859+0800.jsonl",
+    "sha256": "8bec9f57aeaf671dcd40d894d00ed76d9999c34c5f9e40f65c730075b83046a9",
+    "bytes": 174
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T095048-291859+0800.rx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T095048-291859+0800.tx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T095850-612659+0800.jsonl",
+    "sha256": "2c1f596a01dab91e10a5d3026a2a6c5d1688608829d126c661fdc74300acc561",
+    "bytes": 174
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T095850-612659+0800.rx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T095850-612659+0800.tx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T100424-368782+0800.jsonl",
+    "sha256": "b7b997f23bc3ad0b01cf6474cc16cedd4b4687cd12a634feb5bf237c56a043ba",
+    "bytes": 334494
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T100424-368782+0800.rx.bin",
+    "sha256": "4fb4682e3fd77d97143c44de9928e0e9edffbce9b5198f6ab53f878310471347",
+    "bytes": 70647
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T100424-368782+0800.tx.bin",
+    "sha256": "7159871c9a8f7bb494fdd6e6e23568bac54e0ea39da6f7b9289ba0f3b5ba664a",
+    "bytes": 3321
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T110331-297137+0800.jsonl",
+    "sha256": "af3604d8b0b15ae3432e6f796c71ee435501499045d4d8da84d9b4ff87ec027c",
+    "bytes": 152780
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T110331-297137+0800.rx.bin",
+    "sha256": "0ab16b2f1c9e77fdc4c6355252a1ea1cfb58239dc4087433face7bf0f8747cd3",
+    "bytes": 31447
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex/serial-20261124T110331-297137+0800.tx.bin",
+    "sha256": "c020e3c57bc749096e926a58ada834e4e3597bcabd7018573b77619432016d98",
+    "bytes": 2292
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T112837-414518+0800.jsonl",
+    "sha256": "95e9f85c68c954d07f4a54362de466a807c19b8666e7a41ba6da8e2fdeef884c",
+    "bytes": 31122
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T112837-414518+0800.rx.bin",
+    "sha256": "4d7f213c29a6dd1eb8dc6f2d1499cf39631672a9e973188d8e51ed05f0c7b1cd",
+    "bytes": 341
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T112837-414518+0800.tx.bin",
+    "sha256": "e0fb00381700cca45751382b879e5ee1c71f84895e52c195758f9b7968e6070b",
+    "bytes": 192
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T113221-669340+0800.jsonl",
+    "sha256": "ef45739cf49e8f39af6836da54667ced327ab3ca509d90e61e110b79acd3c3cc",
+    "bytes": 432246
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T113221-669340+0800.rx.bin",
+    "sha256": "747ebc93d534dba4f09fa30136e681cab5404a80a8f2c1691eab6e3f553193de",
+    "bytes": 87095
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T113221-669340+0800.tx.bin",
+    "sha256": "8b4835965991158c989734e83fd34d185fc1c3df9531bbe0dd1decac308a1ee5",
+    "bytes": 4707
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T115429-417313+0800.jsonl",
+    "sha256": "ece5e938657c42732f195272eab782a0724e07c1afa4640561aa146a2b8ae52b",
+    "bytes": 1926
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T115429-417313+0800.rx.bin",
+    "sha256": "c7cffd1e848ce4472b0a17adf5831018fb13429b87c336270b1dc4a4a058b5c5",
+    "bytes": 45
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T115429-417313+0800.tx.bin",
+    "sha256": "d4e3e27399742af6a1d58f44d045f542c628397593fa5d004ce9aa34e84e0b84",
+    "bytes": 48
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T120921-403566+0800.jsonl",
+    "sha256": "8c9c3ca8d84b48cb806867ea18c4ef0f83ec13da436f675f679ab50fe0320c5d",
+    "bytes": 377589
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T120921-403566+0800.rx.bin",
+    "sha256": "5392802efb9f33af5886fe2b0bdab1945c5824f7cb03cb84189009d5efa70703",
+    "bytes": 77510
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T120921-403566+0800.tx.bin",
+    "sha256": "afe7d5ccda861e34d33263acb25badf606e8deab86b44f16d440dd7fc144d36d",
+    "bytes": 8005
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T144142-546518+0800.jsonl",
+    "sha256": "3b4dd2997841db3bd7f3b3adc898569668fb991cca87d821bf5c0d01d6fb84e1",
+    "bytes": 5276
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T144142-546518+0800.rx.bin",
+    "sha256": "6cea5b73b3cc2021bdf1cb086e9089c41049698c1681fd7afd410167b0730abd",
+    "bytes": 904
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T144142-546518+0800.tx.bin",
+    "sha256": "0e9ea70f4abf1f7c29294111acba0b9c9f60ff286c0005d29886c0775da92820",
+    "bytes": 188
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T165530-131412+0800.jsonl",
+    "sha256": "644ffdde1e7e6088da93a7930f84298c9980e217a93f828c5747499798a68d56",
+    "bytes": 768129
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T165530-131412+0800.rx.bin",
+    "sha256": "ddac08d29671dedcb2b488ff5574db73d3a0766d9922f7add9790c0e20b6ce67",
+    "bytes": 158406
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-20261124T165530-131412+0800.tx.bin",
+    "sha256": "a2f50cbd97cb00045e25d6e265549fa7ba2cd8da4e5ad27bea1e378b4ef27ea9",
+    "bytes": 2318
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-crlf-20261124T120208+0800.jsonl",
+    "sha256": "d0f846b8df092f17d6aba621901103dcaee6916fd8b10c92fafc5f2d791d8f94",
+    "bytes": 168
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-crlf-20261124T120208+0800.rx.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "2026-11-25-Codex/logs/2026-11-24-Codex2/serial-crlf-20261124T120208+0800.tx.bin",
+    "sha256": "2bb97a7e70a28c1f26b8898fac10ec8aac9070881fab1f8895864565718f8181",
+    "bytes": 24
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/assemble-capacity-29510MiB.log",
+    "sha256": "4dfd3bd2e8e56be6f40774cc571baaeff2c773aecfe364602a0590017c874222",
+    "bytes": 6903
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/assemble-image.log",
+    "sha256": "5f9e9fab5f76256d0cf23535f6ce15e3e7e7a30a176a26185f08a812612c8b8a",
+    "bytes": 5285
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/bsp-dtc-warnings.log",
+    "sha256": "b07950e2a523a3a2cef6a61eb91b577a9c5148238f46a5826ee9e60f757ad9f7",
+    "bytes": 2405
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/build-desktop-rootfs-v2.log",
+    "sha256": "b35f566f897604f7a30ff9f97ff070d9fce9478a7541190c89b8c2a3862660d3",
+    "bytes": 2236
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/build-kernel-7.3.6.log",
+    "sha256": "27f89bb39f19dfe8acd9afce78da8459e5c0e2b02da4b50bd7c54dc796b530c9",
+    "bytes": 1109754
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/build-kernel-edp-lanes-fix.log",
+    "sha256": "e15b3b8d837a34893a2d1c3e085cc19f7c73ddc524d8103695e622b4386a3b42",
+    "bytes": 1668
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/build-userspace-clean-check.log",
+    "sha256": "bb3b6ea7f3dfd08aa792ed4d593e1feaaf27db09cc17de047ac2993a0f044fa4",
+    "bytes": 7253
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/build-userspace-v2.log",
+    "sha256": "e1b073f4f3cfdc9d9e9b027ce6a2a5a2b642fe83d33e2dbe21b9b16d5decf233",
+    "bytes": 246722
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/build-userspace.log",
+    "sha256": "ac9a4d567f704eceedb505a2f5574f9b51fc7bedaf2990b559fcb56d1577ad9b",
+    "bytes": 249600
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/finalize-kernel.log",
+    "sha256": "89f10219c3cdeb308f7a89645d14dea5ceff5c97b13dfc234648a5a810afefce",
+    "bytes": 1977
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/flash-kingston-20261124.log",
+    "sha256": "2d06fdbea801c12498bd59917a769c5635b3628686cb8864cf3fd2df4ab5cce8",
+    "bytes": 97928
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/flash-readback-skipped-20261124.txt",
+    "sha256": "834c33f0f152868d1e767557d5e8e07391c562144681b4d5c534d5378fde4572",
+    "bytes": 326
+  },
+  {
+    "path": "2026-11-25-Codex/logs/trash/usb-kernel-files-update-20261124.log",
+    "sha256": "1a0d0d359d34306ce44f845c2b5e832ad625a76740f6b01ffbe425c96413c02c",
+    "bytes": 2673
+  },
+  {
+    "path": "2026-11-25-Codex/manifests/SHA256SUMS",
+    "sha256": "b8b5a5f90a22a57aff2cdaffb4a4c44df8d03211b334abc15804894f5fcbb4fa",
+    "bytes": 44115
+  },
+  {
+    "path": "2026-11-25-Codex/manifests/SOURCE-MAP.json",
+    "sha256": "60b05e72dca1ed43eec98b1e435f7bac72579a76d0614c56e12b9d9351c4da75",
+    "bytes": 99766
+  },
+  {
+    "path": "2026-11-25-Codex/manifests/VALIDATION.md",
+    "sha256": "0f2c34ee495e83bd8895b0077440b5f12330175641239cfbeeeebe7136ea8acd",
+    "bytes": 1871
+  },
+  {
+    "path": "2026-11-25-Codex/reference/README.md",
+    "sha256": "14c03d72c281a931cabb3357dffce149a10b7816e9274b41fb260736062ac9cc",
+    "bytes": 1631
+  },
+  {
+    "path": "2026-11-25-Codex/reference/download-metadata/kernel-7x-sha256sums.asc",
+    "sha256": "1fb961c974ad3ba80cef174e0354a31716a25c2551e43bda7eaf055c5e4a67fb",
+    "bytes": 18226
+  },
+  {
+    "path": "2026-11-25-Codex/reference/download-metadata/kernel-org-releases-20261124.json",
+    "sha256": "fea9273ba78f054cf0e30bcc551fb20747e9abf1d98cc2feb3c21a712fbd5ed4",
+    "bytes": 8428
+  },
+  {
+    "path": "2026-11-25-Codex/reference/download-metadata/ubuntu-base-SHA256SUMS",
+    "sha256": "30f23cec3a46679bcf21dbe0c0a0ab51440e9b2f5ac69b3ae1d4a7a71c0ffc69",
+    "bytes": 1884
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/device.dtb",
+    "sha256": "a9aef8560cccf1716559f0974294df89d54e6abc2e0507801c87062eee0d00e6",
+    "bytes": 147584
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/original-backup-SHA256SUMS",
+    "sha256": "c1cbc4267132d91fc10b7ed54a7ce887fbbd2f6847bf45abf46808323efb52d8",
+    "bytes": 5059
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/zte-book.dts",
+    "sha256": "3fbc36b84c9e09ce613c556d8c37cfed9ae3e63eab283ecbd5a875eb158f08f2",
+    "bytes": 180891
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/w600d-backup/device_slot_b.dtb",
+    "sha256": "a9aef8560cccf1716559f0974294df89d54e6abc2e0507801c87062eee0d00e6",
+    "bytes": 147584
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/w600d-backup/device_slot_b.dts",
+    "sha256": "3fbc36b84c9e09ce613c556d8c37cfed9ae3e63eab283ecbd5a875eb158f08f2",
+    "bytes": 180891
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/w600d-backup/live.dtb",
+    "sha256": "80f776f03c7e709d65cca08b13a4c1423584f11062984f9dc7328b54a5b0be77",
+    "bytes": 143488
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/w600d-backup/live.dts",
+    "sha256": "cb66354e021aeaad72b55cf39262287bfe4760da28a51137b3548f0228e4de54",
+    "bytes": 180810
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/w600d-backup/resource_a/rk3568-w600dse-pvt-cs___saradc_ch1=938___saradc_ch4=779.dtb",
+    "sha256": "35f137de14c41f52a4d0ba8c3fe98fc51d82c94e0e76289ee2dd7f7912e1ef54",
+    "bytes": 141015
+  },
+  {
+    "path": "2026-11-25-Codex/reference/factory-device-tree/w600d-backup/resource_a/w600dse-pvt-cs.dts",
+    "sha256": "6bb4861dda123ef40f6dc385e0e756f674b1f4eee0eea4cd19b0fb605f8bbb4c",
+    "bytes": 178058
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/memory.md",
+    "sha256": "440d0aecbf266a70676dcf877c17b5c8d8c4374a68f291fd423c27e8c8331b6c",
+    "bytes": 15496
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/README.md",
+    "sha256": "386050917a0e61138c21cb0c9dd7191b2bac9a5d6d2c24ae6e11a6bcf79a4d0d",
+    "bytes": 9218
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/boot-diag.cmd",
+    "sha256": "a9f87c5aff1be4c4382292eee868ecd6b30b83537db4fd1dfa0e0362def5b137",
+    "bytes": 370
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/boot.cmd",
+    "sha256": "0aae20599e7e0af6f4d77d751d2976c7fd2636dab58f9e4cc05ead3aa3c9d9c0",
+    "bytes": 1099
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/build.sh",
+    "sha256": "c699e1729f5d6b17689cf2084b780c3a7278060a0f522660951e751913e2b66f",
+    "bytes": 696
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/demo.c",
+    "sha256": "4e0234cbf6986c8c292e5cd1dc95c3c4b937f8d6ae68f2884cc3dfe508c3ba33",
+    "bytes": 9486
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/demo.o",
+    "sha256": "b9892bf6e4c4d4ca88631f72754f047105c8d0340299c9c087a785ee3dad5db3",
+    "bytes": 8120
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/link.py",
+    "sha256": "457bc3efb7e89489adb3244883340bd337fba3e50c2a46c76053a63a7e00a6d5",
+    "bytes": 4953
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/mkscr.py",
+    "sha256": "97c9e68ed8efa5c6f4bf743ca683e4365cd9a5b08529d7c6e16d6fa7264da31c",
+    "bytes": 1349
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/mksig.py",
+    "sha256": "e1189075b3023cafffe1b689c260ebc7aebc3e6df9b64724603d3ec6aff649fe",
+    "bytes": 2029
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/sig.h",
+    "sha256": "acbdec3daa15153fbb72af44905e77b9698aa78b5a76ae7fd74e2a5aedde0c30",
+    "bytes": 626
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/src/test-host.c",
+    "sha256": "2895ecb7ccdde0e2954bd9eca0bb37633f909cce61551b0ec5fcda414e0db21e",
+    "bytes": 1228
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/stick/SHA256SUMS",
+    "sha256": "00023b7e3d950f59102282e4352579c1b623a8bd2fda28d0e916b6708986aa8e",
+    "bytes": 236
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/stick/boot-diag.scr",
+    "sha256": "8a152a2c1f37b77da8aaa8ba3cb452b65cb6fdad5bdfc763c467709589984b40",
+    "bytes": 442
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/stick/boot.scr",
+    "sha256": "9f1d50d44a5a699ac20261234e2641ce0f114ae945f1f7785c963e026cbc2ce1",
+    "bytes": 1171
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/demo/usb-demo/stick/w600d-demo.bin",
+    "sha256": "1fadd856e21f0795d1e5fa00ec8b53e47e0ae0187bf62993868572aa4226cbff",
+    "bytes": 6170
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/keymap/Generic.kl",
+    "sha256": "5935d577bf35b1cf18f6c9340d2bc7815d60470ea41448dbbe8482c77389950f",
+    "bytes": 9232
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/keymap/Vendor_258a_Product_0001.kl",
+    "sha256": "2a8448009624699faff1378c8d1eb9d571d3bc09eac94358aa85b1eababb7d44",
+    "bytes": 9324
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/reference/ext/vop2.h",
+    "sha256": "3f289aa2367b63a7eeffddeb4e755c9d9be716f2dfbb7ebfbcbe92c7298c26b9",
+    "bytes": 27456
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/reference/ext/vop2_reg.c",
+    "sha256": "01a067fa727aa78d81e2235fded1eb72fa8a69f0113b83b6e82bff40ef3f0671",
+    "bytes": 88359
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/reference/rk3568-evb-uboot/url",
+    "sha256": "c0ae28862e9135545181f9283b91008f628c55d107c73134f19bac0d30890a64",
+    "bytes": 55
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/boot-nc.cmd",
+    "sha256": "6e28bebe7b3a3917a7b566b64d44a07a1de8da7ad5521059af478b381ae4ce0f",
+    "bytes": 534
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/boot.cmd",
+    "sha256": "966c63fad01a976bc786b24b8ee61e9c76b492971844dd25ef74636981da8b89",
+    "bytes": 903
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/chain.S",
+    "sha256": "f701d313ed17a4f4441a2b7b79b7465fdbc6d36595918f2016296d94838ab86e",
+    "bytes": 1902
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/chain.elf",
+    "sha256": "71c80446142a4e397f30d7c658928877cf3dc3e49367c296999e5b33d2b18623",
+    "bytes": 66632
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/chain.o",
+    "sha256": "bc719df4a8d7d4dc38081fd00fcd3f0c7e305bbffc5fe6632314fd8ad8f7e4b1",
+    "bytes": 1032
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/qtest.bin",
+    "sha256": "94798139d2279ace1752bc72186eabd97ae6d31b7e7584e0e9ddf105db6b962b",
+    "bytes": 272
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/qtest.elf",
+    "sha256": "cdf36b7d0df70158f382cd9ffd01c24d62df0a13c88bd76b7b15e50bf635a424",
+    "bytes": 66632
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/qtest.o",
+    "sha256": "774d8fa3e7b36ae64acf7f5679501352894b21fc3fecc7dea0cb3ff7bf832219",
+    "bytes": 1032
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/chain/w600d-chain.bin",
+    "sha256": "fccb0bfa05c0c83ff46e95bb9afa593786b5f29acf2b6145ccbb1c2dfac28f7a",
+    "bytes": 272
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/stick/SHA256SUMS",
+    "sha256": "e249d21855d9f5ff9a60afe2c49da25e339c251fb50b781e6fc2b5f15973d64c",
+    "bytes": 240
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/stick/boot.scr",
+    "sha256": "47374c83e0907806f993ecbeab86867bc824345cd48971db72c39780670ef6ab",
+    "bytes": 606
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/stick/u-boot-w600d.bin",
+    "sha256": "3d596f72c5cbd81894099cca86d1c1458ec789cbb03fc3e67fb0469e06d2cb03",
+    "bytes": 1806528
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/stick/w600d-chain.bin",
+    "sha256": "fccb0bfa05c0c83ff46e95bb9afa593786b5f29acf2b6145ccbb1c2dfac28f7a",
+    "bytes": 272
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/assets/uboot/stick-prev/u-boot-w600d-kbd.bin",
+    "sha256": "0035f6ade7f2ceb21dabb108ef3ee69c1a9aaf7d71915bfd71856d98a14d986c",
+    "bytes": 959328
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/HOWTO-change-logo.md",
+    "sha256": "ad1c07ee2e3e9757d7c88050223dec2a9813adee0594b777d33d3aa194a01685",
+    "bytes": 6731
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/HOWTO-patch-uboot.md",
+    "sha256": "ae8ed920e358d657ce098d504eb8ea1cd1bba3fb38a710a440ec7342c97e484e",
+    "bytes": 25611
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/HOWTO-uboot-shell.md",
+    "sha256": "9987ac102bcae92ab2533b65c5c99bfe9dc5f975e96a0f1d308bf9b0e682e3dd",
+    "bytes": 6892
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/HOWTO-usb-drive.md",
+    "sha256": "6a0dbda7552d5791ae1d6726ecb8dc6ecff92c41a89658b1765ef4e9b4765138",
+    "bytes": 4836
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/W600D-linux.md",
+    "sha256": "1bd714649de9b06677e603001e6b3f29513de783ec12e11fc487527ac2dc1bfc",
+    "bytes": 18265
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/ab-tries.md",
+    "sha256": "f9c3d6c6de42a11df8e021c088ea2000b1d110d8f4ce22eca0c4951bcc83dc75",
+    "bytes": 4366
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/back-key.md",
+    "sha256": "cc597e00c7c538d5ab124adbf75bca00c93a33a9cfd4ede3447c3da4f6c55994",
+    "bytes": 6947
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/debrick.md",
+    "sha256": "f9d954a974c42fa9a3e8d23db67586eb3df1a21fbcd3f52a2a0731434e16c894",
+    "bytes": 9115
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/fw-v2.25.md",
+    "sha256": "0247ae138337cf80cb30e7d98ed543e500f9bc8ab2e5ad0bcf76a2584fc3d435",
+    "bytes": 7935
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/partitions.md",
+    "sha256": "73992f17ba4b6078e2204e8c80118d6050684d3a1816d4323119d6df3b95eca3",
+    "bytes": 8823
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/ref-issue3681.md",
+    "sha256": "b7f24fa03edb11280c36439ddc91e6678941551a445b804d1f6c19e6ed393a00",
+    "bytes": 6075
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/ref-z96a-comparison.md",
+    "sha256": "75d15d3afcf12ed24e2a756ecd4b47f1c264137f94d73a40a237ceb2657e79b7",
+    "bytes": 9728
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/docs/usb-boot.md",
+    "sha256": "a701cf389b6ec31e58e700ed9d84f249233991bff473ecdb4fa77b5cf36d0217",
+    "bytes": 9843
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/make-logo.py",
+    "sha256": "fecf2a6eea872999ac307ae0595a633fb5ba57db7075d39c6505098fc962596e",
+    "bytes": 2698
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/map-winkey-back.sh",
+    "sha256": "a39d6466667500625da4fe5c10b28e06c4248596f023c02d58419bb5ac3edaa7",
+    "bytes": 11465
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/mk.sh",
+    "sha256": "4ab4ae8fa87139d806a3d81a4da84317267b35eab8b458822f91357f861d377e",
+    "bytes": 514
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/patch-uboot-env.py",
+    "sha256": "e7523d35497179e00a7dbbcfbaa1b8d687904b18c5708a0911fae28e675a706c",
+    "bytes": 4173
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/payload-extract.py",
+    "sha256": "925e93c73ae1acd10da1aa1efcccb7742429bf26bd77c6533bb8b446867c4243",
+    "bytes": 4520
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/rsce.py",
+    "sha256": "ce58aac4828804a70427caf2eed9b1b290b4ca97fb1b281498e03a4e8cc46288",
+    "bytes": 1277
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/uboot-test.sh",
+    "sha256": "12c62d7449f60fa7523edd459a7c077425b34a0507b1a016f97f3a362a9d7c7d",
+    "bytes": 1710
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/re/callers.py",
+    "sha256": "03ec46b4c7470bc12c4f2822c4eaa1c4a1c7d5df4489d81d5546656ea2265b93",
+    "bytes": 927
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/re/fnstrings.py",
+    "sha256": "d8b315c4ec2590b223e63f4dc191978b82e610f9ef9ebbb58aaafd2302fc2877",
+    "bytes": 1254
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/re/raw2elf.py",
+    "sha256": "481ef2d1f0a246c5834bd0ad23e91fd0261286ae3c8048f5fd18efb9d2740fb0",
+    "bytes": 922
+  },
+  {
+    "path": "2026-11-25-Codex/reference/u-boot-research/tools/re/xref.py",
+    "sha256": "ddc0d73ee8683a3b2e8874b528d2a746b42652c4c30b7674b69aef9b72d923cb",
+    "bytes": 1176
+  },
+  {
+    "path": "2026-11-25-Codex/reference/upstream-linux-7.3.6/arch/arm64/boot/dts/rockchip/rk3568.dtsi",
+    "sha256": "4622d7f24b6608603f30bc7fb6fdc2391368303928c245c631e9bc8ae33e8bcd",
+    "bytes": 11169
+  },
+  {
+    "path": "2026-11-25-Codex/reference/upstream-linux-7.3.6/arch/arm64/boot/dts/rockchip/rk356x-base.dtsi",
+    "sha256": "bacd116195c6e5f22348973956bc1890fe30809d4bfa717a237c7cc796858adb",
+    "bytes": 53645
+  },
+  {
+    "path": "2026-11-25-Codex/tools/cleanup-workspace.py",
+    "sha256": "ceadf7e253c9a43e2a41c0b01f061ea741e8e4a84abe7d314b28a3523f088f9c",
+    "bytes": 16494
+  },
+  {
+    "path": "2026-11-25-Codex/tools/collect-snapshot.py",
+    "sha256": "ba1b714d3f213e24d2d3616e9bd84748457040b3c6d4e69a6888ffd61afe5072",
+    "bytes": 8626
+  },
+  {
+    "path": "2026-11-25-Codex/tools/dtb_inventory.py",
+    "sha256": "c3deaa9be95b575c8d5f8dc8bae79d13180a03eaf0c9ef102aab9539fe362e4f",
+    "bytes": 3263
+  },
+  {
+    "path": "2026-11-25-Codex/tools/extract-backups.py",
+    "sha256": "f7f122efcbb098c5f3e03fa86a8c1637cc0a4e1039eadf64156e28fef3ff627c",
+    "bytes": 2594
+  },
+  {
+    "path": "2026-11-25-Codex/tools/serial_console.py",
+    "sha256": "5514656b402f839644691cfdddda51cc437908d1b0f82d92227dfb5951626ba7",
+    "bytes": 4035
+  },
+  {
+    "path": "2026-11-25-Codex/tools/verify-workspace.py",
+    "sha256": "54bc22f398080cc79958ceda057fd2d1452675384b722189f9fc19e023ba29f5",
+    "bytes": 7100
+  },
+  {
+    "path": "ref/notes-2026-11-10.txt",
+    "sha256": "fd036521e2ab2ea51869e96bb5197f0598536a187c70e092347b9e7ee807af6d",
+    "bytes": 275
+  },
+  {
+    "path": "ref/2026-11-11/serial_log1.txt",
+    "sha256": "433dea9dede43912d490f1f073895aca230bb7744811973d9aa406fc7154488c",
+    "bytes": 32697
+  },
+  {
+    "path": "ref/2026-11-11/serial_log2.txt",
+    "sha256": "8ffe6428f45b086998adf6484897eaf7a149d09519682278f972372d98b810f3",
+    "bytes": 54840
+  },
+  {
+    "path": "ref/2026-11-11/serial_log3_fixed_orphan_file.txt",
+    "sha256": "545a76715193fa7ff674ac4ff7f5a2b590bdc4f0ba7cb69910b7e4b53b07a20e",
+    "bytes": 75343
+  },
+  {
+    "path": "ref/2026-11-11/serial_log4_route_to_vp2.txt",
+    "sha256": "b0b1282bf5b02a9cc904947c2090c7f918dab5d837270a289abdf50a7fb6f9de",
+    "bytes": 94394
+  },
+  {
+    "path": "ref/2026-11-23/01-keep_bootcon.txt",
+    "sha256": "feafa8f9a7b811bffaded96de94217bc837fffdbebd44782481d336c1644cd1c",
+    "bytes": 33382
+  },
+  {
+    "path": "ref/2026-11-23/02-more.txt",
+    "sha256": "586343de4c50ffe030b9f3d0fffc9f668218ae68daa9331de0e2d53d1055404e",
+    "bytes": 75781
+  },
+  {
+    "path": "ref/2026-11-23/03-has-bash.txt",
+    "sha256": "867d1b87955936ce4a9d0cea64de219b937f4a9a1c477a4f24611242996b9dc6",
+    "bytes": 54830
+  },
+  {
+    "path": "ref/2026-11-23/04-u-boot-\u539f\u5382printenv.txt",
+    "sha256": "23616240494a5d0b2372916f19765210f53d1575810c0073b55df415ec211401",
+    "bytes": 4624
+  },
+  {
+    "path": "ref/backups/device.dtb",
+    "sha256": "a9aef8560cccf1716559f0974294df89d54e6abc2e0507801c87062eee0d00e6",
+    "bytes": 147584
+  },
+  {
+    "path": "ref/backups/zte-book.dts",
+    "sha256": "3fbc36b84c9e09ce613c556d8c37cfed9ae3e63eab283ecbd5a875eb158f08f2",
+    "bytes": 180891
+  },
+  {
+    "path": "ref/backups/firmware/url.txt",
+    "sha256": "efbf56440db218c5e69ffbc6452e066603219412532ad66477928cf394e2ad46",
+    "bytes": 107
+  },
+  {
+    "path": "ref/backups/uboot-backup-20261106-v14/SHA256SUMS",
+    "sha256": "669d24c7e6576f4b7cf490a77e8b83c72593989d2224b1c8e8a3c98be65f1e8a",
+    "bytes": 231
+  },
+  {
+    "path": "ref/backups/uboot-backup-20261106-v14/misc.img",
+    "sha256": "1dfe70e2d7aafd65cc64fcbb9ee0a8127ab51abc35f96b9e7397b1ad55fe6686",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/uboot-backup-20261106-v14/uboot_a.img",
+    "sha256": "8de8c9f8187a062128af68e6ae219a991ac67f8fb9e25b55f3fbc95c69ec65b0",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/uboot-backup-20261106-v14/uboot_b.img",
+    "sha256": "e524fd6b17bb035ec696a48bc08f2a9ca803fb71d97ca24d5b80b821778ae378",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/uboot-patch-experiement/v13-usb-first.img",
+    "sha256": "b94f333f0b460dc2743fcf041c206007be67a520be99db16247fb3bdbcf42f86",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/uboot-patch-experiement/v14-diag.img",
+    "sha256": "8de8c9f8187a062128af68e6ae219a991ac67f8fb9e25b55f3fbc95c69ec65b0",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/uboot-patch-experiement/v15-usb-first-bd0.img",
+    "sha256": "36e264b12dc757a2a92900d101f7423c5681585ad7cc524c924582bad54e629d",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/SHA256SUMS",
+    "sha256": "c1cbc4267132d91fc10b7ed54a7ce887fbbd2f6847bf45abf46808323efb52d8",
+    "bytes": 5059
+  },
+  {
+    "path": "ref/backups/w600d-backup/baseparameter.img",
+    "sha256": "b3ea054f37f20610cdb9d914287b24107d28ae0ae6e61a0134f462659506cb67",
+    "bytes": 1048576
+  },
+  {
+    "path": "ref/backups/w600d-backup/boot_a.img",
+    "sha256": "5829f4163e21d625c4a7b1be9329d5d7f276e170b8170946c15d94389ca4060b",
+    "bytes": 167772160
+  },
+  {
+    "path": "ref/backups/w600d-backup/boot_b.img",
+    "sha256": "7be72d708698281df61fc168268367f577916a4d40a7130b2fcccb942abade9b",
+    "bytes": 167772160
+  },
+  {
+    "path": "ref/backups/w600d-backup/device_slot_b.dtb",
+    "sha256": "a9aef8560cccf1716559f0974294df89d54e6abc2e0507801c87062eee0d00e6",
+    "bytes": 147584
+  },
+  {
+    "path": "ref/backups/w600d-backup/device_slot_b.dts",
+    "sha256": "3fbc36b84c9e09ce613c556d8c37cfed9ae3e63eab283ecbd5a875eb158f08f2",
+    "bytes": 180891
+  },
+  {
+    "path": "ref/backups/w600d-backup/dtbo_a.img",
+    "sha256": "59b971b4300092de56164904d6a1747276eb569acfc31c09dda6569aa5c8e57d",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/dtbo_b.img",
+    "sha256": "59b971b4300092de56164904d6a1747276eb569acfc31c09dda6569aa5c8e57d",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/emmc_backup_gpt.bin",
+    "sha256": "2fb50e5f0208f554a34387204e40b475c7462a38cd6e96ea6ba7e35064654354",
+    "bytes": 16896
+  },
+  {
+    "path": "ref/backups/w600d-backup/emmc_first16MiB.bin",
+    "sha256": "4907e80b53fb1e619f28c44de9ac0853263fe7e0e149917797ce2abc4e96ddac",
+    "bytes": 16777216
+  },
+  {
+    "path": "ref/backups/w600d-backup/getprop.txt",
+    "sha256": "18823be71ce4ca5d5ebde1cc4746122d12fa8acb3e14fb3830d1cc99092bb2ad",
+    "bytes": 34144
+  },
+  {
+    "path": "ref/backups/w600d-backup/live.dtb",
+    "sha256": "80f776f03c7e709d65cca08b13a4c1423584f11062984f9dc7328b54a5b0be77",
+    "bytes": 143488
+  },
+  {
+    "path": "ref/backups/w600d-backup/live.dts",
+    "sha256": "cb66354e021aeaad72b55cf39262287bfe4760da28a51137b3548f0228e4de54",
+    "bytes": 180810
+  },
+  {
+    "path": "ref/backups/w600d-backup/logo.img",
+    "sha256": "64706fe93e2a425bf35822f47c340178e83630104064c0f6752c0138871111e6",
+    "bytes": 33554432
+  },
+  {
+    "path": "ref/backups/w600d-backup/misc.img",
+    "sha256": "4624f49ef39599f374ea2d1d8bc8c44dff8acfad19a6e99655e8c27be950ce0b",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/partitions.txt",
+    "sha256": "88445ae93c5a23469b5a6875b8a0da847a3e989810d95092e9cf90f1b957d9d9",
+    "bytes": 854
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a.img",
+    "sha256": "430f1837b4b9ee9829bd7e26c861af6ab3e5091f593f1ecabfdaff8921d5e901",
+    "bytes": 15003648
+  },
+  {
+    "path": "ref/backups/w600d-backup/security.img",
+    "sha256": "11f5823f3e497383659d350cf9401fed046babee7b9486000fb2a8164d77c872",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/trust_a.img",
+    "sha256": "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/trust_b.img",
+    "sha256": "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/uboot_a.img",
+    "sha256": "2375420f37c0d1c435e6e359d9e25fab13120007869457b4ff8d7d81fd38ad1c",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/uboot_b.img",
+    "sha256": "e524fd6b17bb035ec696a48bc08f2a9ca803fb71d97ca24d5b80b821778ae378",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/backups/w600d-backup/vbmeta_a.img",
+    "sha256": "76ff77959f2451ee3838de5b2d90a0e21017345cac4f7ce56c9da7a630edc752",
+    "bytes": 1048576
+  },
+  {
+    "path": "ref/backups/w600d-backup/vbmeta_b.img",
+    "sha256": "76ff77959f2451ee3838de5b2d90a0e21017345cac4f7ce56c9da7a630edc752",
+    "bytes": 1048576
+  },
+  {
+    "path": "ref/backups/w600d-backup/zteparameter.img",
+    "sha256": "ecf12980b7fdb3771ad979a49bc96c4f0f9906021581cfc1eb3685a9b19c6013",
+    "bytes": 33554432
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/battery_0.bmp",
+    "sha256": "8d34c090377559052ab4f9f8f4716d825ba8071becc44fbaf959da2559542b3c",
+    "bytes": 6170
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/battery_1.bmp",
+    "sha256": "9f30cfccce6191b809b2cbe56064c66d9ba9f03fe1b2b2f5c8ec580d1ad7670d",
+    "bytes": 6300
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/battery_2.bmp",
+    "sha256": "b90f49de2a00f5a2bf5d1c40cabb2324eb24cb3a21d949a40ba2f28680f0a3ca",
+    "bytes": 6300
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/battery_3.bmp",
+    "sha256": "59005597a3526d2ad4f0a970474f138481b291a2fa631287bd380d66953b1ec7",
+    "bytes": 6300
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/battery_4.bmp",
+    "sha256": "7c31654c4f97810d79dc453596becea5ec109469adf15ca22d92ba607245fc9f",
+    "bytes": 6300
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/battery_5.bmp",
+    "sha256": "3b7911eb58a52310ee35a4aa64aa323534cf13c3d48a43e218850b672afe7a8b",
+    "bytes": 6196
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/battery_fail.bmp",
+    "sha256": "6528ef40becacefb19de1bdc25c9928ca109333105387784fc815e3fef87e5cc",
+    "bytes": 6680
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/logo.bmp",
+    "sha256": "2664c25675c2d1faee4262e2319a9eb11fd1ea8a1602923e16a6034d36ea3686",
+    "bytes": 6220854
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/logo_kernel.bmp",
+    "sha256": "2664c25675c2d1faee4262e2319a9eb11fd1ea8a1602923e16a6034d36ea3686",
+    "bytes": 6220854
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk-kernel.dtb",
+    "sha256": "c884d737bcc5d73c4797f48a38e872551504501bcc6cea92ed626494adbbb340",
+    "bytes": 138704
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w500d___saradc_ch1=10___saradc_ch4=10.dtb",
+    "sha256": "2620955398c649f51955701b44ff8862b3237fd6205be3894547379ac313d7c6",
+    "bytes": 134576
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w520d2-wifi6-21_5tp___saradc_ch1=171___saradc_ch4=85.dtb",
+    "sha256": "9bd0150a3ac3b51b5904bbab3011a6ce0f10e2ce31d06f6217661d1cf5746d54",
+    "bytes": 134898
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w520d2-wifi6-27tp___saradc_ch1=171___saradc_ch4=171.dtb",
+    "sha256": "56c36ea42927af797bc9b93c403c6621a4d4662a6c4f1f034f107147b69c5d15",
+    "bytes": 134898
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w520d2-wifi6___saradc_ch1=171___saradc_ch4=10.dtb",
+    "sha256": "128cd770746e7466720a10932ec761bc6776213f63f9413375e8790005a2d4e2",
+    "bytes": 134930
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600dse-25wh_v11___saradc_ch1=1024___saradc_ch4=695.dtb",
+    "sha256": "e355eb4db75e928324023b07eb221fbaaad43a5a3716f5e0d2a76dc0eac3be93",
+    "bytes": 141039
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600dse-pvt-40wh___saradc_ch1=853___saradc_ch4=779.dtb",
+    "sha256": "f6720173bacba97f76beda49bfc64861f26014d1bb1158a1a2038d189c9e5d07",
+    "bytes": 138728
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600dse-pvt-cs___saradc_ch1=938___saradc_ch4=779.dtb",
+    "sha256": "35f137de14c41f52a4d0ba8c3fe98fc51d82c94e0e76289ee2dd7f7912e1ef54",
+    "bytes": 141015
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600dse-pvt___saradc_ch1=938___saradc_ch4=955.dtb",
+    "sha256": "868ecf4af25417e0d38968efdb269ff0213dda056520403ba921617c9f420aa3",
+    "bytes": 138728
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600dse___saradc_ch1=1024___saradc_ch4=955.dtb",
+    "sha256": "c884d737bcc5d73c4797f48a38e872551504501bcc6cea92ed626494adbbb340",
+    "bytes": 138704
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600dsewifi6_v10___saradc_ch1=598___saradc_ch4=779.dtb",
+    "sha256": "c3e04c3ac62ee6fe045581aa66f17401ec63d43ceb5babaafbded9a64d2973ab",
+    "bytes": 140203
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600dsewifi6_v4-40w___saradc_ch1=768___saradc_ch4=779.dtb",
+    "sha256": "22c1d1789879b5f03cc27e6be0124eb2d32d8c7c7e6256053731c36db0937b6a",
+    "bytes": 138816
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600e25wh_v13___saradc_ch1=853___saradc_ch4=695.dtb",
+    "sha256": "302278718fe78c2da8258cfe414f1650e94465d5298fd85d31eb226b88648029",
+    "bytes": 141491
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600e5g-25wh___saradc_ch1=598___saradc_ch4=955.dtb",
+    "sha256": "f49f53204281a5851cd5f3fdfc24671cadd75652b48555f99b4a5b64eac09bca",
+    "bytes": 139519
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600e5g-40wh___saradc_ch1=768___saradc_ch4=955.dtb",
+    "sha256": "d06a180f86a3d6d6b8c8ae550cfddbd22d4ce1b4a015e4303d2059e9bdc42190",
+    "bytes": 139519
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600e5g___saradc_ch1=853___saradc_ch4=955.dtb",
+    "sha256": "f03fb3f6cba7303597e5f4b12e6d9af48cae7e06655dcb8ccfe82f8db202b069",
+    "bytes": 139519
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w600ewifi___saradc_ch1=683___saradc_ch4=955.dtb",
+    "sha256": "55065a4da70406b15f2fa93d7fa3bd2e21d8732bc83b3daf19f5e609498ef5d5",
+    "bytes": 138812
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/rk3568-w620d-25wh_v12___saradc_ch1=938___saradc_ch4=695.dtb",
+    "sha256": "e2067f65dd099b6437cf4217ce37a156717b9cc9532dfb24fde704f14eeedf9f",
+    "bytes": 141785
+  },
+  {
+    "path": "ref/backups/w600d-backup/resource_a/w600dse-pvt-cs.dts",
+    "sha256": "6bb4861dda123ef40f6dc385e0e756f674b1f4eee0eea4cd19b0fb605f8bbb4c",
+    "bytes": 178058
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/.gitignore",
+    "sha256": "408ac93dbe746dbe63a17d3394071ed69e454e9daf7b23319a19d2f1a4279838",
+    "bytes": 525
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/LICENSES_AND_COPYRIGHT.md",
+    "sha256": "632453cbe1430cf1ae8aaa6159348759b419502b68b10b1b9863031fa517d86d",
+    "bytes": 6022
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/README.md",
+    "sha256": "b24a8c66ae57067f5f20b4b10522b9db2c7cd43fb7b55885c097c9a117fc91ef",
+    "bytes": 9241
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/build_boot_linux_612.sh",
+    "sha256": "f6f591b75061ecabe2316cab6f99d11c866e609977efb5c61d1e3bc6b79898d1",
+    "bytes": 1731
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/build_kernel_612.sh",
+    "sha256": "09bc7dcc7efa663007d37a00dfa7d1bb7f2ab0493feac07d17bfa00ebaac8237",
+    "bytes": 6879
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/emmc_backup_and_migrate.sh",
+    "sha256": "28cc7bf8bce23834818c2609fd3ad54c11a91c2d6377df72e14ee1009ed9fde5",
+    "bytes": 7625
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/pack_boot_linux.py",
+    "sha256": "75c8b5fc538bb2361f35c8cd8759f895a12ed5734ddeae66e038cc5d84ad237c",
+    "bytes": 6055
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/switch_ab_slot.py",
+    "sha256": "555dbef052a98e75e0d897b867b42bde41158ef26c62b3c2c150c2fb58ffdbe0",
+    "bytes": 2494
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/FLASHING_GUIDE.md",
+    "sha256": "0214ac4cd96a54690bde913408ce833b7222a8157f38ff3bc3d080607f21a3b9",
+    "bytes": 20002
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/OTG_RECOVERY.md",
+    "sha256": "1826549385db6d4c824ffa13f0799c0ce0d8149b14d8e0ade4bbd5dcb30445e3",
+    "bytes": 12953
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/REVERSE_ENGINEERING_NOTES.md",
+    "sha256": "58521f1002a8050d915568038f00f9e95e39fe76e1c75038f2a19b2dad33f5f8",
+    "bytes": 5358
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/board-profile.md",
+    "sha256": "9019fcc964b5aa42949998c800b449611de7a2e8eb61d9cacc6ff22eb14a57ed",
+    "bytes": 8201
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/progress.md",
+    "sha256": "2bd8359c7176185fcfe7b522111fcb8158076d685f89626c21b0cb32ed29d9ca",
+    "bytes": 5906
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/cloudbook-air-mainline/02-\u65b9\u6848\u8bbe\u8ba1.md",
+    "sha256": "1232f5b3478e8d46fb4624616aeeb879cecb96efc088828fe159155345dd2f85",
+    "bytes": 7222
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/cloudbook-air-mainline/03-4.19\u57fa\u7ebf\u9a8c\u8bc1\u6458\u8981.md",
+    "sha256": "edb94f015e88f68d9c289d7feba8014a290f84bedec16a4fb83814a7a6e16f8f",
+    "bytes": 9670
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/cloudbook-air-mainline/04-\u57fa\u7ebf\u56fa\u5316\u4e0e\u5916\u8bbe\u9a8c\u8bc1.md",
+    "sha256": "24627a881bb57c3704b579b9ebf7c0cb8e288c033150094d355b640d522016ca",
+    "bytes": 5470
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/cloudbook-air-mainline/05-6.12\u6700\u5c0f\u542f\u52a8\u6784\u5efa.md",
+    "sha256": "ab15030b009b4371a89f0c76e6deecd1c25698317f32e9a7fe16594c25388b84",
+    "bytes": 10189
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/cloudbook-air-mainline/06-4.19\u4e0e6.12\u5185\u6838\u5dee\u5f02\u53ca\u5916\u8bbe\u6620\u5c04\u5206\u6790.md",
+    "sha256": "e8cd324c8bb9c7fdd84098e6bc5d2a1f947cf39a48521b6bf18cbc5f8d2e839f",
+    "bytes": 20404
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/cloudbook-air-mainline/07-6.12\u70b9\u4eae\u6210\u529f\u4e0ev8\u8bc1\u636e.md",
+    "sha256": "718dc7444b8f0c1e4268ffe4eab35f56f0303d86f0cecefd3ff41f40637a37e1",
+    "bytes": 5212
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/cloudbook-air-mainline/08-P4\u8ba1\u5212\u4e0e\u6839\u56e0\u9a8c\u8bc1.md",
+    "sha256": "af2dc1d4fc8b5dcb0b95c561e3c8ce366e00a45aedf4d872f328609a16412ac4",
+    "bytes": 9771
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/docs/cloudbook-air-mainline/09-\u663e\u793a\u94fe\u6838\u67e5\u4e0eeDP\u79fb\u690d.md",
+    "sha256": "a58fdc410085dc4b11853bbf8551277cbd7a7e0ef88a9c8812ac858667935645",
+    "bytes": 7311
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/README.md",
+    "sha256": "befb77f3d6282048fccf16a79f6a22b0f950b3d7761840541556a9432e1a1278",
+    "bytes": 2012
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/TESTPLAN.md",
+    "sha256": "4764ce415cd2d6ce99aeed040c768f659fda244a840b00704b393e1efc40d668",
+    "bytes": 1967
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/config-6.12.117-cloudbook",
+    "sha256": "8f4e9311648e24ad10fada6d84fe35974f97fd119ebdc00042e1d5671072e303",
+    "bytes": 235145
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v10-419align-edp.dts",
+    "sha256": "a594ea91db0b2742296c15aefbb4253a0f7f44973671c2c29bdfd8179e06cd32",
+    "bytes": 927
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v11-touchpad.dts",
+    "sha256": "36056e6c814d4c835216e1411640be87fd1494e6021a296d721e16cdb70d1c49",
+    "bytes": 361
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v12-gpu.dts",
+    "sha256": "2085fa27de7f4b356fa5f75bff3c4172ee56363811da9ee28a44014da97fc850",
+    "bytes": 369
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v13-hdmi.dts",
+    "sha256": "1b75d1b91f988adcd974ec221f1da401b8846309c14b8a61db5b303a224ca128",
+    "bytes": 324
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v14-audio.dts",
+    "sha256": "0c789675b6cd0576f64d8b72ff7ed01ea6abd9ee3736b5bfd1dbcc3c214b172b",
+    "bytes": 592
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v15-battery.dts",
+    "sha256": "e0fe0c535aac12ecf1c50f822128337ed2c7b83c632b92e1df0a787189ac760d",
+    "bytes": 522
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v16-tsadc.dts",
+    "sha256": "0de2bcf9bebfa528b16cebb4156e15f19e990a956c5d55e247ca89b534749901",
+    "bytes": 341
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v17-saradc.dts",
+    "sha256": "dc773d3bcaca2a7b8c2a9d3903a6f7fc01aef883b60a9034a1f572fd89994825",
+    "bytes": 296
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v18-hdmi-audio.dts",
+    "sha256": "275cc8cab2b86c3a56a20829f985fbff642a28ca0d5cbdd99b9836a26774d64e",
+    "bytes": 417
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v19-pdm.dts",
+    "sha256": "c9d43c602c84727cab567aab124c9dcf5f0b63a2a0971597004dbb8666fa6198",
+    "bytes": 438
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v2-no-sdio.dts",
+    "sha256": "d7ea36ebcd4eee7e26d6c45bf8c82624419c51c6c2128049e7ecb4445a9fc952",
+    "bytes": 39279
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v20-wifi-bt.dts",
+    "sha256": "af005cf0ec61989b284006ab9af47ac612824556953dfd5349b22e4a3388ead0",
+    "bytes": 320
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v21-wl-power-pol.dts",
+    "sha256": "b6bf2484bdf06a6aab6df8ca29f0bfa17743735a7556cf4314d9e1cc48477420",
+    "bytes": 195
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v22-sdio-reset-pol.dts",
+    "sha256": "15f0c5ba96af4efe666ed7840b21d36d6b58461650be1298e0dcc1e4f5e8f076",
+    "bytes": 174
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v23-sdio-cmd11.dts",
+    "sha256": "8ca363c42c0d2add3207ba33a88e27982afc1d81cf3cf61814c14e4b64f4971d",
+    "bytes": 162
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v24-audio-route.dts",
+    "sha256": "e4771377a771a50b925b2dd6351064ac87995a4855757ed8929f6bc26176de6f",
+    "bytes": 466
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v25-charger-pd.dts",
+    "sha256": "3a70873ff4bd5d9ec9289af3a500b0e6e27ef5c1c9d86b0221427f58b823ee1b",
+    "bytes": 779
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v26-hall-pmdebug.dts",
+    "sha256": "e19b62e04bedb663892f308b5704080b83b9a157329840a1d9c16349bbf56132",
+    "bytes": 668
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v27-hall-pmdebug.dts",
+    "sha256": "168846f86c04fc3e92665600019cbc4470494b5e0f980a41692195f10e5d70d8",
+    "bytes": 588
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v28-usb2-pm-fix.dts",
+    "sha256": "71e8af6c28f5aa0bb8d55cfdb58ca955c4e2052ea830643c01a5bdf58469ff8d",
+    "bytes": 1096
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v29-emmc-rootfs.dts",
+    "sha256": "3a1f44d379c4bc28a7a26a46ae7688582808a69fe375904e2f691885f51ceb77",
+    "bytes": 775
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v3-clkpd-debug.dts",
+    "sha256": "26b36d19117dfadeeead421c84b320fe867db39ad19b6fba2fcb341c285b0d85",
+    "bytes": 39329
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v30-charging-led.dts",
+    "sha256": "65c4835f91678361d7b4b495329b4f98874f266b27441184b472549168617566",
+    "bytes": 3328
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v5-g3-clean.dts",
+    "sha256": "242a0a1c0572dbc8822f7c00e7ae58782cc98a4a086b2b7c5c83ca3c9deec861",
+    "bytes": 39528
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v8-419align-nogic.dts",
+    "sha256": "bce31b893da29b8909f478e6e890511af676f06d9f36cf60dea2edcafba8af9a",
+    "bytes": 569
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v8-419align-rootfs.dts",
+    "sha256": "8f4e65dd766a9af82944a8b43cfda10782c0c4fe4165cd48d8f8fd4075bf7691",
+    "bytes": 580
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v8-419align.dts",
+    "sha256": "5701444e0d60abfe9513e1491f35f5759d537ba7bc9e607cdecb1ca71d622123",
+    "bytes": 3333
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v8-only-pmic-hwreset.dts",
+    "sha256": "ef38ab7b51dcd7f483c1dfc20cae12570292a62d0cf9487542748fb29a6a7e35",
+    "bytes": 1218
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v9-419align-edp.dts",
+    "sha256": "8f93da269231e313022a5b423c100dbbf49eab77e1137d84b4b558719c4937ce",
+    "bytes": 3547
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw-v9-edp.dts",
+    "sha256": "23601f634b0660b25d8d542307317b30a6ba29a1e4f7bb462f723a55e1c6857d",
+    "bytes": 39516
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/rk3568-ecloudbook-air-24rtw.dts",
+    "sha256": "82852f8e8ef85232f3219e5d79b2e0c23749cf6d42139ff29391a1578f1e90b8",
+    "bytes": 39381
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0001-r8152-add-sr9900-id.patch",
+    "sha256": "2e1eff4629dc2bfa06ed634cdb463b4732a91b8a078c054306581ce4fd20688c",
+    "bytes": 1027
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0002-dw-wdt-early-diagnostics.patch",
+    "sha256": "22f57b9a7bb29c1e3a2f7e3ffb74e8eed044761db64a96521061f8cccf6ccb44",
+    "bytes": 3566
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0003-clk-rk3568-add-659mhz-vpll-rate.patch",
+    "sha256": "5746b314ab588c29d2351e939eef147456ef62df9f620322d16d4da0f500c79f",
+    "bytes": 447
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0004-mmc-sdio-skip-cmd11-fixed-1v8.patch",
+    "sha256": "5f180673b87d5440d4f35db1ab2a05aad127d96a3b4f0f17a640f3d7dab0fb0e",
+    "bytes": 1368
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0005-mt76-mt7663s-w103d-isolated.patch",
+    "sha256": "2833fd393ca3ca82000308ab44219aeae2b49b629394635e21da3104b6e431a0",
+    "bytes": 114455
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0006-mt7663-w103d-combo-lifecycle.patch",
+    "sha256": "af1345f1096c506275fce9dda7b5e06a610e1c097906a780c895ddb599334d5b",
+    "bytes": 10764
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0007-mac80211-data-rate-reporting.patch",
+    "sha256": "77a7dcb6686bc84650ebf30f0af55bf9b13d4019570318a07f846cf99ab13541",
+    "bytes": 1195
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0008-power-supply-sc2021-bq25703a.patch",
+    "sha256": "a88666ef67e13dcbb154dde5fa644393843d311ecf04dbbdcdf35916ff8b6a46",
+    "bytes": 43179
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0009-phy-rockchip-naneng-edp.patch",
+    "sha256": "ef481a69c1eebc3b1de7fd4c5a7dad77c65cad7a789086ab32496d06c299379f",
+    "bytes": 13753
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0010-drm-analogix-dp-rk3568-and-boe-nv140wum-n44.patch",
+    "sha256": "b5409e992a87468c38835e9c9a6152b3896412209c413bdabb98bf1eeb5ca294",
+    "bytes": 10424
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0011-mt76-mt7663s-w103d-sanitize-wiphy.patch",
+    "sha256": "7bc84c66ec5e742d8caf2bc8b04cbf9ae7f8df03f2de4abeb81b79255eabce66",
+    "bytes": 4377
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0012-mt76-mt7663s-w103d-fix-band-switch-disconnect.patch",
+    "sha256": "3cea2ddce2b410aaba501823b52bc5a5d6c8e018fc1f53ecd17ab8f0d4ea6241",
+    "bytes": 10183
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0013-mt76-mt7663s-w103d-tx-ampdu-and-sdio-throughput.patch",
+    "sha256": "b4fbd920df011b0957aad3a338af3e9caba9e316a7301d876e5bcafd7c1ad796",
+    "bytes": 25318
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/mainline-6.12/patches/0014-power-supply-sbs-align-charging-led-status.patch",
+    "sha256": "6b57068e3122b93bb09861c758f2ca2117dccf853bd5f578c78fc5739ce60ee6",
+    "bytes": 5516
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/rootfs_overlay/etc/X11/xorg.conf.d/30-touchpad.conf",
+    "sha256": "03860c5dbb685d6a59638335fc0bb8b29deae361379d171c3b9f95f959128ca7",
+    "bytes": 141
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/rootfs_overlay/etc/lightdm/lightdm.conf.d/50-cloudbook.conf",
+    "sha256": "4cf44f61963390433b93d7e0ee7995e41cf954a9bf21ef104f7fae3769783e57",
+    "bytes": 117
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/rootfs_overlay/etc/systemd/logind.conf.d/90-cloudbook-power.conf",
+    "sha256": "6c805eec8e10d7029f1beb7cc6b37e7f2e9742b1bda9f925e674cec02dfb648d",
+    "bytes": 150
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/rootfs_overlay/etc/systemd/sleep.conf.d/90-cloudbook-sleep.conf",
+    "sha256": "18cb0b61078f4b1346cac633bb3c96d36de6b994a6eea6b2f302803b012905cd",
+    "bytes": 42
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/rootfs_overlay/etc/udev/rules.d/90-backlight.rules",
+    "sha256": "e1012bcbc902601b2ebb378685440983f25f3156da84deeaff96eb3a027d8c4d",
+    "bytes": 156
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/rootfs_overlay/usr/share/alsa/ucm2/Rockchip/rk809-cloudbook/HiFi.conf",
+    "sha256": "2e29bc2660c71200feaf182683d02d202dd99a2d33d982622557bc3eba96ba09",
+    "bytes": 1093
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/rootfs_overlay/usr/share/alsa/ucm2/Rockchip/rk809-cloudbook/rk809-cloudbook.conf",
+    "sha256": "c6d820ee9e2b65c821fc8f7279c245f149b0ab788aa5f40eed1dd1270a31753f",
+    "bytes": 115
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/rootfs_overlay/usr/share/alsa/ucm2/conf.d/simple-card/rockchip,rk809-codec.conf",
+    "sha256": "c6d820ee9e2b65c821fc8f7279c245f149b0ab788aa5f40eed1dd1270a31753f",
+    "bytes": 115
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/scripts/extract_resource_from_boot.py",
+    "sha256": "7619673b066c7275b4cbc5ca7c8c89525f222504edadd96868e238798e6326c1",
+    "bytes": 1648
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/scripts/restore_factory_android.sh",
+    "sha256": "3fefa598a6fd876e076925862360d186da25a662bafb7c8be8c8c7f3f9ac6639",
+    "bytes": 5495
+  },
+  {
+    "path": "ref/eastwoodnet_cloudbook-air-mainline-linux/tools/serial_bridge.py",
+    "sha256": "9b72025184ea28b574c642ec8a5150a5fe3cd1c7a2958f96283752a55a8f984b",
+    "bytes": 1531
+  },
+  {
+    "path": "ref/research/assets/logo/logo_w600d.img",
+    "sha256": "2098d9c03966712c046505a995e9a56c1966ca100b951d8da99bfa6bfc17f828",
+    "bytes": 33554432
+  },
+  {
+    "path": "ref/research/assets/logo/logo_w600d.img.bmp",
+    "sha256": "17bdd0761ed1c788ff7bd042ccc739a4564a86f4c5948e9d617e8c23209c3ac4",
+    "bytes": 6220854
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/.gitignore",
+    "sha256": "74d163425ca4868166930d30a381fec56b146954d6599835968f840320530eb9",
+    "bytes": 14
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/HOWTO-linux-usb-boot.md",
+    "sha256": "25ff79c1cbebdd02f5073dc64dc89a2bef3df02945c4fb350b49178d8f149a67",
+    "bytes": 21988
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/README.md",
+    "sha256": "bc084d0b2ccf569842040c28a47e72fdd24d05b68e9f7e523179e00234027591",
+    "bytes": 11479
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/README_zh.md",
+    "sha256": "74e601de2f1eb32771d2782b118bfd05227a8e645b71cd6ca545ca5a77a40329",
+    "bytes": 11739
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/README_\u4eba\u7c7b\u5199\u7684.txt",
+    "sha256": "01ee1cb51a114cef3d2806b259336b047b787caab40708f0d465a0e48f5c9695",
+    "bytes": 1038
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/build.sh",
+    "sha256": "cf681044ec0033f94df3cc04378c655abc8081f2083d9e8e23211906408367ce",
+    "bytes": 3257
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/howto-typewriter-uboot.md",
+    "sha256": "3671e92bb84725a6f2d645aa42d844bd5d09d267faad87dccb41048e8cf393f8",
+    "bytes": 7403
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/patch-u-boot.sh",
+    "sha256": "9b0da5321699cc06fef495b3a5e35272a6bf6b3c82cf99bc7405f18f94fe01ad",
+    "bytes": 2307
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/01_vendor-env_patch_uboot_a/SHA256SUMS",
+    "sha256": "37c1486b87dfbaa7c3fed198eb8a4ad7295f95db6472691f697fb612e564963d",
+    "bytes": 87
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/01_vendor-env_patch_uboot_a/patch-uboot-env.py",
+    "sha256": "192b61d4fdeaa3f39f4daa1fb17a667cf6080f4cd4357ab946c6513d153283cb",
+    "bytes": 4209
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/01_vendor-env_patch_uboot_a/uboot_a-usbfirst.img",
+    "sha256": "36e264b12dc757a2a92900d101f7423c5681585ad7cc524c924582bad54e629d",
+    "bytes": 4194304
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/01_vendor-env_patch_uboot_a/w600d-uboot-a.sh",
+    "sha256": "df3cff00cec9ce58bd4ce520ee66bb5ed4641624f88388857fb7dbf722281495",
+    "bytes": 5157
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/02_prebuilt_USB_uboot/SHA256SUMS",
+    "sha256": "e249d21855d9f5ff9a60afe2c49da25e339c251fb50b781e6fc2b5f15973d64c",
+    "bytes": 240
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/02_prebuilt_USB_uboot/boot.scr",
+    "sha256": "47374c83e0907806f993ecbeab86867bc824345cd48971db72c39780670ef6ab",
+    "bytes": 606
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/02_prebuilt_USB_uboot/u-boot-w600d.bin",
+    "sha256": "3d596f72c5cbd81894099cca86d1c1458ec789cbb03fc3e67fb0469e06d2cb03",
+    "bytes": 1806528
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/02_prebuilt_USB_uboot/w600d-chain.bin",
+    "sha256": "fccb0bfa05c0c83ff46e95bb9afa593786b5f29acf2b6145ccbb1c2dfac28f7a",
+    "bytes": 272
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/memory.md",
+    "sha256": "440d0aecbf266a70676dcf877c17b5c8d8c4374a68f291fd423c27e8c8331b6c",
+    "bytes": 15496
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/README.md",
+    "sha256": "386050917a0e61138c21cb0c9dd7191b2bac9a5d6d2c24ae6e11a6bcf79a4d0d",
+    "bytes": 9218
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/boot-diag.cmd",
+    "sha256": "a9f87c5aff1be4c4382292eee868ecd6b30b83537db4fd1dfa0e0362def5b137",
+    "bytes": 370
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/boot.cmd",
+    "sha256": "0aae20599e7e0af6f4d77d751d2976c7fd2636dab58f9e4cc05ead3aa3c9d9c0",
+    "bytes": 1099
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/build.sh",
+    "sha256": "c699e1729f5d6b17689cf2084b780c3a7278060a0f522660951e751913e2b66f",
+    "bytes": 696
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/demo.c",
+    "sha256": "4e0234cbf6986c8c292e5cd1dc95c3c4b937f8d6ae68f2884cc3dfe508c3ba33",
+    "bytes": 9486
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/demo.o",
+    "sha256": "b9892bf6e4c4d4ca88631f72754f047105c8d0340299c9c087a785ee3dad5db3",
+    "bytes": 8120
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/link.py",
+    "sha256": "457bc3efb7e89489adb3244883340bd337fba3e50c2a46c76053a63a7e00a6d5",
+    "bytes": 4953
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/mkscr.py",
+    "sha256": "97c9e68ed8efa5c6f4bf743ca683e4365cd9a5b08529d7c6e16d6fa7264da31c",
+    "bytes": 1349
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/mksig.py",
+    "sha256": "e1189075b3023cafffe1b689c260ebc7aebc3e6df9b64724603d3ec6aff649fe",
+    "bytes": 2029
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/sig.h",
+    "sha256": "acbdec3daa15153fbb72af44905e77b9698aa78b5a76ae7fd74e2a5aedde0c30",
+    "bytes": 626
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/src/test-host.c",
+    "sha256": "2895ecb7ccdde0e2954bd9eca0bb37633f909cce61551b0ec5fcda414e0db21e",
+    "bytes": 1228
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/stick/SHA256SUMS",
+    "sha256": "00023b7e3d950f59102282e4352579c1b623a8bd2fda28d0e916b6708986aa8e",
+    "bytes": 236
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/stick/boot-diag.scr",
+    "sha256": "8a152a2c1f37b77da8aaa8ba3cb452b65cb6fdad5bdfc763c467709589984b40",
+    "bytes": 442
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/stick/boot.scr",
+    "sha256": "9f1d50d44a5a699ac20261234e2641ce0f114ae945f1f7785c963e026cbc2ce1",
+    "bytes": 1171
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/demo/usb-demo/stick/w600d-demo.bin",
+    "sha256": "1fadd856e21f0795d1e5fa00ec8b53e47e0ae0187bf62993868572aa4226cbff",
+    "bytes": 6170
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/keymap/Generic.kl",
+    "sha256": "5935d577bf35b1cf18f6c9340d2bc7815d60470ea41448dbbe8482c77389950f",
+    "bytes": 9232
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/keymap/Vendor_258a_Product_0001.kl",
+    "sha256": "2a8448009624699faff1378c8d1eb9d571d3bc09eac94358aa85b1eababb7d44",
+    "bytes": 9324
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/reference/ext/vop2.h",
+    "sha256": "3f289aa2367b63a7eeffddeb4e755c9d9be716f2dfbb7ebfbcbe92c7298c26b9",
+    "bytes": 27456
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/reference/ext/vop2_reg.c",
+    "sha256": "01a067fa727aa78d81e2235fded1eb72fa8a69f0113b83b6e82bff40ef3f0671",
+    "bytes": 88359
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/reference/rk3568-evb-uboot/url",
+    "sha256": "c0ae28862e9135545181f9283b91008f628c55d107c73134f19bac0d30890a64",
+    "bytes": 55
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/boot-nc.cmd",
+    "sha256": "6e28bebe7b3a3917a7b566b64d44a07a1de8da7ad5521059af478b381ae4ce0f",
+    "bytes": 534
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/boot.cmd",
+    "sha256": "966c63fad01a976bc786b24b8ee61e9c76b492971844dd25ef74636981da8b89",
+    "bytes": 903
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/chain.S",
+    "sha256": "f701d313ed17a4f4441a2b7b79b7465fdbc6d36595918f2016296d94838ab86e",
+    "bytes": 1902
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/chain.elf",
+    "sha256": "71c80446142a4e397f30d7c658928877cf3dc3e49367c296999e5b33d2b18623",
+    "bytes": 66632
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/chain.o",
+    "sha256": "bc719df4a8d7d4dc38081fd00fcd3f0c7e305bbffc5fe6632314fd8ad8f7e4b1",
+    "bytes": 1032
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/qtest.bin",
+    "sha256": "94798139d2279ace1752bc72186eabd97ae6d31b7e7584e0e9ddf105db6b962b",
+    "bytes": 272
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/qtest.elf",
+    "sha256": "cdf36b7d0df70158f382cd9ffd01c24d62df0a13c88bd76b7b15e50bf635a424",
+    "bytes": 66632
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/qtest.o",
+    "sha256": "774d8fa3e7b36ae64acf7f5679501352894b21fc3fecc7dea0cb3ff7bf832219",
+    "bytes": 1032
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/chain/w600d-chain.bin",
+    "sha256": "fccb0bfa05c0c83ff46e95bb9afa593786b5f29acf2b6145ccbb1c2dfac28f7a",
+    "bytes": 272
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/stick/SHA256SUMS",
+    "sha256": "e249d21855d9f5ff9a60afe2c49da25e339c251fb50b781e6fc2b5f15973d64c",
+    "bytes": 240
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/stick/boot.scr",
+    "sha256": "47374c83e0907806f993ecbeab86867bc824345cd48971db72c39780670ef6ab",
+    "bytes": 606
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/stick/u-boot-w600d.bin",
+    "sha256": "3d596f72c5cbd81894099cca86d1c1458ec789cbb03fc3e67fb0469e06d2cb03",
+    "bytes": 1806528
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/stick/w600d-chain.bin",
+    "sha256": "fccb0bfa05c0c83ff46e95bb9afa593786b5f29acf2b6145ccbb1c2dfac28f7a",
+    "bytes": 272
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/assets/uboot/stick-prev/u-boot-w600d-kbd.bin",
+    "sha256": "0035f6ade7f2ceb21dabb108ef3ee69c1a9aaf7d71915bfd71856d98a14d986c",
+    "bytes": 959328
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/HOWTO-change-logo.md",
+    "sha256": "ad1c07ee2e3e9757d7c88050223dec2a9813adee0594b777d33d3aa194a01685",
+    "bytes": 6731
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/HOWTO-patch-uboot.md",
+    "sha256": "ae8ed920e358d657ce098d504eb8ea1cd1bba3fb38a710a440ec7342c97e484e",
+    "bytes": 25611
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/HOWTO-uboot-shell.md",
+    "sha256": "9987ac102bcae92ab2533b65c5c99bfe9dc5f975e96a0f1d308bf9b0e682e3dd",
+    "bytes": 6892
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/HOWTO-usb-drive.md",
+    "sha256": "6a0dbda7552d5791ae1d6726ecb8dc6ecff92c41a89658b1765ef4e9b4765138",
+    "bytes": 4836
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/W600D-linux.md",
+    "sha256": "1bd714649de9b06677e603001e6b3f29513de783ec12e11fc487527ac2dc1bfc",
+    "bytes": 18265
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/ab-tries.md",
+    "sha256": "f9c3d6c6de42a11df8e021c088ea2000b1d110d8f4ce22eca0c4951bcc83dc75",
+    "bytes": 4366
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/back-key.md",
+    "sha256": "cc597e00c7c538d5ab124adbf75bca00c93a33a9cfd4ede3447c3da4f6c55994",
+    "bytes": 6947
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/debrick.md",
+    "sha256": "f9d954a974c42fa9a3e8d23db67586eb3df1a21fbcd3f52a2a0731434e16c894",
+    "bytes": 9115
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/fw-v2.25.md",
+    "sha256": "0247ae138337cf80cb30e7d98ed543e500f9bc8ab2e5ad0bcf76a2584fc3d435",
+    "bytes": 7935
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/partitions.md",
+    "sha256": "73992f17ba4b6078e2204e8c80118d6050684d3a1816d4323119d6df3b95eca3",
+    "bytes": 8823
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/ref-issue3681.md",
+    "sha256": "b7f24fa03edb11280c36439ddc91e6678941551a445b804d1f6c19e6ed393a00",
+    "bytes": 6075
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/ref-z96a-comparison.md",
+    "sha256": "75d15d3afcf12ed24e2a756ecd4b47f1c264137f94d73a40a237ceb2657e79b7",
+    "bytes": 9728
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/docs/usb-boot.md",
+    "sha256": "a701cf389b6ec31e58e700ed9d84f249233991bff473ecdb4fa77b5cf36d0217",
+    "bytes": 9843
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/make-logo.py",
+    "sha256": "fecf2a6eea872999ac307ae0595a633fb5ba57db7075d39c6505098fc962596e",
+    "bytes": 2698
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/map-winkey-back.sh",
+    "sha256": "a39d6466667500625da4fe5c10b28e06c4248596f023c02d58419bb5ac3edaa7",
+    "bytes": 11465
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/mk.sh",
+    "sha256": "4ab4ae8fa87139d806a3d81a4da84317267b35eab8b458822f91357f861d377e",
+    "bytes": 514
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/patch-uboot-env.py",
+    "sha256": "e7523d35497179e00a7dbbcfbaa1b8d687904b18c5708a0911fae28e675a706c",
+    "bytes": 4173
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/payload-extract.py",
+    "sha256": "925e93c73ae1acd10da1aa1efcccb7742429bf26bd77c6533bb8b446867c4243",
+    "bytes": 4520
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/rsce.py",
+    "sha256": "ce58aac4828804a70427caf2eed9b1b290b4ca97fb1b281498e03a4e8cc46288",
+    "bytes": 1277
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/uboot-test.sh",
+    "sha256": "12c62d7449f60fa7523edd459a7c077425b34a0507b1a016f97f3a362a9d7c7d",
+    "bytes": 1710
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/re/callers.py",
+    "sha256": "03ec46b4c7470bc12c4f2822c4eaa1c4a1c7d5df4489d81d5546656ea2265b93",
+    "bytes": 927
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/re/fnstrings.py",
+    "sha256": "d8b315c4ec2590b223e63f4dc191978b82e610f9ef9ebbb58aaafd2302fc2877",
+    "bytes": 1254
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/re/raw2elf.py",
+    "sha256": "481ef2d1f0a246c5834bd0ad23e91fd0261286ae3c8048f5fd18efb9d2740fb0",
+    "bytes": 922
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/_RESEARCH/tools/re/xref.py",
+    "sha256": "ddc0d73ee8683a3b2e8874b528d2a746b42652c4c30b7674b69aef9b72d923cb",
+    "bytes": 1176
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/chain/boot-nc.cmd",
+    "sha256": "6e28bebe7b3a3917a7b566b64d44a07a1de8da7ad5521059af478b381ae4ce0f",
+    "bytes": 534
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/chain/boot.cmd",
+    "sha256": "ee5e80ee83ffbe911395c8532d52c54523f56071a64a57628d13d9902a84aae7",
+    "bytes": 924
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/chain/chain.S",
+    "sha256": "5f71c291485d9ca75b4a1cf042c40203fb0ae6abe2b6372fc8be1284ae1cb89b",
+    "bytes": 1942
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/chain/mkscr.py",
+    "sha256": "5f3823d814f6c58e9595302c0d15180cda8f1262e3b8b5088390abb4aa567b0a",
+    "bytes": 1385
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/patches_for_upstream/typewriter/w600d-changes.patch",
+    "sha256": "45f5e5067b4c82d214331b9dcb5ceeeffc6b6f2400b6ad3b6b35c73579baf42d",
+    "bytes": 5941
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/patches_for_upstream/u-boot/0001-usb-kbd-send-terminal-control-codes-for-Ctrl-chords.patch",
+    "sha256": "d77712a97f2eac0371e775bb0885c8ff09c19ca88fdb85cbb7d1db1312e725a6",
+    "bytes": 1952
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/patches_for_upstream/u-boot/0002-video-set-opaque-alpha-for-32-bpp-colours.patch",
+    "sha256": "7b5119d78ff2c7c91ee4d89bfacd7339058b2d827b008081e44ae17d0fb272c6",
+    "bytes": 1173
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/patches_for_upstream/u-boot/0003-video-rockchip-add-RK3568-VOP2-takeover-driver.patch",
+    "sha256": "e1ecba2fd685d9da31d2488b9bbcc1cc91a8b69d0c1efe797993c94f01a341b7",
+    "bytes": 9087
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/patches_for_upstream/u-boot/0004-cmd-hook-up-the-typewriter-editor-cmd-typewriter.patch",
+    "sha256": "fff6a7542da8e55ddb126bb1dc7d5cb14aa353efc02ac6065a89fb605394c79b",
+    "bytes": 1188
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/patches_for_upstream/u-boot/0005-board-rockchip-add-ZTE-W600D-SE-chain-loaded-from-th.patch",
+    "sha256": "ebeb8ec7ae840b0a659ca1326594b1c0f8f66b68fd5a44c912677123c985852c",
+    "bytes": 7347
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/Kconfig",
+    "sha256": "20a621a3ea96fc37231f370e49e5fb0f3028ec3265c6650ee42cc6cbc2da69e6",
+    "bytes": 5727
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/Makefile",
+    "sha256": "0f9ffdfdb57a4c10898ff035328e4de4446fea3cdeaebca09d9d05c2aa3b6e20",
+    "bytes": 584
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/README-upstream.md",
+    "sha256": "82690028e6c171fe5736d4b15beea19814bca28b36dfb81145f4d03decc5091e",
+    "bytes": 15290
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/cmd_tw.c",
+    "sha256": "107f21a1dfcd969096dbb2a79ce6d801d43dbd05db3c071be22c837ebd740418",
+    "bytes": 83595
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/cmd_tw.h",
+    "sha256": "ff836a9f8f8cbb0ae46199ac692eada914157290f5b949a898e419fef32e6d05",
+    "bytes": 13334
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/cmd_tw_fs.c",
+    "sha256": "952fe7c0d1798918f337d360240aed0a5b23679c635674c29ae0c79251dc13e3",
+    "bytes": 11186
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/cmd_tw_video.c",
+    "sha256": "6e6b47a64565f18a76916b4b8f2291f17c6796f8e3c2fe1067053379b3ada6ac",
+    "bytes": 32863
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/cmd_twwfi.c",
+    "sha256": "9b085ad20b28c99c50a4063b51aefd6c25f98ed7c709aaf4c2655f46472ab181",
+    "bytes": 103467
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/font_data.c",
+    "sha256": "6d1824deebc07898302b0acb9ab0c2f56968e2f1bdc019d422e1538cc6434178",
+    "bytes": 547770
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/font_data.h",
+    "sha256": "72228741b45b551bcd40c74c910965127be8ed57875fbcb72a750f27e1cd6549",
+    "bytes": 699
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/gen.sh",
+    "sha256": "fa7dcaf2f86373c638611c527419853fd8a81c35d5efde8d9d86236cfa56a8d6",
+    "bytes": 2647
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/gen_font.py",
+    "sha256": "551e778b6af9538add6b5ee0b8c6f942d2b321ac26e2d66eea70f2cf3933fea7",
+    "bytes": 4286
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/ime_table.c",
+    "sha256": "623d82a0ed0ea3b55704e1b8197192c662f1e546ff800934dbb34acb68003b5f",
+    "bytes": 4792
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/ime_table.h",
+    "sha256": "633a9a0a2b076347d0b4dd0a1f281bbe9bba543243ce5df803c5a77d837f83ac",
+    "bytes": 2497
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/wubi_embed.c",
+    "sha256": "5d3db05475801f6d33965109185ece004aa8fb8974aa4b9fe54fdc98943a3eb0",
+    "bytes": 1756168
+  },
+  {
+    "path": "ref/u-boot-zte-w600d-se/typewriter/wubi_embed.h",
+    "sha256": "7ed570274c2b00e03a426fd2a6c3314a98a59a97df67f3a572f81d74d1627d45",
+    "bytes": 321
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot.scr",
+    "sha256": "47374c83e0907806f993ecbeab86867bc824345cd48971db72c39780670ef6ab",
+    "bytes": 606
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/u-boot-w600d.bin",
+    "sha256": "3d596f72c5cbd81894099cca86d1c1458ec789cbb03fc3e67fb0469e06d2cb03",
+    "bytes": 1806528
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/w600d-chain.bin",
+    "sha256": "fccb0bfa05c0c83ff46e95bb9afa593786b5f29acf2b6145ccbb1c2dfac28f7a",
+    "bytes": 272
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/zte_w600d_linux.dts",
+    "sha256": "29783b319c27c587638cb1c6095f28a0513890e03cb3b9c04dc59ce823c40bff",
+    "bytes": 3596
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/Image",
+    "sha256": "470eccce48e9b780c3dc1f76c7144829a10c15e80517c3dcf45c01240d40f863",
+    "bytes": 36506112
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/boot.cmd",
+    "sha256": "1caa38e86fd02cdefb2c3b8397063ced4adb9fce2e6cdd1b83412b84b8c64bb5",
+    "bytes": 1339
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/boot.scr",
+    "sha256": "1bf1d5ff2155b5c7acf2c3c256600101bed06d6a2a2e42e129080cb0a5dcc730",
+    "bytes": 1411
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/display_fix.patch",
+    "sha256": "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec",
+    "bytes": 1
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/initrd-custom.img",
+    "sha256": "643d9d5c9b50ac99acd56197ec5c5d23fb1967a3b26cdd96aac4f699c81db65d",
+    "bytes": 69480789
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/initrd.img-6.18.45-current-arm64",
+    "sha256": "434de7d58bdf9a7eeb3be9e6035256e05eb5adbf8fb26ee4319ec473415e1ba4",
+    "bytes": 70063123
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/rk3568-evb1-v10.dtb",
+    "sha256": "9b02b7436cca5a92fd9effe94a795e7f3111c3cb0751286de484f3b40447f743",
+    "bytes": 63038
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/rk3568-evb1-v10.dts",
+    "sha256": "ac5d89573c665ba29eb71fb0152f53dba9a8e0dcd24c548aa6e871a5b918db9a",
+    "bytes": 79615
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/rk3568-laptop-zte.dtb",
+    "sha256": "4578807d00d97eed27227955e10251ff195f2de38d3d3b783965dc2b5057aa8e",
+    "bytes": 165657
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/rk3568-z96a.dts",
+    "sha256": "5505ea4c44b69b1c41d0e81110d08728e0bc20eb55c33a4b2d9581c9b22ce576",
+    "bytes": 35212
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/rk3568-zte-w600d.dtb",
+    "sha256": "e7ea837b36bea45578de7eb4a7c46476639a94eaef47c2c14ab4c99cd27175e0",
+    "bytes": 143488
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/boot/vmlinuz-6.18.45-current-arm64",
+    "sha256": "8d23e8cefdb75c87a1e71dc2d8da28e22a8a7dc637915ca1fce3fea3a87d6089",
+    "bytes": 42363392
+  },
+  {
+    "path": "ref/usbdisk-Nov-24/extlinux/extlinux.conf",
+    "sha256": "5ef3b7c8b83a42b9d4011cff4a43a31da5984110068672edda63fde1e21559bb",
+    "bytes": 288
+  }
+]

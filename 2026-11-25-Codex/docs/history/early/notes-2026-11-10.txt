@@ -1,0 +1,8 @@
+load usb 0:1 ${scriptaddr} /boot/boot.scr && source ${scriptaddr}
+
+
+?物理 U 盘在 "Starting kernel..." 的一瞬间直接被断电了。
+OTG相关
+
+因此需要编内核:
+	https://github.com/bingo1991/rk3568_laptop_sunniwell_z96a/raw/refs/heads/main/rk3568_z96a_defconfig

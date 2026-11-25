@@ -1,0 +1,11 @@
+FROM w600d-ubuntu-xfce-base:24.04.5
+COPY artifacts/kernel/modules/lib/modules/ /lib/modules/
+COPY rootfs/FIRST-STEPS.txt /home/linux/Desktop/FIRST-STEPS.txt
+RUN depmod 7.3.6-w600d-usb && \
+    systemctl disable ssh.service ssh.socket && systemctl mask ssh.service ssh.socket && \
+    chown -R linux:linux /home/linux && \
+    test -x /sbin/init && test -x /usr/bin/Xorg && test -x /usr/bin/xfce4-session && \
+    test -f /usr/share/xsessions/xfce.desktop && \
+    test "$(readlink /etc/systemd/system/ssh.service)" = /dev/null && \
+    test "$(readlink /etc/systemd/system/ssh.socket)" = /dev/null
+CMD ["/sbin/init"]

@@ -1,0 +1,7 @@
+**
+!rootfs/
+!rootfs/**
+!artifacts/
+!artifacts/kernel/
+!artifacts/kernel/modules/
+!artifacts/kernel/modules/**

@@ -1,0 +1,20 @@
+diff --git a/rootfs_overlay/usr/share/alsa/ucm2/conf.d/simple-card/rockchip,rk809-codec.conf b/rootfs_overlay/usr/share/alsa/ucm2/conf.d/simple-card/rockchip,rk809-codec.conf
+deleted file mode 120000
+index f3e5f53..0000000
+--- a/rootfs_overlay/usr/share/alsa/ucm2/conf.d/simple-card/rockchip,rk809-codec.conf
++++ /dev/null
+@@ -1 +0,0 @@
+-../../Rockchip/rk809-cloudbook/rk809-cloudbook.conf
+\ No newline at end of file
+diff --git a/rootfs_overlay/usr/share/alsa/ucm2/conf.d/simple-card/rockchip,rk809-codec.conf b/rootfs_overlay/usr/share/alsa/ucm2/conf.d/simple-card/rockchip,rk809-codec.conf
+new file mode 100644
+index 0000000..75940f3
+--- /dev/null
++++ b/rootfs_overlay/usr/share/alsa/ucm2/conf.d/simple-card/rockchip,rk809-codec.conf
+@@ -0,0 +1,6 @@
++Syntax 4
++
++SectionUseCase."HiFi" {
++	File "/Rockchip/rk809-cloudbook/HiFi.conf"
++	Comment "Play HiFi quality music"
++}

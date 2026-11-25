@@ -1,0 +1,66 @@
+[
+  {
+    "path": "artifacts/kernel-tested/config-7.3.6-w600d-usb",
+    "target": "../../build/linux-7.3.6/config/config-7.3.6-w600d-usb"
+  },
+  {
+    "path": "bootloader/usb-uboot/patches",
+    "target": "patches_for_upstream"
+  },
+  {
+    "path": "build/linux-7.3.6/reference/cloudbook-mainline-6.12",
+    "target": "cloudbook-air-mainline-linux/mainline-6.12"
+  },
+  {
+    "path": "recovery/factory-backups/original-backup-SHA256SUMS",
+    "target": "w600d-backup/SHA256SUMS"
+  },
+  {
+    "path": "recovery/factory-backups/w600d-backup/device_slot_b.dtb",
+    "target": "../device.dtb"
+  },
+  {
+    "path": "recovery/factory-backups/w600d-backup/device_slot_b.dts",
+    "target": "../zte-book.dts"
+  },
+  {
+    "path": "recovery/factory-backups/w600d-backup/dtbo_b.img.gz",
+    "target": "dtbo_a.img.gz"
+  },
+  {
+    "path": "recovery/factory-backups/w600d-backup/resource_a/logo_kernel.bmp",
+    "target": "logo.bmp"
+  },
+  {
+    "path": "recovery/factory-backups/w600d-backup/resource_a/rk3568-w600dse___saradc_ch1=1024___saradc_ch4=955.dtb",
+    "target": "rk-kernel.dtb"
+  },
+  {
+    "path": "recovery/factory-backups/w600d-backup/trust_b.img.gz",
+    "target": "trust_a.img.gz"
+  },
+  {
+    "path": "recovery/factory-backups/w600d-backup/uboot_b.img.gz",
+    "target": "../uboot-backup-20261106-v14/uboot_b.img.gz"
+  },
+  {
+    "path": "recovery/factory-backups/w600d-backup/vbmeta_b.img.gz",
+    "target": "vbmeta_a.img.gz"
+  },
+  {
+    "path": "reference/factory-device-tree",
+    "target": "../recovery/factory-backups"
+  },
+  {
+    "path": "reference/legacy-usb-Nov-24/boot/rk3568-laptop-zte.dtb",
+    "target": "../../../build/linux-7.3.6/reference/rk3568-laptop-zte.dtb"
+  },
+  {
+    "path": "reference/legacy-usb-Nov-24/u-boot-w600d.bin",
+    "target": "../../bootloader/usb-uboot/02_prebuilt_USB_uboot/u-boot-w600d.bin"
+  },
+  {
+    "path": "reference/u-boot-research",
+    "target": "../bootloader/usb-uboot/_RESEARCH"
+  }
+]

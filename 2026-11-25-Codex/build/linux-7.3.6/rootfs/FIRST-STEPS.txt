@@ -1,0 +1,19 @@
+W600D USB Linux development image
+
+Ubuntu 24.04.5 ARM64, XFCE desktop, Linux 7.3.6-w600d-usb.
+The local desktop and tty1 automatically log in as linux.
+The diagnostic UART automatically logs in as root. SSH is disabled.
+The linux account has passwordless sudo for bring-up; set a password with
+sudo passwd linux and remove /etc/sudoers.d/90-local-bringup before treating
+this as a secured daily-use machine. Disable local/UART autologin as needed.
+
+No Linux eMMC/SDHCI node is enabled. Android partitions are not mounted.
+Use sudo poweroff, wait for shutdown, then remove USB to boot Android.
+Do not unplug USB while Linux is running: it is the root filesystem.
+
+The desktop/display/keyboard on this new kernel still need physical validation.
+Audio, Wi-Fi, Bluetooth, battery reporting and suspend are not claimed working.
+USB Ethernet is supported by the kernel; configure it with NetworkManager.
+
+Diagnostics: uname -a; cat /proc/cmdline; ls /sys/class/drm;
+cat /proc/bus/input/devices; sudo evtest; journalctl -b.

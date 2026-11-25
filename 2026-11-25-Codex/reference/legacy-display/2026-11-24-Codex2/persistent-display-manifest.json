@@ -1,0 +1,19 @@
+{
+  "source": "ref/usbdisk-Nov-24/boot/rk3568-laptop-zte.dtb",
+  "source_sha256": "4578807d00d97eed27227955e10251ff195f2de38d3d3b783965dc2b5057aa8e",
+  "output": "2026-11-24-Codex2/rk3568-laptop-zte-edp-20261124.dtb",
+  "output_sha256": "ae39fab24eba06fcee147abcf76e7ba3f374bcf874b3fc123d54b09c83fdb7d0",
+  "size": 165657,
+  "status_length_offsets": {
+    "/display-subsystem/route/route-edp": 10484,
+    "/syscon@fdcb0000/edp-phy": 21356,
+    "/pwm@fdd70020": 28336,
+    "/edp@fe0c0000": 49360,
+    "/edp@fe0c0000/ports/port@0/endpoint@1": 49672,
+    "/vcc3v3-lcd-edp": 118912,
+    "/backlight": 119140,
+    "/edp-panel": 119384
+  },
+  "validation": "Exactly eight status changes; all other DT properties, header and size unchanged",
+  "layout": "Each shorter status value is followed by one FDT_NOP token to preserve block offsets"
+}

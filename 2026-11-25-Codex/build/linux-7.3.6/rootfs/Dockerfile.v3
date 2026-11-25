@@ -1,0 +1,34 @@
+FROM w600d-ubuntu-base:24.04.5 AS userspace
+ARG APT_PROXY=socks5h://192.168.1.5:1080
+ENV DEBIAN_FRONTEND=noninteractive
+RUN printf '#!/bin/sh\nexit 101\n' > /usr/sbin/policy-rc.d && chmod 755 /usr/sbin/policy-rc.d && \
+    printf 'Acquire::http::Proxy "%s";\nAcquire::https::Proxy "%s";\n' "$APT_PROXY" "$APT_PROXY" > /etc/apt/apt.conf.d/90-build-proxy && \
+    apt-get -o APT::Update::Error-Mode=any update && apt-get install -y --no-install-recommends \
+    ubuntu-minimal systemd-sysv systemd-resolved systemd-timesyncd udev kmod \
+    xfce4 xfce4-terminal mousepad lightdm lightdm-gtk-greeter \
+    xserver-xorg-core xserver-xorg-input-libinput dbus-x11 x11-xserver-utils \
+    libgl1-mesa-dri mesa-utils network-manager network-manager-gnome \
+    sudo openssh-server vim-tiny less htop usbutils pciutils evtest fbset \
+    ethtool curl wget ca-certificates locales fonts-dejavu-core fonts-noto-cjk && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* && \
+    rm -f /usr/sbin/policy-rc.d /etc/apt/apt.conf.d/90-build-proxy /etc/ssh/ssh_host_*
+RUN printf 'en_US.UTF-8 UTF-8\n' > /etc/locale.gen && locale-gen && \
+    printf 'LANG=en_US.UTF-8\n' > /etc/default/locale && \
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    printf 'Asia/Shanghai\n' > /etc/timezone && \
+    for group in sudo audio video input render netdev autologin; do groupadd -f "$group"; done && \
+    useradd -m -s /bin/bash -G sudo,audio,video,input,render,netdev,autologin linux && \
+    passwd -l root && printf 'linux ALL=(ALL) NOPASSWD: ALL\n' > /etc/sudoers.d/90-local-bringup && \
+    chmod 440 /etc/sudoers.d/90-local-bringup && \
+    mkdir -p /etc/lightdm/lightdm.conf.d /etc/systemd/system/getty@tty1.service.d \
+    /etc/systemd/system/serial-getty@ttyS2.service.d /boot /media/boot /home/linux/Desktop && \
+    printf '[Seat:*]\nautologin-user=linux\nautologin-user-timeout=0\nautologin-session=xfce\nuser-session=xfce\n' > /etc/lightdm/lightdm.conf.d/50-w600d.conf && \
+    printf '[Service]\nExecStart=\nExecStart=-/sbin/agetty --autologin linux --noclear %%I $TERM\n' > /etc/systemd/system/getty@tty1.service.d/autologin.conf && \
+    printf '[Service]\nExecStart=\nExecStart=-/sbin/agetty --autologin root --keep-baud 115200,57600,38400,9600 %%I $TERM\n' > /etc/systemd/system/serial-getty@ttyS2.service.d/bringup.conf && \
+    printf 'PARTUUID=24c0d202-02 / ext4 defaults,noatime 0 1\nPARTUUID=24c0d202-01 /media/boot vfat ro,nofail,x-systemd.device-timeout=10 0 0\n' > /etc/fstab && \
+    systemctl enable lightdm NetworkManager systemd-resolved systemd-timesyncd getty@tty1 serial-getty@ttyS2 && \
+    systemctl disable ssh.service ssh.socket && systemctl mask ssh.service ssh.socket && \
+    systemctl set-default graphical.target && \
+    truncate -s 0 /etc/machine-id && rm -f /var/lib/dbus/machine-id && \
+    ln -sf /etc/machine-id /var/lib/dbus/machine-id && \
+    dpkg-query -W -f='${binary:Package}\t${Version}\n' > /usr/share/w600d-package-versions.txt

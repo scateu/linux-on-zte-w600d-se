@@ -1,0 +1,18 @@
+--- a/drivers/gpu/drm/bridge/analogix/analogix_dp_reg.c
++++ b/drivers/gpu/drm/bridge/analogix/analogix_dp_reg.c
+@@ -524,6 +524,7 @@
+ 		union phy_configure_opts phy_cfg = {0};
+ 
++		phy_cfg.dp.lanes = dp->link_train.lane_count;
+ 		phy_cfg.dp.link_rate =
+ 			drm_dp_bw_code_to_link_rate(dp->link_train.link_rate) / 100;
+ 		phy_cfg.dp.set_rate = true;
+ 		ret = phy_configure(dp->phy, &phy_cfg);
+@@ -595,6 +596,7 @@
+ 			phy_cfg.dp.pre[lane] = pe;
+ 		}
+ 
++		phy_cfg.dp.lanes = dp->link_train.lane_count;
+ 		phy_cfg.dp.set_voltages = true;
+ 		ret = phy_configure(dp->phy, &phy_cfg);
+ 		if (ret && ret != -EOPNOTSUPP) {

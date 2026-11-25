@@ -1,0 +1,12 @@
+#include "rk3568-zte-w600d-mainline.dts"
+
+&pmu_io_domains {
+	pmuio2-supply = <&vcca1v8_pmu>;
+	vccio1-supply = <&vccio_acodec>;
+	vccio3-supply = <&vccio_sd>;
+	vccio4-supply = <&vcc_1v8>;
+	vccio5-supply = <&vcc3v3_pmu>;
+	vccio6-supply = <&vcc3v3_pmu>;
+	vccio7-supply = <&vcc3v3_pmu>;
+	status = "okay";
+};
