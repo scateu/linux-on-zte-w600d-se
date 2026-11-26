@@ -16,6 +16,7 @@ __pycache__/
 **/artifacts/kernel*/
 **/artifacts/userspace/
 **/artifacts/firmware/
+**/artifacts/releases/
 **/logs/
 
 *.o

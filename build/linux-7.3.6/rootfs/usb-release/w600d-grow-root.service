@@ -1,0 +1,14 @@
+[Unit]
+Description=Grow the W600D USB root filesystem
+After=local-fs.target
+Before=display-manager.service
+ConditionPathExists=!/var/lib/w600d-grow-root/done
+
+[Service]
+Type=oneshot
+StateDirectory=w600d-grow-root
+ExecStart=/usr/local/sbin/w600d-grow-root
+TimeoutStartSec=3min
+
+[Install]
+WantedBy=multi-user.target

@@ -11,7 +11,8 @@ date folders, the duplicate archive and ref/ now lives here. Those old
 directories were removed. Unique recovery images were retained losslessly,
 not discarded; both original Git repositories and their histories were moved.
 
-**Start with `CURRENT.md`, then `docs/DIY-FROM-UPSTREAM.md`.** This is a
+**Installing? See [USB preview installation](docs/INSTALL.md).**
+For development, start with `CURRENT.md`, then `docs/DIY-FROM-UPSTREAM.md`. This is a
 source-and-evidence handoff, not a claim that the laptop is completely finished.
 The current live kernel is **7.3.6-w600d-usb-wifi**, with Ubuntu
 **24.04.5 ARM64 Base plus XFCE**. These version numbers are reproduction inputs,

@@ -28,8 +28,15 @@ fi
 printf 'Minimal desktop integration context: %s\n' "$CONTEXT"
 docker build --platform linux/arm64 --network none --build-arg "KERNEL_RELEASE=$KERNEL_RELEASE" \
     -f "$CONTEXT/rootfs/Dockerfile.final" -t w600d-ubuntu-xfce:7.3.6 "$CONTEXT"
+DESKTOP_IMAGE=w600d-ubuntu-xfce:7.3.6
+if [ "${USB_PREVIEW:-0}" = 1 ]; then
+    cp -a rootfs/usb-release "$CONTEXT/rootfs/"
+    DESKTOP_IMAGE=w600d-ubuntu-xfce:7.3.6-usb-preview
+    docker build --platform linux/arm64 --build-arg "APT_PROXY=${APT_PROXY:-}" \
+        -f "$CONTEXT/rootfs/usb-release/Dockerfile" -t "$DESKTOP_IMAGE" "$CONTEXT"
+fi
 docker run --rm --network none --platform linux/arm64 -e "KERNEL_RELEASE=$KERNEL_RELEASE" \
-    w600d-ubuntu-xfce:7.3.6 /bin/sh -ec '
+    "$DESKTOP_IMAGE" /bin/sh -ec '
     test -x /sbin/init
     test -x /usr/bin/xfce4-session
     test -d "/lib/modules/$KERNEL_RELEASE"
@@ -49,7 +56,7 @@ docker run --rm --network none --platform linux/arm64 -e "KERNEL_RELEASE=$KERNEL
     dpkg-query -W xfce4 lightdm systemd-sysv network-manager
     dpkg-query -W -f="\${binary:Package}\t\${Version}\n"
 ' > artifacts/rootfs-package-versions.txt
-CONTAINER=$(docker create --platform linux/arm64 w600d-ubuntu-xfce:7.3.6)
+CONTAINER=$(docker create --platform linux/arm64 "$DESKTOP_IMAGE")
 trap 'docker rm "$CONTAINER" >/dev/null' EXIT
 docker export "$CONTAINER" -o artifacts/ubuntu-w600d-rootfs.raw.tar
 fakeroot bash -c '

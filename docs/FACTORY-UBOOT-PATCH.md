@@ -30,11 +30,18 @@ promise about another laptop's secure-boot policy.
 
 ## Back up that exact machine first
 
+From a fresh Git checkout, run `git submodule update --init bootloader/usb-uboot`
+to obtain the patcher and ADB helper.
+
 1. Confirm model, firmware, by-name partitions, active A/B slot and rescue path.
 2. Obtain its own stock uboot_a, uboot_b and misc; save sizes and SHA256SUMS.
    Keep early eMMC/GPT, boot resources and per-device factory backups too.
 3. Keep the second FIT copy and the other usable bootloader slot stock.
 4. Do not use our saved/prebuilt image as a universal factory image.
+
+A stock B is not an unconditional fallback for a damaged or hung A. See
+[W600D SE A/B boot retries](AB-BOOT-RETRIES.md) before changing any bootloader
+partition or `misc`.
 
 The preserved Android-root helper can dump the three essential partitions:
 
@@ -68,7 +75,23 @@ identical before considering any write.
 
 After identity, backup, offline verification and recovery readiness are
 established, the original helper's flash subcommand writes **uboot_a only** and
-asks for confirmation. Do not set YES=1 to bypass its prompts. Review
+asks for confirmation. Do not set YES=1 to bypass its prompts:
+
+```sh
+bash bootloader/usb-uboot/01_vendor-env_patch_uboot_a/w600d-uboot-a.sh \
+  -s "$ADB_SERIAL" flash /path/to/that-machines-backup/uboot_a-usbfirst.img
+```
+
+After read-back verification the helper uses `bootctl` to make A a trial slot,
+which **does** update `misc`. Boot Android without the USB and verify the
+running slot is `_a` and A is marked successful before repeated USB boots:
+
+```sh
+adb -s "$ADB_SERIAL" shell getprop ro.boot.slot_suffix
+adb -s "$ADB_SERIAL" shell 'su 0 sh -c "bootctl is-slot-marked-successful 0"'
+```
+
+Stop if either check fails. Review
 `../bootloader/usb-uboot/_RESEARCH/docs/HOWTO-patch-uboot.md` and
 `HOWTO-uboot-shell.md` before following that device-specific write procedure.
 No write command needs to run merely to use this consolidated workspace.

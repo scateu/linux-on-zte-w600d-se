@@ -34,6 +34,10 @@ rename extlinux.conf, alter Image/DTB/rootfs, issue an eMMC write or save an
 environment. Removing USB therefore removes all experimental files; the physical
 unplugged Android acceptance test remains a separate outstanding check.
 
+Do not treat slot B as automatic recovery for an eMMC replacement. See
+[W600D SE A/B boot retries](AB-BOOT-RETRIES.md) for the FIT fallback rules,
+the Android success flag and the separate ZTE counter seen in serial logs.
+
 The old typewriter is also patched mainline U-Boot, but its VOP2 takeover driver
 only finds an already-enabled window and changes its framebuffer. Its CRTC,
 eDP PHY, panel and backlight remain the factory's work. Neither that driver nor

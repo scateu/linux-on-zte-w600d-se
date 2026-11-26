@@ -1,5 +1,25 @@
 # Factory patch and removable-USB bootflow
 
+## Where the factory SPL lives
+
+The RK3568 BootROM loads `idbloader` from raw eMMC user-area LBA 64
+(`0x8000`, 32 KiB). The factory `RKNS` image contains the RAM initialization
+code, then U-Boot SPL (Secondary Program Loader) at relative sector `0x70`.
+With 512-byte sectors, SPL starts at absolute LBA 176 (`0x16000`, 88 KiB).
+It is not in `uboot_a`, `uboot_b`, or the USB image. SPL reads `misc` to pick
+the full factory U-Boot FIT in one of the two `uboot_*` partitions; changing
+`uboot_a` does not change SPL. See the [image analysis](../bootloader/usb-uboot/_RESEARCH/docs/ab-tries.md#spl)
+and [A/B retry behavior](AB-BOOT-RETRIES.md).
+
+```mermaid
+flowchart TD
+    ROM[RK3568 BootROM] --> DDR["eMMC idbloader: DDR init, LBA 64 header"]
+    DDR --> SPL["Factory SPL: LBA 176"]
+    SPL -->|Select slot from misc| FIT["Factory FIT: uboot_a or uboot_b"]
+    FIT -->|USB-first patch and bootable USB| USB["USB extlinux → Linux"]
+    FIT -->|No USB boot| Android["Vendor fallback → Android"]
+```
+
 ## Default USB boot: one U-Boot
 
 ```text

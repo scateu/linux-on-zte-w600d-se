@@ -17,7 +17,7 @@ Numbers below come from the saved partition dump and original image analysis.
 
 | Part | Start sector | Recorded size | Name / contents |
 | --- | ---: | --- | --- |
-| raw | 64 | within first 4 MiB | Rockchip DDR/SPL/idbloader |
+| raw | 64 | within first 4 MiB | Rockchip `idbloader`: DDR init and [factory SPL](BOOTFLOW.md#where-the-factory-spl-lives) |
 | p1 | 8192 | 4 MiB | security / secure storage |
 | p2 | 16384 | 4 MiB | uboot_a, FIT, observed distro fallback support |
 | p3 | 24576 | 4 MiB | uboot_b, different factory build; not interchangeable blindly |

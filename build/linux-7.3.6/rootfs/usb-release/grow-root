@@ -1,0 +1,30 @@
+#!/bin/bash
+set -euo pipefail
+export LC_ALL=C
+
+root_number=$(findmnt -nro MAJ:MIN /)
+root_device=$(readlink -e "/dev/block/$root_number")
+parent=$(lsblk -dnro PKNAME "$root_device")
+disk="/dev/$parent"
+if [[ ! -b "$root_device" || ! -b "$disk" ||
+      $(findmnt -nro FSTYPE /) != ext4 ||
+      $(lsblk -dnro TRAN "$disk") != usb ||
+      $(blkid -s PARTUUID -o value "$root_device") != 24c0d202-02 ]]; then
+    printf "Not the W600D USB root partition; refusing to resize.\n" >&2
+    exit 1
+fi
+
+grow_status=0
+growpart --update=on "$disk" 2 || grow_status=$?
+if (( grow_status > 1 )); then
+    exit "$grow_status"
+fi
+
+table_size=$(partx --raw --noheadings --nr 2 --output SECTORS "$disk")
+kernel_size=$(blockdev --getsz "$root_device")
+if [[ "$table_size" != "$kernel_size" ]]; then
+    printf "Kernel partition size differs from disk; reboot to retry.\n" >&2
+    exit 1
+fi
+resize2fs "$root_device"
+touch /var/lib/w600d-grow-root/done

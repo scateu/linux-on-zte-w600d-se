@@ -1,0 +1,12 @@
+ZTE W600D SE USB preview: Ubuntu 24.04 ARM64 / XFCE
+
+Root space grows automatically on the first boot. To check it:
+  df -h /
+  journalctl -b -u w600d-grow-root.service
+
+Shutdown fully before unplugging the USB. Power on without it for Android.
+The Linux image is for a removable USB only, never Android partitions.
+
+Local linux autologin and passwordless sudo are enabled; SSH is masked.
+Set a password with sudo passwd linux, then remove passwordless sudo and
+turn off local autologin before sharing the machine or using it daily.

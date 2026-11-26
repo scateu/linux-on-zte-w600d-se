@@ -69,6 +69,30 @@ patch order and v4 build in `DIY-FROM-UPSTREAM.md`.
 
 ## Final outputs
 
+### Compact USB preview
+
+After building or restoring `artifacts/kernel-wifi/`, `artifacts/firmware/`,
+and the `w600d-ubuntu-xfce-base:24.04.5` Docker image, run from
+`build/linux-7.3.6/` (or the equivalent recipe directory on the build host):
+
+```sh
+bash scripts/build-usb-release.sh preview-20261126-r2
+```
+
+This reuses the checked v6 kernel/DTB, builds the ARM64 desktop rootfs with
+Ubuntu `cloud-guest-utils` (`APT_PROXY` optional), and assembles a 4 GiB MBR
+image with 512 MiB FAT32 boot plus ext4 root. It writes only regular files.
+Raw and compressed images, separate SHA-256 manifests, package versions and
+the partition map go to `artifacts/releases/preview-20261126-r2/`.
+
+`w600d-grow-root.service` runs at first normal boot. It checks that the
+mounted root is the expected ext4 partition on a USB disk, grows partition
+2 and then the live filesystem, and records completion only on success.
+It does not touch the FAT boot partition or eMMC. Check it on real hardware
+with `journalctl -b -u w600d-grow-root.service` and `df -h /`.
+
+### Older development outputs
+
 Under the fresh recipe directory:
 
 ```text
