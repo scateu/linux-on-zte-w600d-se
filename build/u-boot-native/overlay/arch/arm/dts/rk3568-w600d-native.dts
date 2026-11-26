@@ -1,0 +1,196 @@
+/dts-v1/;
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/pinctrl/rockchip.h>
+#include "rk3568.dtsi"
+
+/ {
+	model = "ZTE W600D SE native-display USB U-Boot (experimental)";
+	compatible = "zte,w600d-se", "rockchip,rk3568";
+
+	chosen {
+		stdout-path = "serial2:115200n8";
+	};
+
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		optee@8400000 {
+			reg = <0 0x08400000 0 0x01000000>;
+			no-map;
+		};
+	};
+
+	vcc5v0_host: regulator-vcc5v0-host {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc5v0_host";
+		regulator-min-microvolt = <5000000>;
+		regulator-max-microvolt = <5000000>;
+		gpio = <&gpio3 RK_PA0 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		regulator-always-on;
+		pinctrl-names = "default";
+		pinctrl-0 = <&vcc5v0_host_en>;
+	};
+
+	vcc5v0_otg: regulator-vcc5v0-otg {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc5v0_otg";
+		regulator-min-microvolt = <5000000>;
+		regulator-max-microvolt = <5000000>;
+		gpio = <&gpio0 RK_PC4 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		regulator-always-on;
+		pinctrl-names = "default";
+		pinctrl-0 = <&vcc5v0_otg_en>;
+	};
+
+	vcc3v3_lcd: regulator-vcc3v3-lcd {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc3v3_lcd";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		gpio = <&gpio2 RK_PD5 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		pinctrl-names = "default";
+		pinctrl-0 = <&lcd_power_en>;
+	};
+
+	backlight: backlight {
+		compatible = "pwm-backlight";
+		pwms = <&pwm2 0 25000 0>;
+		enable-gpios = <&gpio2 RK_PD3 GPIO_ACTIVE_HIGH>;
+		brightness-levels = <0 200 255>;
+		default-brightness-level = <1>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&backlight_en>;
+	};
+
+	lcd_panel: panel {
+		compatible = "zte,w600d-kdc-panel";
+		power-supply = <&vcc3v3_lcd>;
+		enable-gpios = <&gpio2 RK_PD4 GPIO_ACTIVE_HIGH>;
+		backlight = <&backlight>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&lcd_enable>;
+
+		display-timings {
+			native-mode = <&panel_timing>;
+			panel_timing: timing {
+				clock-frequency = <141020000>;
+				hactive = <1920>;
+				vactive = <1080>;
+				hfront-porch = <48>;
+				hsync-len = <32>;
+				hback-porch = <80>;
+				vfront-porch = <10>;
+				vsync-len = <12>;
+				vback-porch = <28>;
+				hsync-active = <0>;
+				vsync-active = <0>;
+			};
+		};
+	};
+
+	edp_phy: edp-phy@fdcb0000 {
+		compatible = "rockchip,rk3568-edp-phy";
+		reg = <0 0xfdcb0000 0 0x8000>;
+		resets = <&cru SRST_P_EDPPHY_GRF>;
+		reset-names = "apb";
+		#phy-cells = <0>;
+	};
+
+	edp: edp@fe0c0000 {
+		compatible = "rockchip,rk3568-edp";
+		reg = <0 0xfe0c0000 0 0x10000>;
+		resets = <&cru SRST_EDP_24M>, <&cru SRST_P_EDP_CTRL>;
+		reset-names = "dp", "apb";
+		phys = <&edp_phy>;
+		phy-names = "dp";
+		rockchip,panel = <&lcd_panel>;
+		force-hpd;
+	};
+
+	native_display: display@fe040000 {
+		compatible = "zte,w600d-vop2-native";
+		reg = <0 0xfe040000 0 0x3000>,
+		      <0 0xfdd20000 0 0x1000>,
+		      <0 0xfdd00000 0 0x1000>,
+		      <0 0xfdd90000 0 0x1000>,
+		      <0 0xfe043e00 0 0x100>,
+		      <0 0xfe043f00 0 0x100>;
+		reg-names = "vop", "cru", "pmucru", "pmu", "iommu0", "iommu1";
+		clocks = <&cru PLL_VPLL>, <&cru DCLK_VOP1>, <&cru ACLK_VOP>;
+		clock-names = "vpll", "dclk", "aclk";
+		resets = <&cru SRST_A_VOP_NIU>, <&cru SRST_A_VOP>,
+			 <&cru SRST_H_VOP>, <&cru SRST_VOP0>,
+			 <&cru SRST_VOP1>, <&cru SRST_VOP2>;
+		rockchip,panel = <&lcd_panel>;
+		rockchip,edp = <&edp>;
+	};
+};
+
+&gpio3 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&keyboard_power>;
+
+	keyboard-power-hog {
+		gpio-hog;
+		gpios = <RK_PA3 GPIO_ACTIVE_HIGH>;
+		output-high;
+		line-name = "keyboard-power";
+	};
+};
+
+&pinctrl {
+	keyboard {
+		keyboard_power: keyboard-power {
+			rockchip,pins = <3 RK_PA3 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+	lcd {
+		lcd_power_en: lcd-power-en {
+			rockchip,pins = <2 RK_PD5 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+		lcd_enable: lcd-enable {
+			rockchip,pins = <2 RK_PD4 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+		backlight_en: backlight-en {
+			rockchip,pins = <2 RK_PD3 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+	usb {
+		vcc5v0_host_en: vcc5v0-host-en {
+			rockchip,pins = <3 RK_PA0 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+		vcc5v0_otg_en: vcc5v0-otg-en {
+			rockchip,pins = <0 RK_PC4 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+};
+
+&pwm2 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pwm2m1_pins>;
+	status = "okay";
+};
+
+&uart2 {
+	status = "okay";
+};
+
+&combphy0 { status = "okay"; };
+&combphy1 { status = "okay"; };
+&usb_host0_xhci { dr_mode = "host"; status = "okay"; };
+&usb_host1_xhci { status = "okay"; };
+&usb_host0_ehci { status = "okay"; };
+&usb_host0_ohci { status = "okay"; };
+&usb_host1_ehci { status = "okay"; };
+&usb_host1_ohci { status = "okay"; };
+&usb2phy0 { status = "okay"; };
+&usb2phy0_host { phy-supply = <&vcc5v0_otg>; status = "okay"; };
+&usb2phy0_otg { phy-supply = <&vcc5v0_otg>; status = "okay"; };
+&usb2phy1 { status = "okay"; };
+&usb2phy1_host { phy-supply = <&vcc5v0_host>; status = "okay"; };
+&usb2phy1_otg { phy-supply = <&vcc5v0_host>; status = "okay"; };

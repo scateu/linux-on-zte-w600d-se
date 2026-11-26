@@ -1,0 +1,351 @@
+--- a/drivers/video/rockchip/Kconfig
++++ b/drivers/video/rockchip/Kconfig
+@@ -48,6 +48,16 @@
+ 	help
+ 	  This enables Embedded DisplayPort(EDP) display support.
+ 
++config VIDEO_W600D_NATIVE
++	bool "ZTE W600D SE native RK3568 VOP2 and eDP display"
++	depends on ROCKCHIP_RK3568
++	select DISPLAY
++	select DISPLAY_ROCKCHIP_EDP
++	help
++	  Fixed-mode experimental display initialization for the KDC panel.
++	  Resets VOP2/eDP and power-cycles the panel; does not take over a
++	  framebuffer initialized by the preceding bootloader.
++
+ config DISPLAY_ROCKCHIP_LVDS
+ 	bool "LVDS Port"
+ 	depends on VIDEO_ROCKCHIP
+--- a/drivers/video/rockchip/Makefile
++++ b/drivers/video/rockchip/Makefile
+@@ -9,6 +9,7 @@
+ obj-$(CONFIG_ROCKCHIP_RK3328) += rk3328_vop.o
+ obj-$(CONFIG_ROCKCHIP_RK3399) += rk3399_vop.o
+ obj-$(CONFIG_DISPLAY_ROCKCHIP_EDP) += rk_edp.o
++obj-$(CONFIG_VIDEO_W600D_NATIVE) += w600d_vop2.o w600d_panel.o rk3568_edp_phy.o
+ obj-$(CONFIG_DISPLAY_ROCKCHIP_LVDS) += rk_lvds.o
+ obj-hdmi-$(CONFIG_ROCKCHIP_RK3288) += rk3288_hdmi.o
+ obj-hdmi-$(CONFIG_ROCKCHIP_RK3328) += rk3328_hdmi.o
+--- a/drivers/clk/rockchip/clk_rk3568.c
++++ b/drivers/clk/rockchip/clk_rk3568.c
+@@ -62,6 +62,7 @@
+ 	RK3036_PLL_RATE(816000000, 1, 68, 2, 1, 1, 0),
+ 	RK3036_PLL_RATE(600000000, 1, 100, 4, 1, 1, 0),
+ 	RK3036_PLL_RATE(594000000, 1, 99, 4, 1, 1, 0),
++	RK3036_PLL_RATE(564000000, 1, 47, 2, 1, 1, 0),
+ 	RK3036_PLL_RATE(500000000, 1, 125, 6, 1, 1, 0),
+ 	RK3036_PLL_RATE(408000000, 1, 68, 2, 2, 1, 0),
+ 	RK3036_PLL_RATE(400000000, 1, 100, 6, 1, 1, 0),
+--- a/drivers/video/video-uclass.c
++++ b/drivers/video/video-uclass.c
+@@ -355,7 +355,7 @@
+ 				       (colours[idx].g << 16) |
+ 				       (colours[idx].b << 8) | 0xff;
+ 			default:
+-				return (colours[idx].r << 16) |
++				return 0xff000000 | (colours[idx].r << 16) |
+ 				       (colours[idx].g <<  8) |
+ 				       (colours[idx].b <<  0);
+ 			}
+--- a/drivers/video/rockchip/rk_edp.c
++++ b/drivers/video/rockchip/rk_edp.c
+@@ -9,11 +9,13 @@
+ #include <dm.h>
+ #include <dm/device_compat.h>
+ #include <edid.h>
++#include <generic-phy.h>
+ #include <log.h>
+ #include <malloc.h>
+ #include <panel.h>
+ #include <regmap.h>
+ #include <reset.h>
++#include <rockchip_edp_phy.h>
+ #include <syscon.h>
+ #include <asm/gpio.h>
+ #include <asm/arch-rockchip/clock.h>
+@@ -43,7 +45,8 @@
+ 
+ enum rockchip_dp_types {
+ 	RK3288_DP = 0,
+-	RK3399_EDP
++	RK3399_EDP,
++	RK3568_EDP
+ };
+ 
+ struct rockchip_dp_data {
+@@ -60,8 +63,32 @@
+ 	struct udevice *panel;
+ 	struct link_train link_train;
+ 	u8 train_set[4];
++	struct phy phy;
++	bool has_phy;
++	bool enhanced;
+ };
+ 
++static int rk_edp_config_phy(struct rk_edp_priv *edp, const u8 *values,
++			     bool set_rate)
++{
++	struct rockchip_edp_phy_config config = {
++		.link_rate = edp->link_train.link_rate * 270,
++		.lanes = edp->link_train.lane_count,
++		.set_rate = set_rate,
++		.set_voltages = true,
++	};
++	unsigned int lane;
++
++	if (!edp->has_phy)
++		return 0;
++	for (lane = 0; lane < config.lanes; lane++) {
++		config.voltage[lane] = values[lane] & DP_TRAIN_VOLTAGE_SWING_MASK;
++		config.pre[lane] = (values[lane] & DP_TRAIN_PRE_EMPHASIS_MASK) >>
++				  DP_TRAIN_PRE_EMPHASIS_SHIFT;
++	}
++	return generic_phy_configure(&edp->phy, &config);
++}
++
+ static void rk_edp_init_refclk(struct rk3288_edp *regs, enum rockchip_dp_types chip_type)
+ {
+ 	writel(SEL_24M, &regs->analog_ctl_2);
+@@ -214,7 +241,8 @@
+ 	}
+ 
+ 	/* Is AUX CH command reply received? */
+-	if (rk_edp_is_aux_reply(regs)) {
++	ret = rk_edp_is_aux_reply(regs);
++	if (ret) {
+ 		debug("AUX CH command reply failed!\n");
+ 		return ret;
+ 	}
+@@ -227,7 +255,7 @@
+ 	}
+ 
+ 	/* Check AUX CH error access status */
+-	val = readl(&regs->dp_int_sta);
++	val = readl(&regs->aux_ch_sta);
+ 	if (val & AUX_STATUS_MASK) {
+ 		debug("AUX CH error happens: %d\n\n", val & AUX_STATUS_MASK);
+ 		return -EIO;
+@@ -349,18 +377,25 @@
+ 
+ 	values[0] = edp->link_train.link_rate;
+ 	values[1] = edp->link_train.lane_count;
++	if (edp->enhanced)
++		values[1] |= DP_ENHANCED_FRAME_CAP;
+ 
+ 	return rk_edp_dpcd_write(edp->regs, DPCD_LINK_BW_SET, values,
+ 				 sizeof(values));
+ }
+ 
+-static void rk_edp_set_link_training(struct rk_edp_priv *edp,
++static int rk_edp_set_link_training(struct rk_edp_priv *edp,
+ 				     const u8 *training_values)
+ {
+-	int i;
++	int i, ret;
++
++	ret = rk_edp_config_phy(edp, training_values, false);
++	if (ret)
++		return ret;
+ 
+ 	for (i = 0; i < edp->link_train.lane_count; i++)
+ 		writel(training_values[i], &edp->regs->ln_link_trn_ctl[i]);
++	return 0;
+ }
+ 
+ static u8 edp_link_status(const u8 *link_status, int r)
+@@ -465,6 +500,7 @@
+ 			p = this_p;
+ 	}
+ 
++	p = min(p, (3 - v) << DP_TRAIN_PRE_EMPHASIS_SHIFT);
+ 	if (v >= DP_VOLTAGE_MAX)
+ 		v |= DP_TRAIN_MAX_SWING_REACHED;
+ 
+@@ -491,6 +527,8 @@
+ 	u8 value;
+ 
+ 	value = DP_TRAINING_PATTERN_1;
++	if (edp->has_phy)
++		value |= SCRAMBLING_DISABLE;
+ 	writel(value, &regs->dp_training_ptn_set);
+ 	ret = rk_edp_dpcd_write(regs, DPCD_TRAINING_PATTERN_SET, &value, 1);
+ 	if (ret)
+@@ -503,7 +541,9 @@
+ 	voltage = 0xff;
+ 
+ 	while (1) {
+-		rk_edp_set_link_training(edp, edp->train_set);
++		ret = rk_edp_set_link_training(edp, edp->train_set);
++		if (ret)
++			return ret;
+ 		ret = rk_edp_dpcd_write(regs, DPCD_TRAINING_LANE0_SET,
+ 					edp->train_set,
+ 					edp->link_train.lane_count);
+@@ -571,6 +611,8 @@
+ 	int ret;
+ 
+ 	value = DP_TRAINING_PATTERN_2;
++	if (edp->has_phy)
++		value |= SCRAMBLING_DISABLE;
+ 	writel(value, &regs->dp_training_ptn_set);
+ 	ret = rk_edp_dpcd_write(regs, DPCD_TRAINING_PATTERN_SET, &value, 1);
+ 	if (ret)
+@@ -579,7 +621,9 @@
+ 	/* channel equalization loop */
+ 	channel_eq = 0;
+ 	for (tries = 0; tries < 5; tries++) {
+-		rk_edp_set_link_training(edp, edp->train_set);
++		ret = rk_edp_set_link_training(edp, edp->train_set);
++		if (ret)
++			return ret;
+ 		ret = rk_edp_dpcd_write(regs, DPCD_TRAINING_LANE0_SET,
+ 					edp->train_set,
+ 					edp->link_train.lane_count);
+@@ -627,6 +671,14 @@
+ 	edp->link_train.revision = values[0];
+ 	edp->link_train.link_rate = values[1];
+ 	edp->link_train.lane_count = values[2] & DP_MAX_LANE_COUNT_MASK;
++	edp->enhanced = edp->has_phy && (values[2] & DP_ENHANCED_FRAME_CAP);
++	if (edp->has_phy) {
++		edp->link_train.link_rate = min_t(u8, values[1], LINK_RATE_2_70GBPS);
++		if (edp->link_train.lane_count != 1 &&
++		    edp->link_train.lane_count != 2 &&
++		    edp->link_train.lane_count != 4)
++			return -EINVAL;
++	}
+ 
+ 	debug("max link rate:%d.%dGps max number of lanes:%d\n",
+ 	      edp->link_train.link_rate * 27 / 100,
+@@ -650,6 +702,9 @@
+ 	if (ret)
+ 		return ret;
+ 
++	ret = rk_edp_config_phy(edp, edp->train_set, true);
++	if (ret)
++		return ret;
+ 	return rk_edp_link_configure(edp);
+ }
+ 
+@@ -669,6 +724,22 @@
+ 	ret = rk_edp_link_train_ce(edp);
+ 	if (ret)
+ 		return ret;
++	if (edp->has_phy) {
++		u8 pattern = 0;
++
++		writel(pattern, &edp->regs->dp_training_ptn_set);
++		ret = rk_edp_dpcd_write(edp->regs, DPCD_TRAINING_PATTERN_SET,
++					&pattern, 1);
++		if (ret)
++			return ret;
++		if (edp->enhanced)
++			setbits_le32(&edp->regs->sys_ctl_4, ENHANCED);
++		else
++			clrbits_le32(&edp->regs->sys_ctl_4, ENHANCED);
++		printf("W600D eDP: software link training passed (%u lanes, enhanced=%u)\n",
++		       edp->link_train.lane_count, edp->enhanced);
++		return 0;
++	}
+ 
+ 	writel(HW_LT_EN, &edp->regs->dp_hw_link_training);
+ 	start = get_timer(0);
+@@ -880,7 +951,7 @@
+ 		writel(val, &edp->regs->sys_ctl_3);
+ 
+ 		val = readl(&edp->regs->sys_ctl_3);
+-		if (!(val & STRM_VALID))
++		if (val & STRM_VALID)
+ 			return 0;
+ 	} while (get_timer(start) < 100);
+ 
+@@ -892,6 +963,11 @@
+ 	int ret;
+ 
+ 	rk_edp_config_video_slave_mode(edp->regs);
++	if (edp->has_phy) {
++		writel(IN_BPC_8_BITS, &edp->regs->video_ctl_2);
++		writel(0, &edp->regs->video_ctl_3);
++		writel(0, &edp->regs->video_ctl_10);
++	}
+ 
+ 	if (!rk_edp_get_pll_locked(edp->regs)) {
+ 		debug("PLL is not locked yet.\n");
+@@ -1055,6 +1131,7 @@
+ 
+ 	struct clk clk;
+ 	int ret;
++	priv->has_phy = edp_data->chip_type == RK3568_EDP;
+ 
+ 	ret = uclass_get_device_by_phandle(UCLASS_PANEL, dev, "rockchip,panel",
+ 					   &priv->panel);
+@@ -1064,6 +1141,36 @@
+ 		return ret;
+ 	}
+ 
++	if (priv->has_phy) {
++		struct reset_ctl_bulk resets;
++
++		ret = reset_get_bulk(dev, &resets);
++		if (ret)
++			return ret;
++		ret = reset_assert_bulk(&resets);
++		if (ret)
++			return ret;
++		udelay(100);
++		ret = reset_deassert_bulk(&resets);
++		if (ret)
++			return ret;
++		ret = generic_phy_get_by_name(dev, "dp", &priv->phy);
++		if (ret)
++			return ret;
++		ret = generic_phy_init(&priv->phy);
++		if (ret)
++			return ret;
++		ret = generic_phy_power_on(&priv->phy);
++		if (ret)
++			return ret;
++		priv->link_train.link_rate = LINK_RATE_1_62GBPS;
++		priv->link_train.lane_count = 4;
++		ret = rk_edp_config_phy(priv, priv->train_set, true);
++		if (ret)
++			return ret;
++		goto init_controller;
++	}
++
+ 	ret = reset_get_by_name(dev, "dp", &dp_rst);
+ 	if (ret) {
+ 		ret = reset_get_by_name(dev, "edp", &dp_rst);
+@@ -1116,6 +1223,7 @@
+ 		     edp_data->reg_vop_big_little_sel,
+ 		     (vop_id == 1) ? edp_data->reg_vop_big_little_sel : 0);
+ 
++init_controller:
+ 	rockchip_edp_wait_hpd(priv);
+ 
+ 	rk_edp_init_refclk(regs, edp_data->chip_type);
+@@ -1125,6 +1233,8 @@
+ 	if (ret)
+ 		return ret;
+ 	rk_edp_init_aux(regs);
++	if (priv->has_phy)
++		rockchip_edp_force_hpd(priv);
+ 
+ 	return 0;
+ }
+@@ -1150,10 +1260,15 @@
+ 	.chip_type = RK3288_DP,
+ };
+ 
++static const struct rockchip_dp_data rk3568_edp = {
++	.chip_type = RK3568_EDP,
++};
++
+ static const struct udevice_id rockchip_dp_ids[] = {
+ 	{ .compatible = "rockchip,rk3288-dp", .data = (ulong)&rk3288_dp },
+ 	{ .compatible = "rockchip,rk3288-edp", .data = (ulong)&rk3288_dp },
+ 	{ .compatible = "rockchip,rk3399-edp", .data = (ulong)&rk3399_edp },
++	{ .compatible = "rockchip,rk3568-edp", .data = (ulong)&rk3568_edp },
+ 	{ }
+ };
+ 

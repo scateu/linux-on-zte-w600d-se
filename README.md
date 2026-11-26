@@ -65,7 +65,9 @@ Machine's own factory eMMC DDR/SPL/ATF/U-Boot, patched once to scan USB first
   -> USB Ubuntu /sbin/init
 ```
 
-The new USB has **no second U-Boot, boot.scr, or raw Rockchip loader**.
+The default Linux USB path needs **no second U-Boot, root `boot.scr`, or raw
+Rockchip loader**. The optional native build lives in `/native-uboot/` and is
+only chainloaded manually.
 With USB removed before power-on, the configured bootcmd falls through to
 original Android. That physical fallback test is still outstanding.
 The optional typewriter stick is different: factory U-Boot -> vendor boot.scr
@@ -78,6 +80,7 @@ The optional typewriter stick is different: factory U-Boot -> vendor boot.scr
 | `CURRENT.md` | Latest recorded hardware status and remaining work |
 | `docs/FACTORY-UBOOT-PATCH.md` | Patch the original factory bootcmd once, preserving Android |
 | `docs/USB-UBOOT-TYPEWRITER.md` | Second USB U-Boot, correct boot.cmd/boot-nc.cmd to boot.scr generator, typewriter |
+| `docs/NATIVE-UBOOT.md` | Mainline-based LCD and keyboard prototype: build, test, Ubuntu panic, rollback, potential eMMC replacement |
 | `docs/BOOT-LOGO.md` | Proven boot BMP location, format, offline generation and undo safeguards |
 | `docs/PARTITIONS-AND-HARDWARE.md` | Original partition map, board wiring and evidence sources |
 | `docs/RECOVERY.md` | Lossless backup extraction, deduplication policy and cleanup audit |
@@ -112,6 +115,16 @@ Older notes may describe 5.10 tests,
 two-stage U-Boot loading, a black screen, or a pending full-disk read-back.
 Those are history, not instructions to repeat those operations. In particular,
 old proposals to erase Android/repartition eMMC are **not the current plan**.
+
+## Native U-Boot experiment
+
+The [native-display U-Boot guide](docs/NATIVE-UBOOT.md) records how to reproduce
+and manually chainload the mainline-based prototype. The installed USB build
+showed a readable LCD countdown, and the built-in keyboard stopped it and ran
+`version`. The preceding build panicked handing display control to Ubuntu;
+direct Linux boot from the exact installed binary is still unverified.
+Keep factory U-Boot → USB extlinux as the default. The prototype still depends
+on factory SPL/DDR/secure firmware and **must not be flashed to `uboot_a`**.
 
 ## Safety and completeness
 

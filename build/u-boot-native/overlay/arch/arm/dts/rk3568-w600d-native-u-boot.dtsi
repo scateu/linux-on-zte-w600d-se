@@ -1,0 +1,22 @@
+#include "rk356x-u-boot.dtsi"
+
+&native_display {
+	bootph-some-ram;
+};
+
+/ {
+	aliases {
+		/delete-property/ mmc0;
+		/delete-property/ mmc1;
+		/delete-property/ spi4;
+	};
+
+	chosen {
+		/delete-property/ u-boot,spl-boot-order;
+	};
+
+	bootstd {
+		compatible = "u-boot,boot-std";
+		bootdev-order = "usb";
+	};
+};

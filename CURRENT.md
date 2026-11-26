@@ -1,4 +1,54 @@
-# Current recorded checkpoint — November 25, 2026
+# Current recorded checkpoint — November 26, 2026
+
+## Native-display U-Boot experiment
+
+- User selected goal #2: independently initialize the LCD in a USB-loaded
+  mainline U-Boot, while keeping factory SPL/DDR/secure firmware and Android.
+- The isolated prototype builds on `trash` from upstream
+  `9d67454e920b3908529c9fc642a8c911db040896`; size/configuration/compiled-DT
+  guards pass. Source/recipe: `build/u-boot-native/`; see the
+  [build and hardware test guide](docs/NATIVE-UBOOT.md).
+- The November 26 integer-clock RAM test passed panel power-cycle, VOP2 reset
+  with zero inherited windows, Naneng PHY lock, two-lane eDP training, backlight
+  enable and a fresh VP1 frame. The user initially saw white diagonal marks
+  that changed when typing. After the RAM-only position correction, the user
+  confirmed normal LCD output; the built-in keyboard ran `help`, verified on
+  UART without agent TX.
+- Smart0 and U-Boot agree on framebuffer base `0x7d700000` and 7680-byte
+  stride. The confirmed fix sets the fullscreen Smart0 origin to `(0,0)` in
+  active-area coordinates while retaining the porches in VP1 timing. The
+  corrected 677656-byte build passed its guards on `trash` and is installed
+  under `/native-uboot/` on the USB boot partition.
+- The installed build showed a readable countdown on the internal LCD. The
+  user stopped it with Space on the built-in keyboard and ran `version`.
+  UART logged no TX after starting the chainload. This was a warm restart
+  to factory U-Boot followed by manual chainload, not a cold-boot test.
+- The supplied v14 backup's first FIT is already debug-patched; the second
+  retains the original Android defaults. Both payload hashes verify. Details
+  and a read-only inspector are included; no factory backup/eMMC was written.
+- The existing typewriter submodule and normal USB Linux boot files remain
+  unchanged. Wi-Fi association is now user-reported; slow DHCP is deferred.
+- Earlier trials fixed framebuffer reservation (`bootph-some-ram`), panel
+  already-OFF handling, USB storage and preservation of the factory OP-TEE
+  memory hole. The third and fourth builds booted Ubuntu but failed the
+  fractional pixel-clock check before VOP2 reset. The current build programs
+  564 MHz VPLL / 141 MHz VP1 DCLK, matching the clocks measured in working Linux.
+- Only FAT `/native-uboot/` was updated; the native manifest and the normal
+  extlinux/Image/v6 DTB checksums all verified with FAT read-only. The previous
+  native build is backed up in
+  `/root/w600d-debug-backups/20261126T093341-native-uboot-pre-origin/`.
+  The chainload remains manual. Unplugged Android acceptance is still pending.
+- `boot` from the integer build with the RAM-only Smart0 fix loaded the
+  unchanged Ubuntu Image and DTB, but Linux panicked in `rk_iommu_enable_stall`
+  after the `vo` power domain failed to exit idle. No USB files were changed
+  during this attempt. A power-cycle into the normal factory -> USB Ubuntu
+  route recovered successfully. The exact installed 677656-byte build has not
+  been tested booting Linux directly. Keep the default unchanged and compare
+  active versus quiesced scanout using USB only. Do not write the USB payload
+  to `uboot_a`; an eMMC-target FIT and independent recovery are separate work.
+- The preceding software reboot panicked in the existing Linux DRM shutdown
+  path after filesystems were synced/read-only. The user power-cycled; this
+  unrelated shutdown issue is recorded in `docs/NATIVE-UBOOT.md` and deferred.
 
 This consolidates the last hardware observations on November 24, 2026 (+08:00)
 and the user's subsequent confirmations. The laptop was not queried or changed

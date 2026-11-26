@@ -1,0 +1,51 @@
+--- a/drivers/clk/rockchip/clk_pll.c
++++ b/drivers/clk/rockchip/clk_pll.c
+@@ -334,10 +334,10 @@
+ 		     RK3036_PLLCON1_REFDIV_MASK),
+ 		     (rate->postdiv2 << RK3036_PLLCON1_POSTDIV2_SHIFT |
+ 		     rate->refdiv << RK3036_PLLCON1_REFDIV_SHIFT));
++	rk_clrsetreg(base + pll->con_offset + 0x4,
++		     RK3036_PLLCON1_DSMPD_MASK,
++		     rate->dsmpd << RK3036_PLLCON1_DSMPD_SHIFT);
+ 	if (!rate->dsmpd) {
+-		rk_clrsetreg(base + pll->con_offset + 0x4,
+-			     RK3036_PLLCON1_DSMPD_MASK,
+-			     rate->dsmpd << RK3036_PLLCON1_DSMPD_SHIFT);
+ 		writel((readl(base + pll->con_offset + 0x8) &
+ 			(~RK3036_PLLCON2_FRAC_MASK)) |
+ 			    (rate->frac << RK3036_PLLCON2_FRAC_SHIFT),
+@@ -371,7 +371,7 @@
+ {
+ 	u32 refdiv, fbdiv, postdiv1, postdiv2, dsmpd, frac;
+ 	u32 con = 0, shift, mask;
+-	ulong rate;
++	u64 rate;
+ 	int mode;
+ 
+ 	con = readl(base + pll->mode_offset);
+@@ -403,17 +403,14 @@
+ 		con = readl(base + pll->con_offset + 0x8);
+ 		frac = (con & RK3036_PLLCON2_FRAC_MASK) >>
+ 			RK3036_PLLCON2_FRAC_SHIFT;
+-		rate = (24 * fbdiv / (refdiv * postdiv1 * postdiv2)) * 1000000;
+-		if (dsmpd == 0) {
+-			u64 frac_rate = OSC_HZ * (u64)frac;
+-
+-			do_div(frac_rate, refdiv);
+-			frac_rate >>= 24;
+-			do_div(frac_rate, postdiv1);
+-			do_div(frac_rate, postdiv1);
+-			rate += frac_rate;
+-		}
+-		return rate;
++		if (!refdiv || !postdiv1 || !postdiv2)
++			return 0;
++		rate = (u64)fbdiv << 24;
++		if (!dsmpd)
++			rate += frac;
++		rate *= OSC_HZ;
++		do_div(rate, refdiv * postdiv1 * postdiv2);
++		return rate >> 24;
+ 	case RKCLK_PLL_MODE_DEEP:
+ 	default:
+ 		return 32768;

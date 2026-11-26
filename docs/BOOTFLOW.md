@@ -1,6 +1,6 @@
 # Factory patch and removable-USB bootflow
 
-## Current new USB: one U-Boot
+## Default USB boot: one U-Boot
 
 ```text
 eMMC vendor DDR/SPL/ATF/U-Boot
@@ -11,7 +11,10 @@ eMMC vendor DDR/SPL/ATF/U-Boot
   -> Ubuntu on USB ext4
 ```
 
-The optional typewriter workflow uses two U-Boots. Its complete sources,
+There are two separate, optional chainload workflows. The
+[native-display prototype](NATIVE-UBOOT.md) is manually started from
+`/native-uboot/boot-native.scr`; it is not a default, and its handoff to Linux
+is not yet validated. The typewriter also uses two U-Boots. Its complete sources,
 patches and prebuilts are now in `../bootloader/usb-uboot/`; see
 `USB-UBOOT-TYPEWRITER.md`. It is not needed by the new mainline USB. Do not copy
 their boot.scr, chainloader or raw U-Boot onto the new disk by habit.
